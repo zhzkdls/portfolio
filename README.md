@@ -12,7 +12,7 @@
 이정아 포트폴리오 https://webstoryboy.github.io/portfolio/port9/index5.html<br> 
 김강산 포트폴리오 https://webstoryboy.github.io/portfolio/port10/portfolio/index.html<br> 
 
-https://webstoryboy.github.io/portfolio/port11/index20.html
-https://webstoryboy.github.io/portfolio/port12/index17.html
+https://webstoryboy.github.io/portfolio/port11/index20.html<br> 
+https://webstoryboy.github.io/portfolio/port12/index17.html<br> 
 
 
