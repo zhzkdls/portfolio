@@ -298,13 +298,12 @@ const run = () => {
         }
     }
 }
-document.addEventListener('DOMContentLoaded',init,false);
 
 
-function reload() {
-  window.location.href = window.location.href;
-}
-document.getElementById('bn').onclick = reload;
+
+//document.addEventListener('DOMContentLoaded',init,false);
+document.addEventListener('scroll',init, false);
+
 
 
 //스킬 카운터
