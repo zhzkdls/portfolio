@@ -15,8 +15,8 @@
 이소연 포트폴리오 https://webstoryboy.github.io/portfolio/port11/index20.html<br> 
 서지현 포트폴리오 https://webstoryboy.github.io/portfolio/port12/index17.html<br> 
 황상한 포트폴리오 https://webstoryboy.github.io/portfolio/port13/index5.html<br>
-이다빈 포트폴리오 https://webstoryboy.github.io/portfolio/port14/index7.html
+이다빈 포트폴리오 https://webstoryboy.github.io/portfolio/port14/index7.html<br> 
 
-윤현정 포트폴리오 https://webstoryboy.github.io/portfolio/port18/index.html
-
+윤현정 포트폴리오 https://webstoryboy.github.io/portfolio/port18/index.html<br> 
+주하나 포트폴리오 https://webstoryboy.github.io/portfolio/port19/index5.html<br> 
 
