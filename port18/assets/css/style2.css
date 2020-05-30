@@ -1,0 +1,380 @@
+@font-face { 
+    font-family: 'Cafe24Oneprettynight'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+/* layout */
+#contents {}
+#section1 {position: relative; height: 100vh;}
+#section2 {position: relative; padding-bottom: 10%;}
+#section3 {height: 1000px; background: #ccc;}
+#section4 {height: 3000px; background: #F1EED8;}
+#section5 {}
+#section6 {}
+
+/* container */
+.container {width: 1300px; margin: 0 auto;  }
+
+/* header */
+#header {
+    position: fixed; left: 0; top: 0; 
+    width: 100%;  
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1;
+}
+#header .logo {
+    font-family: "IC Body Bold";
+    font-size: 22px;
+    position: absolute; left: 20px; top: 20px;
+}
+#header .title {
+    font-family: "IC Body Bold";
+    font-size: 22px;
+    border-bottom: 3px solid #16191B;
+}
+#header .contact {
+    border: 2px solid #16191B; 
+    background: #fff;
+    color: #16191B;
+    font-family: "IC Body Bold";
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 7px 13px 5px 13px;
+    position: absolute; right: 10px; top: 10px;
+}
+/* sec1 */
+.main-text {
+    text-align: center;
+    position: absolute; left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
+}
+.main-text span {
+    margin-top: 1vw;
+    display: block;
+    font-size: 2.5vw;
+    font-family: "IC Body Bold", sans-serif;
+}
+.main-text h1 {white-space: nowrap;}
+.main-text h1 span{
+    font-size: 20vw;
+    line-height: 0.9;
+    font-weight: 400;
+    font-family: "IC Fatale", serif;
+    text-transform: uppercase;
+    padding-bottom: 2vw;
+    display: inline-block;
+}
+.main-text p {
+    color: transparent;
+    font-family: "IC Body Bold";
+    -webkit-text-stroke: 2px #16191B;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    line-height: 6vw;
+    text-transform: uppercase;
+}
+ 
+
+/* sec2 */
+.sub-text {display: flex; }
+.sub-text .st-left {width: 50%;}
+.sub-text .st-right {width: 50%;}
+.sub-text .img-wrap {width: 100%; height: 45vh;}
+.sub-text .img-wrap .img {
+    box-sizing: border-box;
+    border: 2px solid #000;
+    width: 100%; height: 100%; 
+    background: url(../img/main_i1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.sub-text .img-wrap .img.img2 {
+    background: url(../img/main_i2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.sub-text .text {
+    padding: 5vw;
+    font-size: 26px;
+    line-height: 40px;
+    font-family: 'Cafe24Oneprettynight'; 
+    word-break: keep-all;
+}
+.sub-text .text.t2 {
+    text-align: right;
+}
+.sub-text .text strong {
+    font-weight: bold; border-bottom: 2px solid #000;
+}
+.sec2-bg1 {
+    width: 20vw; height: 50vh; 
+    background: #000; 
+    position: absolute; left: 0; top: -15vh;
+    z-index: -1;
+    background: url(../img/main_pattern.png);
+    background-size: 400px;
+}
+.sec2-bg2 {
+    width: 20vw; height: 50vh; 
+    background: #000; 
+    position: absolute; right: 0; bottom: 0vh;
+    z-index: -1;
+    background: url(../img/main_pattern.png);
+    background-size: 400px;
+}
+.sub-img {padding: 10vh 0;}
+.sub-img span {
+    text-align: center; display: block; 
+    text-transform: uppercase; color: #777; font-size: 22px;
+    font-family: 'Cafe24Oneprettynight'; 
+}
+.sub-img span:nth-child(1) {padding-left: 1vw;}
+.sub-img span:nth-child(2) {padding-left: 3vw;}
+.sub-img span:nth-child(3) {padding-left: 5vw;}
+.sub-img span:nth-child(4) {padding-left: 7vw;}
+.sub-img img {display: block; width: 100px; margin: 10px auto; padding-left: 20vw;}
+
+
+
+/* sec3 */
+.sec4 {text-align: center; padding: 15% 0;}
+.sec4 .stit {
+    text-transform: uppercase;
+    font-size: 2.5vw; font-family: "IC Body Bold", sans-serif;}
+.sec4 h3 {    
+    font-size: 20vw;
+    line-height: 0.9;
+    font-weight: 400;
+    font-family: "IC Fatale", serif;
+}
+.sec4 .desc {
+    width: 25vw; margin: 4vw auto;
+    font-size: 22px;
+    line-height: 36px;
+    font-family: 'Cafe24Oneprettynight';
+    margin-bottom: 15vw;
+}
+.site-wrap {}
+.site-wrap .site {display: flex; justify-content: space-between; margin-bottom: 5vw;}
+.site-wrap .site .site-img {width: 55%}
+.site-wrap .site .site-img img {width: 100%;}
+.site-wrap .site .site-text {width: 40%; overflow: hidden;}
+.site-wrap .site .site-text strong {
+    text-transform: uppercase;
+    font-size: 2.5vw; line-height:2.5vw;
+    font-family: "IC Body Bold", sans-serif;
+    white-space: nowrap;
+}
+.site-wrap .site .site-text h4 {
+    font-size: 10vw; line-height: 9vw;
+    font-family: "IC Fatale", serif;
+
+}
+.site-wrap .site .site-text p {
+    text-transform: uppercase;
+    color: transparent;
+    font-family: "IC Body Bold";
+    -webkit-text-stroke: 2px #16191B;
+    font-size: 5.25vw;
+    letter-spacing: 2px;
+    line-height: 6.5vw;}
+
+.site-wrap .site .site-text .tx {
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 24px;
+    text-align: justify;
+}
+.site-wrap .site .site-text .btn {
+    color: #000;
+    border: 2px solid #000;
+    border-bottom-width: 3px;
+    font-family: "IC Body bold", sans-serif;
+    font-size: 1.3vw;
+    display: inline-block;
+    line-height: 1.4;
+    margin-top: 2vw;
+    border-radius: 4px;
+    padding: 0.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-weight: 100;
+}
+
+
+
+
+
+/* 미디어 쿼리 */
+@media (max-width: 600px){
+    #header .title {display: none;}
+    #header .logo {font-size: 14px;}
+    #header .contact {font-size: 14px;}
+    
+    .main-text p {-webkit-text-stroke-width: 1px;}
+}
+
+
+
+
+.menu {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 10vh 0 25vh;
+	--marquee-width: 100vw;
+	--offset: 20vw;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	--item-font-size: 10vw;
+	counter-reset: menu;
+}
+
+.menu__item {
+	cursor: default;
+	position: relative;
+	padding: 0 5vw;
+}
+
+.menu__item-link {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	-webkit-text-stroke: 1.5px #000;
+	text-stroke: 1.5px #000;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	color: transparent;
+	transition: opacity 0.4s;
+}
+
+.menu__item-link::before {
+	all: initial;
+	font-family: sofia-pro, sans-serif;
+	counter-increment: menu;
+	content:  counter(menu);
+	position: absolute;
+	bottom: 60%;
+	left: 0;
+	pointer-events: none;
+}
+
+.menu__item-link:hover {
+	transition-duration: 0.1s;
+	opacity: 0;
+}
+
+.menu__item-img {
+	pointer-events: none;
+	position: absolute;
+	height: 50vh;
+	max-height: 400px;
+	opacity: 0;
+	left: 100%;
+	top: 50%;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+}
+
+.menu__item-link:hover + .menu__item-img {
+	opacity: 1;
+	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transition: all 0.4s;
+}
+
+/* Make sure 3 items are visible in the viewport by setting suitable font size. */
+
+.marquee {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--marquee-width);
+	overflow: hidden;
+	pointer-events: none;
+	mix-blend-mode: color-burn;
+}
+
+.marquee__inner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.menu__item-link:hover ~ .marquee .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.marquee span {
+	text-align: center;
+}
+
+.menu__item-link,
+.marquee span {
+	white-space: nowrap;
+	font-size: var(--item-font-size);
+	padding: 0 1vw;
+	font-weight: 900;
+	line-height: 1.15;
+}
+
+.marquee span {
+	font-style: italic;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+@media screen and (min-width: 53em) {
+	.frame {
+		text-align: left;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		padding: 2.5rem 6vw;
+		pointer-events: none;
+		grid-template-columns: 75% 25%;
+		grid-template-rows: auto;
+	}
+
+	.frame__title-wrap {
+		display: flex;
+		align-items: start;
+	}
+
+	.frame__info {
+		margin: 0;
+	}
+
+	.frame__title {
+		margin: 0 1rem 0 0;
+	}
+
+	.frame__links {
+		padding: 0;
+		justify-self: end;
+	}
+
+	.frame a {
+		pointer-events: auto;
+	}
+}
+
+
+
