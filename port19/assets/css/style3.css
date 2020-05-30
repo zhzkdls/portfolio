@@ -1,0 +1,92 @@
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* layout */
+#contents {}
+#section1 {height: 100vh;}
+#section2 {height: 100vh;}
+#section3 {background: #333;}
+#section4 {background: #444;}
+#section5 {background: #555;}
+#section6 {background: #666;}
+
+#contents {position:fixed; width: 600vw; overflow: hidden; height: 100vh;}
+#contents > section {width: 120vw; float: left; height: 100vh; }
+
+/* container */
+.container {height: 98vh;}
+
+/* sec1 */
+.sec1 {overflow: hidden; display: flex; flex-wrap: wrap;}
+.sec1 h1 {
+    height: 100vh; width: 20vw; overflow: hidden;}
+.sec1 h1 strong {
+    display: block;
+    white-space: nowrap;
+    font-size: 18vw;
+    padding-bottom: 1.6vw;
+    transform: rotate(-90deg) translateX(0px);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -5px;
+    font-weight: 700;
+    animation: left 20s infinite linear;
+} 
+@keyframes left {
+    0% {transform: rotate(-90deg) translateX(-400px)}
+    100% {transform: rotate(-90deg) translateX(-2400px)}
+}
+
+.sec1 .intro {position: relative; width: 29vw; margin: 0.5vw 0; height: 100vh; background: #FFF600; text-align: center;}
+.sec1 .intro .circle {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+
+.sec1 .intro h2 {font-size: 2vw; font-family: 'Oswald', sans-serif; padding: 2vw 0 1vw;}
+.sec1 .intro .img {
+    
+    width: 20vw; height: 20vw; margin: 0 auto;
+    background: url(../img/me8.jpg) center top -285px;
+    background-size: 250%;
+    border-radius: 50%;
+}
+.sec1 .intro p { padding: 1.5vw; font-size: 1.1vw; text-align: justify; text-justify: inter-word;}
+
+
+.sec1 .mimg-wrap {width: 71vw; height: inherit; position: relative;}
+
+.sec1 .mimg-wrap .img {
+    position: absolute; left: 0; top: 0;
+    width: 70vw; height: 98vh; margin: 0.5vw 0 0.5vw 0.5vw;
+
+    background: url(../img/me3.jpg) no-repeat;
+    background-size: 100% 100%;
+    filter: saturate(0.25);
+
+}
+.sec1 .mimg-wrap .img img {width: 100%;}
+
+
+
+
+@media (max-width: 600px){
+    .sec1 h1 {width: 40vw;}
+    .sec1 .intro {width: 60vw;}
+}
+
+/* sec2 */
+.sec2 {overflow: hidden; height: 98vh; margin: 0.5vw 0;  }
+.sec2 h2 {width: 73vw; font-size: 18vw; line-height: 17vw; letter-spacing: -5px; font-weight: 700; font-family: 'Oswald', sans-serif;}
+.sec2 h3 {width: 73vw;  padding: 0.5vw; overflow: hidden;}
+.sec2 h3 span {font-size: 4vw; line-height: 4.5vw; letter-spacing: -1px; font-weight: normal; font-family: 'Oswald', sans-serif; white-space: nowrap; display:block; animation: move 20s infinite linear; transform: translateX(0);
+
+} 
+@keyframes move {
+    0% {transform: translateX(0)}
+    100% {transform:  translateX(-2400px)}
+}
+
+.sec2 .text {width: 73vw; height: 100vh; background-color: yellow;}
+.sec2 .text p {font-size: 4vw; line-height: 4.5vw; letter-spacing: -1px; font-weight: 600; font-family: 'Oswald', sans-serif; padding: 12vw 0 0 2vw; }
+
+
+
+
+

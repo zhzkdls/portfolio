@@ -1,0 +1,127 @@
+
+
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-1Thin'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* layout */
+#contents {}
+#section1 {height: 5000px; width: 100%; overflow: hidden;}
+#section2 {height: 1000px; background: blue;}
+#section3 {height: 1000px; background: #333;}
+#section4 {height: 1000px; background: #444;}
+#section5 {height: 1000px; background: #555;}
+#section6 {height: 1000px; background: #666;}
+
+/* scroll */
+.scroll {
+    position: fixed; left: 10px; top: 10px; width: 40px; height: 40px; 
+    background: rgba(0,0,0,0.9);
+    line-height: 40px; text-align: center;
+    color: #fff; z-index: 1000; font-size: 12px;
+}
+
+/* sec1 */
+.sec1 {
+    position: fixed; left: 0; top: 0; width: 1800px;
+    display: flex;
+}
+.sec1 h1 {
+    height: 100vh; width: 240px; overflow: hidden;
+}
+.sec1 h1 strong {
+    display: block;
+    white-space: nowrap;
+    font-size: 220px;
+    padding-top: 30px;
+    line-height: 1;
+    transform: rotate(-90deg) translateX(0px);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -5px;
+    font-weight: 100;
+    animation: left 100s infinite linear;
+    font-family: 'S-CoreDream-1Thin';
+} 
+@keyframes left {
+    0% {transform: rotate(-90deg) translateX(-400px)}
+    100% {transform: rotate(-90deg) translateX(-2400px)}
+}
+.sec1 .intro {
+    position: relative; width: 400px;
+    height: 100vh; 
+    background: #fff725; text-align: center;
+    display: flex; align-content: space-between;
+    flex-direction: column;
+}
+.sec1 .intro h2 {
+    font-family: 'Oswald';
+    height: 20vh; line-height: 20vh;
+}
+.sec1 .intro .circle {
+    height: 40vh;
+}
+.sec1 .intro .circle .img {
+    width: 300px; height: 300px; margin: 0 auto;
+    background: url(../img/me3.jpg) no-repeat center center;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+.sec1 .intro .desc {
+    font-family: 'S-CoreDream-2ExtraLight';
+    font-weight: 100;
+    height: 40vh;
+    padding: 25px;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.sec1 .inImg {
+    position: relative; width: 1100px; 
+    height: 100vh; 
+/*
+    background: url(../img/me9.jpg) no-repeat center center;
+    background-size: cover;
+*/
+}
+.sec1 .inImg .text {
+    position: absolute; bottom: 0; right: 0; text-align: right;
+}
+.sec1 .inImg .text span {
+    display: block;
+    font-family: 'S-CoreDream-1Thin';
+    font-size: 140px;
+    text-align: right;
+    font-weight: 200;
+    line-height: 180px;
+    text-transform: uppercase;
+}
+.sec1 .inImg .text em {
+    font-family: 'S-CoreDream-2ExtraLight';
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+
+
+
+
+/* media */
+@media (max-height: 500px){
+    .sec1 .intro .desc {display: none;}
+    .sec1 .intro h2 {height: 10vh;}
+}
+
+
+
+
+
+
+
+
+
