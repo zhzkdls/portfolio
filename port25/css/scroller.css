@@ -1,0 +1,87 @@
+
+.scrollContainer
+{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1903px;
+    background-color:#141035; 
+}
+
+.scrollContainer > div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    -moz-animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+
+    -moz-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+#horizontalScroll
+{
+    height: 369px;
+}
+
+#horizontalScroll > div
+{
+    -moz-animation-name: animateScrollLeft;
+    -webkit-animation-name: animateScrollLeft;
+    animation-name: animateScrollLeft;
+}
+
+#horizontalScroll > div.images-loop
+{
+   left:1923px; 
+   /* left: 392px;*/
+   
+}
+
+
+
+@-moz-keyframes animateScrollLeft
+{
+    from
+    {
+        -moz-transform: translateX(0);
+    }
+
+    to
+    {
+        -moz-transform: translateX(-1000px);
+    }
+}
+
+@-webkit-keyframes animateScrollLeft
+{
+    from
+    {
+        -webkit-transform: translateX(0);
+    }
+    to
+    {
+        -webkit-transform: translateX(-1000px);
+    }
+}
+
+@keyframes animateScrollLeft
+{
+    from
+    {
+        transform: translateX(0);
+    }
+    to
+    {
+        transform: translateX(-1000px);
+    }
+}

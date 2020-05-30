@@ -1,0 +1,88 @@
+@font-face { 
+    font-family: 'S-CoreDream-2ExtraLight'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); 
+    font-weight: normal; font-style: normal; 
+}
+/* scroll */
+.scroll {position: fixed; top: 10px; left: 10px; z-index: 10;}
+.scroll span {display: inline-block;  width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white; transition: all 0.8s 2s ease;}
+
+/* layout */
+body {background-color: #1A1A1A;}
+#header {
+    position: fixed; left: 0; top: 0; width: 100%; 
+    border-bottom: 1px solid hsla(0,0%,95.7%,.25); 
+    height: 60px; mix-blend-mode: difference;
+}
+#nav {
+    position: fixed; left: 0; top: 60px; width: 60px; height: 100vh; 
+    border-right: 1px solid hsla(0,0%,95.7%,.25); 
+    mix-blend-mode: difference;
+}
+#contents {}
+#contents > section {}
+#section1 {height: 1000px;}
+#section2 {background-color: #fff;}
+#section3 {height: 1000px;}
+#section4 {height: 1000px;}
+#section5 {height: 5000px; background: #fff;}
+#section6 {height: 6000px; background: #000;}
+
+/* container */
+.container {width: 1440px; margin: 0 auto; position: relative;}
+
+/* #header */
+#header {text-align: center; color: #fff; font-family: 'Bebas Neue', cursive;}
+#header h1 {
+    position: absolute; left: 20px; top: 22px; 
+    color: #fff; font-size: 20px; font-family: 'Bebas Neue', cursive;
+}
+#header p {
+    text-align: center; font-size: 29px; line-height: 65px; 
+    font-family: 'Bebas Neue', cursive;
+}
+#header a {
+    position: absolute; right: 20px; top: 15px; background: #f1f1f1; 
+    display: block; padding: 10px 20px 6px 20px; 
+    border-radius: 25px; 
+    font-size: 14px;
+}
+
+/* sec1 */
+
+/* sec2 */
+.sec2 {padding: 15% 0px; text-align: center; }
+.sec2 .sTitle {font-size: 34px; font-family: 'S-CoreDream-2ExtraLight'; font-weight: 100;}
+.sec2 .mTitle {font-size: 20vw; font-family: 'Teko', cursive; font-weight: 400;}
+.sec2 .info {
+    font-size: 44px; font-family: 'Teko', sans-serif; font-weight: 300; 
+    display: flex; justify-content: space-between; padding: 0 35% 12% 35%;}
+.sec2 .intro {
+    font-size: 24px; line-height: 1.5; font-family: 'S-CoreDream-2ExtraLight';
+}
+
+/* sec2 - Animation */
+.sec2 .sTitle {opacity: 0; transform: translateY(30px); transition: all 0.43s 0.1s cubic-bezier(0, 1.04, 0.58, 1.05);}
+.sec2 .mTitle {opacity: 0; transform: translateY(70px); transition: all 0.43s 0.6s cubic-bezier(0, 1.04, 0.58, 1.05);}
+.sec2 .info   {opacity: 0; transform: translateY(70px); transition: all 0.43s 0.9s cubic-bezier(0, 1.04, 0.58, 1.05);}
+
+#section2.show .sec2 .sTitle {opacity: 1; transform: translateY(0);}
+#section2.show .sec2 .mTitle {opacity: 1; transform: translateY(0);}
+#section2.show .sec2 .info   {opacity: 1; transform: translateY(0);}
+
+
+/* sec5 */
+#section5 {position: relative;}
+
+.sbox {
+    width: 400px; height: 100vh; background: #000; position: fixed; left: 150%; top: 0%;}
+
+
+
+
+
+
+
+
+
+

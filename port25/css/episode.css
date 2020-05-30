@@ -1,0 +1,20 @@
+@font-face{font-family: 'bellMT'; src: url("../fonts/BellMTBold.woff");}
+@font-face{font-family: 'NotoSansCJKkr'; src: url("../fonts/NotoSansCJKkr-Regular.woff");}
+
+/* layout */
+body{overflow-x: hidden;}
+.contents{width: 1920px; height: 6189px; position: relative; overflow: hidden; margin: 0 auto;}
+.header {position: relative; height: 737px; margin: 0 auto;}
+
+/* gnb */
+.gnb_logo{top: 65px; left: 210px; position:absolute; z-index:50;}
+.gnb_logo a img{width:68px;}
+
+/* footer */
+.footer{position: relative; font-family: 'NotoSansCJKkr'; font-size: 14px; margin: 0 auto; width: 1920px; height:70px; top: 3169px; background: #343434;}
+.footer span{ float: left; margin-top: 25px; margin-left: 255px; color: #949494;}
+.footer p{float: right; margin-top: 25px; margin-right: 300px; color: #949494;}
+
+
+
+

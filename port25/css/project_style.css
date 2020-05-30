@@ -1,0 +1,126 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0px;
+	background:#373a31 url(../img/bg_menu.jpg) no-repeat left top;
+	z-index:10000;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	float:right;
+    
+    margin-right: 180px;
+
+}
+
+.overlaysum{width:1170px; height:650px;
+overflow:hidden;
+position:relative; top:150px; left:120px;
+    border: 2px solid;
+}
+.overlaysum a{display: block; float:left; margin-right:20px;
+margin-bottom: 30px;}
+
+/* Menu style */
+
+.overlaygnb{width:350px; height:50px; 
+float:right; margin-right:97px; margin-top:48px;}
+.overlaylogo{top: 36px; left: 277px; position:absolute; z-index:50;}
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {float:right;
+	display: inline-block;
+	position: relative;
+}
+
+.textW{position: relative; width: 1920px; top: 235px; left: 670px;}
+.port{width:550px; height:301px; position: absolute; }
+
+.textW .port>.portText{position: absolute; width:155px; height:286px; margin-left: 150px;}
+
+
+.me{width:550px; height:100px;position: absolute; margin-top: 410px;}
+.textW .me>.aboutText{position: absolute; width:155px; height:100px;}
+.textW .me>.contactText{position: absolute; width:155px; height:100px; margin-left: 350px;}
+.textW .me>.feedbackText{position: absolute; width:155px; height:100px; margin-left: 150px;}
+
+*>.burM{margin-bottom: 30px; margin-left: 15px;}
+
+
+
+
+
+.overlay ul a {float:left;
+margin-left:20px;}
+
+.overlaygnb a:last-child{margin-right:21px;}
+/* Effects */
+.overlay-hugeinc {
+    overflow: hidden;
+    height: 1080px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}

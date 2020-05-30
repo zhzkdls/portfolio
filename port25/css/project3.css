@@ -1,0 +1,76 @@
+@font-face{font-family: 'bellMT'; src: url("../fonts/BellMTBold.woff");}
+@font-face{font-family: 'NotoSansCJKkr'; src: url("../fonts/NotoSansCJKkr-Regular.woff");}
+
+/* layout */
+body {overflow-x: hidden;}
+.contents {width: 1920px; height: 3286px; position: relative; overflow: hidden; margin: 0 auto;}
+.header {position: relative; height: 735px; margin: 0 auto;}
+
+/* gnb */
+.gnb_logo{top: 39px; left: 280px; position:absolute; z-index:50;}
+.gnb_logo a img{width:68px; margin-top: 26px; margin-left: -70px;}
+
+/* arrow btn */
+.arrow-btn{position: absolute;  top: 320px;}
+.arrow-btn li.prev{position: absolute; width: 40px; height: 70px; left: 280px;}
+.arrow-btn li.next{position: absolute; width: 40px; height: 70px; left: 1600px; }
+
+/* main top menu */
+.projectMenu{position: absolute; width: 1401px; font-size: 20px; left:16.5%; bottom: 3.7%;}
+.projectMenu li{float: left; padding-left: 114px; font-family: 'bellMT';}
+.projectMenu li:nth-child(1){padding-left: 6px;}
+.projectMenu li:nth-child(3){padding-left: 116px; color: #fff;}
+.projectMenu li:nth-child(4){padding-left: 103px;}
+.projectMenu li:nth-child(5){padding-left: 84px;}
+.projectMenu li:nth-child(6){padding-left: 76px;}
+.projectMenu li a:hover{color: #fff;}
+
+/* sec1 */
+.sec1{width: 1920px; height: 336px; background: #fff; position: absolute;}
+.sec1 .sec1-text img{position: absolute; font-family: 'bellMT'; left: 405px; top: 68px; font-size: 40px; color: #343434;}
+.sec1 .sec1-text p{position: absolute; font-family: 'NotoSansCJKkr'; left: 405px; top: 130px; font-size: 16px; color: #343434;}
+.sec1 .sec1-btn{position: absolute; display:inline-block; width: 260px; height: 55px; background: #d2eee6; margin: 0 auto; text-align: center; padding-top: 17px; margin-top: 136px; margin-left: 978px;}
+.sec1 .sec1-btn:hover{background: #fff; }
+.sec1 .sec1-btn a{font-size: 15px; font-family: 'NotoSansCJKkr';  color: #3c3c3c;}
+.sec1 .sec1-btn a:hover{color: #3c3c3c;}
+.sec1 .sec1-btn2{position: absolute; display:inline-block; width: 260px; height: 55px; background: #3c3c3c; margin: 0 auto; text-align: center; padding-top: 17px; margin-top: 136px; margin-left: 1252px;}
+.sec1 .sec1-btn2:hover{background: #fff; }
+.sec1 .sec1-btn2 a{font-size: 15px; font-family: 'NotoSansCJKkr';  color: #fff;}
+.sec1 .sec1-btn2 a:hover{color: #3c3c3c;}
+
+/* sec2 */
+.sec2{width: 1920px; height: 683px; background:#f4f3f3; position: absolute; top:336px;}
+.sec2 .txt2{position: absolute; top: 18px;}
+.sec2 img{margin-left: 404px; margin-top: 45px;}
+
+/* sec3 */
+.sec3{width: 1920px; height: 651px; background: #343434; position: absolute; top:1019px;}
+.sec3 .txt3{position: absolute; left: 405px; top: 70px;}
+.sec3 img{position: absolute; left: 405px; top: 170px;}
+.sec3 .iphone{position: absolute; left: 1184px; top: -593px;}
+
+/* sec4 */
+.sec4{width: 1920px; height: 1089px; background: #f4f3f3; position: absolute; top:1623px;}
+.sec4 .txt4{position: absolute; left: 405px; top: 60px;}
+.sec4 img{position: absolute; left: 405px; top: 125px;}
+
+/* sec7 */
+.sec7{width: 1920px; height: 575px; background: #fff; position: absolute; top:2712px;}
+.sec7 .txt7{position: absolute; left: 430px; top: 65px;}
+.sec7 img{position: absolute; left: 430px; top: 135px;}
+.sec7 .sec7-btn{position: absolute; display:inline-block; width: 260px; height: 55px; background: #d2eee6; margin: 0 auto; text-align: center; padding-top: 17px; margin-top: 412px; margin-left: 865px;}
+.sec7 .sec7-btn:hover{background: #fff; }
+.sec7 .sec7-btn a{font-size: 15px; font-family: 'NotoSansCJKkr'; color: #3c3c3c;}
+.sec7 .sec7-btn a:hover{color: #d2eee6;}
+.sec7 .arrow-btn{position: absolute; font-family: 'BellMT'; font-size: 20px; color: #343434;}
+.sec7 .arrow-btn .prev img{position: absolute; height: 30px; left: -25px; top: -4px;}
+.sec7 .arrow-btn .next img{position: absolute; height: 30px; left: 65px; top: -4px;}
+
+/* footer */
+.footer{position: relative; font-family: 'NotoSansCJKkr'; font-size: 14px; margin: 0 auto; width: 1920px; height:70px; background: #343434;}
+.footer span{ float: left; margin-top: 25px; margin-left: 255px; color: #949494;}
+.footer p{float: right; margin-top: 25px; margin-right: 300px; color: #949494;}
+
+
+
+

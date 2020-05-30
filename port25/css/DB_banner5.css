@@ -1,0 +1,17 @@
+.DB_banner5 ul ,.DB_banner5 li{margin:0;padding:0;list-style:none}
+.DB_banner5 img{border:0}
+
+.DB_banner5{position:absolute; width:1076px; height:266px; top: 217px;  right: 73px;}/*��ü���λ�����(ȭ��ǥ����)*/
+.DB_banner5 .DB_mask{position:absolute; bottom: 0px; left: 0px; width:570px; height:373px; /*margin:0 auto; */overflow:hidden;}/*���λ�����*/
+.DB_banner5 .DB_moveSet{position:absolute;}
+.DB_banner5 .DB_moveSet li{float:left; display:inline; width:570px; /*margin-right:1px*/}
+.DB_banner5 .DB_moveSet li a:hover{}
+.DB_banner5 .roll_btn{width: 161px; height: 82px; position: absolute; left: -431px; top:184px;}
+.DB_banner5 .DB_dir{position:absolute; /*bottom:5px;*/ cursor:pointer;}
+.DB_banner5 .DB_prevBtn{left:0px}
+.DB_banner5 .DB_nextBtn{right:33px}
+/*.DB_banner5 .DB_pageSet{font-family:tahoma;font-size:11px;font-weight:bold;color:#aaa;text-align:center;margin-top:5px}*/
+/*.DB_banner5 .DB_pageSet .DB_currentPage{color:#ff0000}
+*/
+
+

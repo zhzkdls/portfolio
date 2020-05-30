@@ -1,0 +1,24 @@
+
+
+/* layout */
+#contents {}
+#section1 {background: #efecea; height: 100vh;}
+#section2 {}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* container */
+.container {width: 1400px; margin: 0 auto; background: rgba(0,0,0,0.3); height: 100vh;}
+
+/* header */
+#header {position: relative; padding: 20px;}
+#header h1 {position: absolute; font-size: 40px; color: #3a3c49; font-family:'CanvasBlack'; padding: 10px 40px; }
+#header p {text-align: center; color: #79726e; font-size: 12px; letter-spacing: .3em; font-family: 'Roboto', sans-serif; padding-top: 40px; font-weight: 300; text-transform: uppercase;}
+
+/* nav */
+.nav {position: fixed; right: 10px; top: 10px; display: none;}
+
+/* sec1 */
+.sec1 {height: 100vh; }

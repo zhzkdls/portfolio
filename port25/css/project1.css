@@ -1,0 +1,88 @@
+@font-face{font-family: 'bellMT'; src: url("../fonts/BellMTBold.woff");}
+@font-face{font-family: 'NotoSansCJKkr'; src: url("../fonts/NotoSansCJKkr-Regular.woff");}
+
+/* layout */
+body{overflow-x: hidden;}
+.contents{width: 1920px; height: 6189px; position: relative; overflow: hidden; margin: 0 auto;}
+.header {position: relative; height: 737px; margin: 0 auto;}
+
+/* gnb */
+.gnb_logo{top: 39px; left: 280px; position:absolute; z-index:50;}
+.gnb_logo a img{width:68px; margin-top: 26px; margin-left: -70px;}
+
+/* arrow btn */
+.arrow-btn{position: absolute;  top: 320px;}
+.arrow-btn li.prev{position: absolute; width: 40px; height: 70px; left: 280px;}
+.arrow-btn li.next{position: absolute; width: 40px; height: 70px; left: 1600px; }
+
+/* main project list btn */
+.projectMenu{position: absolute; width: 1401px; font-size: 20px; left:16.5%; bottom: 3.7%;}
+.projectMenu li{float: left; padding-left: 110px; font-family: 'bellMT';}
+.projectMenu li:nth-child(1){padding-left: 11px; color: #fff;}
+.projectMenu li:nth-child(3){padding-left: 110px;}
+.projectMenu li:nth-child(4){padding-left: 109px;}
+.projectMenu li:nth-child(5){padding-left: 82px;}
+.projectMenu li:nth-child(6){padding-left: 75px;}
+.projectMenu li a:hover{color: #fff;}
+
+/* sec1 */
+.sec1{width: 1920px; height: 336px; background: #dfe3eb; position: absolute;}
+.sec1 .sec1-txt img{position: absolute; font-family: 'bellMT'; left: 405px; top: 68px; font-size: 40px; color: #343434;}
+.sec1 .sec1-txt p{position: absolute; font-family: 'NotoSansCJKkr'; left: 405px; top: 130px; font-size: 16px; color: #343434;}
+.sec1 .sec1-btn{position: absolute; display:inline-block; width: 260px; height: 55px; background: #ec7267; margin: 0 auto; text-align: center; padding-top: 17px; margin-top: 136px; margin-left: 980px;}
+.sec1 .sec1-btn:hover{background: #fff; }
+.sec1 .sec1-btn a{font-size: 15px; font-family: 'NotoSansCJKkr';  color: #fff;}
+.sec1 .sec1-btn a:hover{color: #ec7267;}
+.sec1 .sec1-btn2{position: absolute; display:inline-block; width: 260px; height: 55px; background: #ec7267; margin: 0 auto; text-align: center; padding-top: 17px; margin-top: 136px; margin-left: 1254px;}
+.sec1 .sec1-btn2:hover{background: #fff; }
+.sec1 .sec1-btn2 a{font-size: 15px; font-family: 'NotoSansCJKkr';  color: #fff;}
+.sec1 .sec1-btn2 a:hover{color: #ec7267;}
+
+/* sec2 */
+.sec2{width: 1920px; height: 636px; background:#dddddd; position: absolute; top:336px;}
+.sec2 .txt2{position: absolute; left: 407px; top: 55px;}
+.sec2 img{margin-left: -2px;}
+
+/* sec3 */
+.sec3{width: 1920px; height: 651px; background: #343434; position: absolute; top:972px;}
+.sec3 .txt3{position: absolute; left: 405px; top: 70px;}
+.sec3 img{position: absolute; left: 405px; top: 150px;}
+
+/* sec4 */
+.sec4{width: 1920px; height: 1014px; background: #f4f3f3; position: absolute; top:1621px;}
+.sec4 .txt4{position: absolute; left: 405px; top: 60px;}
+.sec4 img{position: absolute; left: 405px; top: 125px;}
+
+/* sec5 */
+.sec5{width: 1920px; height: 1530px; background: #dddddd; position: absolute; top:2634px;}
+.sec5 .txt5{position: absolute; left: 405px; top: 65px;}
+.sec5 img{position: absolute; left: 405px; top: 150px;}
+.sec5 .sec5-1{width: 1920px; height: 685px; background: #343434; position: absolute; top:1530px;}
+.sec5 .img2{position: absolute; left: 405px; top: 50px;}
+
+/* sec6 */
+.sec6{width: 1920px; height: 854px; background: #000; position: absolute; top:4849px;}
+.sec6 .txt6{position: absolute; left: 850px; top: 70px;}
+.sec6 img{position: absolute; left: 195px; top: 145px;}
+.sec6 .gif{position: absolute; width: 595px; height: 320px; left: 312px; top: 169px;}
+
+/* sec7 */
+.sec7{width: 1920px; height: 575px; background: #f4f3f3; position: absolute; top:5614px;}
+.sec7 .txt7{position: absolute; left: 430px; top: 65px;}
+.sec7 img{position: absolute; left: 430px; top: 135px;}
+.sec7 .sec7-btn{position: absolute; display:inline-block; width: 260px; height: 55px; background: #ec7267; margin: 0 auto; text-align: center; padding-top: 17px; margin-top: 412px; margin-left: 865px;}
+.sec7 .sec7-btn:hover{background: #fff; }
+.sec7 .sec7-btn a{font-size: 15px; font-family: 'NotoSansCJKkr'; color: #fff;}
+.sec7 .sec7-btn a:hover{color: #ec7267;}
+.sec7 .arrow-btn{position: absolute; font-family: 'BellMT'; font-size: 20px; color: #343434;}
+.sec7 .arrow-btn .prev img{position: absolute; height: 30px; left: -25px; top: -4px;}
+.sec7 .arrow-btn .next img{position: absolute; height: 30px; left: 65px; top: -4px;}
+
+/* footer */
+.footer{position: relative; font-family: 'NotoSansCJKkr'; font-size: 14px; margin: 0 auto; width: 1920px; height:70px; background: #343434;}
+.footer span{ float: left; margin-top: 25px; margin-left: 255px; color: #949494;}
+.footer p{float: right; margin-top: 25px; margin-right: 300px; color: #949494;}
+
+
+
+

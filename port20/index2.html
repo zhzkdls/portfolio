@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="scroll">0</div>
+    
+    <header id="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">intro</a></li>
+                <li><a href="#">work</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div id="contents">
+        <section id="section1">
+            <div class="container">
+                <div class="sec1">
+                    <div class="sleft">
+                        <div class="sl-tit">
+                            <h1>web<br>portfolio</h1>
+                            <p>안녕하세요!<br>프론트앤드 개발자 권오인입니다.</p>
+                        </div>
+                    </div>
+                    <div class="sright">
+                        <div class="img-wrap">
+                            <div class="img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="container">
+                <div class="sec2">
+                    <h2><strong>"안녕하세요!</strong><span>신입 프론트엔드 개발자 권오인 입니다."</span></h2>
+                    <div class="link">
+                        <ul>
+                            <li><a href="#">webpub@gmail.com</a></li>
+                            <li><a href="#">instargram</a></li>
+                            <li><a href="#">Kakao</a></li>
+                            <li><a href="#">webpub</a></li>
+                        </ul>
+                    </div>
+                    <div class="intro">
+                        <p>웹에 관심이 많았던 저는 웹디자인을 배우는 과정에서 처음으로 코딩을 접하게 되었습니다. 배워보지도 못한 영역이라 처음엔 개념이 안 잡혀있어서 어려웠지만, 매일매일 메모장에 그날의 수업을 웹 수업 1일 차, 2일 차 이렇게 적어가며 네이버 클라우드에 저장해 집에서도 복습했습니다. 그렇게 배우다 보니 코딩의 매력에 빠져 퍼블리셔라는 직업을 알게 되었습니다.</p>
+                        <p>div를 가운데 정렬하는 방법이 다양한 것처럼, 수학도 풀이과정은 다양하지만, 답은 정확한것처럼 수학을 좋아하는 저는 코딩도 똑같다 생각이 들어 코딩이 좋아졌습니다. 디자인보다 코딩이 더 좋아진 퍼블리셔가 되기 위해 저는 웹 반응형, 제이쿼리를 추가로 수강하며 강사님이 추천해주신 책도 사서 공부하기 시작했습니다.</p>
+                        <p>포트폴리오 제작 시 차별화를 주고 싶어 마우스 휠 동작을 넣고 싶었습니다. 그러나 수업시간에 배우지 않은 내용이어서 구현을 할 수 없었습니다. 포기하지 않고 검색엔진을 활용해 검색, 관련 책을 구매해 공부했습니다. 혼자 해결하기 힘들 경우에 강사님께 수업이 끝난 후 물어봤습니다. 보다 빨리 제작하기 위해 학원이 끝나면 집에서도 꾸준히 3시간 이상 만들었습니다.</p>
+                    </div>
+                    <div class="img-wrap">
+                        <div class="img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section3"></section><!-- //section1 -->
+        <section id="section4"></section><!-- //section1 -->
+        <section id="section5"></section><!-- //section1 -->
+        <section id="section6"></section><!-- //section1 -->
+    </div>
+    <!-- //content -->
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $("body").addClass("show");
+        }, 2000);
+
+        $(window).scroll(function(){
+            var wScroll = $(window).scrollTop();
+            
+            $(".scroll").text(wScroll);
+            
+            var offset = (wScroll - $(".sec2 h2").offset().top) * 0.2;
+
+            console.log(offset)
+            
+            $(".sec2 h2").css("transform","translateY("+ -offset +"px)");
+            $(".sec2 .img-wrap .img").css("transform","translateY("+ offset +"px)");
+            
+            if( wScroll > $(".intro p").offset().top - $(window).height()/2 ){
+                
+                var tl = new TimelineMax();
+
+                tl.staggerTo(".intro p", 0.8, 
+                    {ease: Back.easeOut.config(1.7), opacity: 1, y: 0},1); 
+                }
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- https://5scontent.com/about/ -->
+
+
+
+
+
+
+
+

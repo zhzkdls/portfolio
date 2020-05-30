@@ -1,0 +1,229 @@
+
+/* eff01 - wave animation */
+.eff_box.eff01 .ocean {width:100%; height: 100%;}
+.eff_box.eff01 .wave {background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+	position: absolute;
+	bottom: -10%;  width: 3200px; height: 70%;
+	animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.eff_box.eff01 .wave:nth-of-type(2) {
+	animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) .125s infinite, swell 5s ease 1.25s infinite;
+}
+
+@keyframes wave {
+	0% {margin-left: 0;}
+	100% {margin-left: -1600px;}
+}
+
+@keyframes swell {
+	0% {transform: translate3d(0,-15px,0);}
+	50% {transform: translate3d(0,5px,0);}
+	100% {transform: translate3d(0,-15px,0);}
+} 
+
+/* eff02 - text animation */
+.eff_box.eff02 .code_box {display: flex; align-items: center; justify-content: center;}
+
+.eff_box.eff02 .text_ani {
+	font-size: 4vw; font-weight: 700; letter-spacing: 1px;
+	text-align: center;  background-image: url("https://www.dropbox.com/s/ac9efh6oqu3docb/stars.png?raw=1");
+	background-size: 400px auto;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: snow 3s infinite linear;
+	font-family: 'Teko', sans-serif; 
+}
+
+@keyframes snow {
+	0% {background-position: 0 -400px;}
+	100% {background-position: 0 0;}
+}
+
+/* eff03 - 3d slider animation */
+.eff_box.eff03 .slider_box {
+	width: 120px; height: 120px;
+	transition: all 1s cubic-bezier(0.5, -0.75, 0.2, 1.5);
+}
+.eff_box.eff03 .slider {
+	width: 100%; height: 100%; transform-style: preserve-3d;
+	transform: rotateY(0deg) rotateX(0deg);
+}
+.eff_box.eff03 .slide, .slide:after, .slide:before {
+	display: block; width: 100%; height: 100%;
+	background: url('https://cdn.dribbble.com/users/5031/screenshots/7008431/dribbble.png');
+	position: absolute; transform-style: preserve-3d;
+	background-size: cover; background-position: center;
+}
+
+.eff_box.eff03 .slide.x {transform: rotateY(90deg);} 
+.eff_box.eff03 .slide.x:after {
+	background-image: url('https://cdn.dribbble.com/users/730703/screenshots/6988911/elenidebo-thisiscolossal-theroad-forchicagodesignmuseum.jpg');
+	content: ''; transform: translateZ(60px) rotateZ(-90deg);
+}
+.eff_box.eff03 .slide.x:before {
+	background-image: url('https://cdn.dribbble.com/users/329207/screenshots/6220354/bemocs_geneseo_sailing.jpg');
+	content: ''; transform: translateZ(-60px) rotateZ(-90deg);
+}
+
+.eff_box.eff03 .slide.y {transform: rotateX(90deg);} 
+.eff_box.eff03 .slide.y:after {
+	background-image: url('https://cdn.dribbble.com/users/63407/screenshots/5705689/dribbble_moonlight_2x.png');
+	content: ''; transform: translateZ(60px);
+}
+.eff_box.eff03 .slide.y:before {
+	background-image: url('https://cdn.dribbble.com/users/1355613/screenshots/6441984/landscape_2x.jpg');
+	content: ''; transform: translateZ(-60px);
+}
+
+.eff_box.eff03 .slide.z {transform: rotateX(0);} 
+.eff_box.eff03 .slide.z:after {
+	background-image: url('https://cdn.dribbble.com/users/3178178/screenshots/7013817/the_caravan_by_patryk_wojciechowicz_2x.png');
+	content: ''; transform: translateZ(60px);
+}
+.eff_box.eff03 .slide.z:before {
+	background-image: url('https://cdn.dribbble.com/users/1361661/screenshots/6673317/music_girl.png');
+	content: ''; transform: translateZ(-60px); 
+}
+
+.eff_box.eff03 .slider {animation: rotate 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);}
+
+
+@keyframes rotate {
+	0%, 10% {transform: rotateY(0deg) rotateX(0deg);}
+	15%, 20% {transform: rotateY(180deg) rotateX(0deg);}
+	25%, 35% {transform: rotateY(180deg) rotateX(270deg);}
+	40%, 50% {transform: rotateY(180deg) rotateX(90deg);}
+	55%, 65% {transform: rotateY(-90deg) rotateX(90deg);}
+	70%, 80% {transform: rotateY(90deg) rotateX(90deg);}
+	90%, 95% {transform: rotateY(0deg) rotateX(90deg);}
+}
+
+/* eff04 - border animation */
+.eff_box.eff04 .border_bg{
+	background-image: url("https://3.bp.blogspot.com/-piZWCW2uUbg/W2fPXxkWZgI/AAAAAAAAOu0/eydmMjTIqcwLMHEEr2H7imqoRTxMw4o9QCLcBGAs/s1600/among_trees_night_dribbble.png");
+	width: 100%; height: 100%; background-repeat: no-repeat;
+	background-size: cover; margin: 5% auto; position: relative;
+}
+
+.eff_box.eff04 .borbox{
+	position: absolute;
+	top: 50%; left: 50%; transform: translate(-50%, -50%);
+	width: 25%; height: 50%;
+	background: #111845a6;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 0 20px 50px rgb(23, 32, 90);
+	border: 2px solid #2a3cad;
+	padding: 20px;
+}
+
+.eff_box.eff04 .borbox .content{
+	position:absolute;
+	top:15px; left:15px; right:15px; bottom:15px;
+	border:1px solid #f0a591; padding: 20px; text-align:center;
+	box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+	display: flex; justify-content: center; align-items: center;
+}
+.eff_box.eff04 .borbox .content p{font-size: 14px; color: #fff;}
+
+.eff_box.eff04 .borbox span{
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	display: block; box-sizing: border-box;
+}
+.eff_box.eff04 .borbox span:nth-child(1) {transform:rotate(0deg);}
+.eff_box.eff04 .borbox span:nth-child(2) {transform:rotate(90deg);}
+.eff_box.eff04 .borbox span:nth-child(3) {transform:rotate(180deg);}
+.eff_box.eff04 .borbox span:nth-child(4) {transform:rotate(270deg);}
+.eff_box.eff04 .borbox span:before
+{
+	content: '';
+	position: absolute;
+	width:100%;
+	height: 2px;
+	background: #50dfdb;
+	animation: border_ani 4s linear infinite;
+}
+
+@keyframes border_ani {
+	0% {transform:scaleX(0); transform-origin: left;}
+	50% {transform:scaleX(1); transform-origin: left;}
+	50.1% {transform:scaleX(1); transform-origin: right;}
+	100% {transform:scaleX(0);transform-origin: right;}
+} 
+
+/* eff05 - text animation */
+.eff_box.eff05 .card {
+	position: relative; width: 70%; height: 70%;
+	background-color: #fff; overflow: hidden;
+}
+
+.eff_box.eff05 .card p {
+	z-index: 3;  position: absolute;
+	bottom: 0; right: 24%; font-size: 48px;
+	font-weight: bold; color: #fff;
+}
+.eff_box.eff05 .card .fa-arrow-right {
+	z-index: 3;  position: absolute;
+	right: 13%; bottom: 6%; font-size: 34px;
+}
+.eff_box.eff05 .card span {
+	z-index: 99; position: absolute;
+	top: 10%; right: 13%; color: #333;
+	opacity: 0.7; font-size: 12px;
+	writing-mode: vertical-lr;
+	transition: all 0.2s ease;
+}
+.eff_box.eff05 .card .pic {
+	width: 80%; height: 100%;
+	background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+	background-size: 100% 100%;
+	filter: grayscale(100%);
+}
+.eff_box.eff05 .card .social {
+	position: absolute; left: 8%; width: 40%; height: 30%;
+	top: 0; display: flex; justify-content: space-around; align-items: center;
+}
+.eff_box.eff05 .card i {
+	opacity: 0; font-size: 18px; color: #fff;
+	transform: scale(0.1); transition: all 0.2s ease;
+}
+
+.eff_box.eff05 .card .social i:nth-of-type(1) {transition-delay: 0.4s;}
+.eff_box.eff05 .card .social i:nth-of-type(2) {transition-delay: 0.3s;}
+.eff_box.eff05 .card .social i:nth-of-type(3) {transition-delay: 0.2s;}
+.eff_box.eff05 .card .social i:nth-of-type(4) {transition-delay: 0.1s;}
+.eff_box.eff05 .card:hover i {opacity: 1; transform: scale(1);}
+.eff_box.eff05 .card button {
+	position: absolute; right: 14px; bottom: 14px; width: 30px; height: 30px;
+	background-color: #2b26c3; border-radius: 30px;  transition: all 0.3s ease;
+	mix-blend-mode: hard-light;
+}
+
+.eff_box.eff05 .card:hover button{transform: scale(16.5);}
+.eff_box.eff05 .card:hover p {
+	color: #fff;
+}
+.eff_box.eff05 .card:hover .pic {
+	filter: grayscale(0);
+}
+
+
+/* eff06 - mousemove animation */
+.eff_box.eff06 .move_text{
+	width: 100%; height: 100%; display: flex;
+	align-items: center; justify-content: center;
+	letter-spacing: 8px; border: 1px solid #000;
+	box-sizing: border-box;
+}
+
+.eff_box.eff06 .first_name, .second_name{
+	width: 50%; height: 100%; overflow-x: hidden;
+	display: flex; align-items: center; justify-content: center;
+}
+
+.eff_box.eff06 .first_name{background: #fff; color: #000;}
+.eff_box.eff06 .first_name .text_name{position: relative; left: 50%; font-size: 30px; transform: skewY(-5deg);}
+
+.eff_box.eff06 .second_name{background: black; color: #fff;}
+.eff_box.eff06 .second_name .text_name{position: relative; left: -50%; font-size: 30px; transform: skewY(5deg);}

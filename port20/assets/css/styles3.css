@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap&subset=korean");
+@import url("https://fonts.googleapis.com/css?family=Jua&display=swap");
+.profile .container, .about .container, .skill .container {
+  max-width: 2000px; }
+
+.profile, .about, .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  background-color: #fff; }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: transparent; }
+
+img {
+  width: 100%;
+  border: 0 none; }
+
+@font-face {
+  font-family: "TmonMonsori";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "S-CoreDream-9Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "S-CoreDream-4Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "S-CoreDream-1Thin";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Big John Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Big John Regular"), url("Big John.woff") format("woff"); }
+
+@font-face {
+  font-family: "Hey August Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Hey August.woff") format("woff"); }
+
+@font-face {
+  font-family: "MapoFlowerIsland";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+#pinContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  #pinContainer .panal {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+
+.bgBlock {
+  background-color: #1c1c1c; }
+
+.bgYellow {
+  background-color: #fed000; }
+
+.bgRed {
+  background-color: red; }
+
+/* 
+ * --------------------------------------------
+ * mouse effect
+ * --------------------------------------------
+ */
+/* 
+ * --------------------------------------------
+ * header - main manu
+ * --------------------------------------------
+ *
+ */
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 100; }
+  .header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out; }
+    .header .container .mobile_logo,
+    .header .container .mobile_menu {
+      display: none; }
+    .header .container nav {
+      width: 76%;
+      margin: 0 10%; }
+      .header .container nav ul {
+        display: flex; }
+        .header .container nav ul .nav_item {
+          padding: 0.5vw 1vw;
+          margin: 0 0.5vw;
+          color: #333334;
+          font-family: S-CoreDream-9Black;
+          font-size: 1vw; }
+
+/* 
+ * --------------------------------------------
+ * profile Page
+ * --------------------------------------------
+ */
+.profile {
+  margin-top: 150px; }
+  .profile .container {
+    display: flex; }
+    .profile .container .intro_left {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .profile .container .intro_left .intro_title {
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+        margin-top: 18%;
+        background-color: #fed000;
+        transition: all 0.5s ease-in-out;
+        transform: translateX(30%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right; }
+        .profile .container .intro_left .intro_title .position {
+          font-family: S-CoreDream-9Black;
+          font-size: 1.5vw;
+          font-weight: 700; }
+        .profile .container .intro_left .intro_title .title {
+          padding: 5% 0;
+          font-family: OTEnjoystoriesBA;
+          font-size: 5.5vw; }
+        .profile .container .intro_left .intro_title .desc {
+          line-height: 1.5;
+          font-family: S-CoreDream-4Regular;
+          font-size: 1.5vw; }
+          .profile .container .intro_left .intro_title .desc .mobile_desc {
+            display: none; }
+    .profile .container .intro_right {
+      width: 60%; }
+      .profile .container .intro_right figure {
+        margin: 0 5% 5% 5%;
+        transition: all 0.5s linear;
+        transform: translateY(-150px); }
+        .profile .container .intro_right figure::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 5px;
+          height: 100%;
+          background-color: #fed000; }
+
+/* 
+ * --------------------------------------------
+ * about Page
+ * --------------------------------------------
+ */
+.about .container {
+  display: flex; }
+  .about .container .about_left {
+    width: 35%;
+    margin-bottom: 40%; }
+    .about .container .about_left figure img {
+      height: 100%; }
+  .about .container .about_right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fffffd;
+    line-height: 1.5;
+    transition: all 0.5s ease-in-out; }
+    .about .container .about_right .about_title {
+      transform: translateX(-7vw);
+      font-family: MapoFlowerIsland;
+      font-size: 4.8vw; }
+    .about .container .about_right .about_content {
+      width: 65%;
+      margin-left: 25%;
+      transition: all 0.5s ease-in-out;
+      font-family: S-CoreDream-1Thin;
+      font-size: 2vw; }
+
+/* 
+  skill Page
+*/
+/*
+* -----------------------------
+* Responsive
+* -----------------------------
+*
+* laptop
+* (769px ~ 1024px)
+*/
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .profile .container {
+    margin-bottom: 0; }
+    .profile .container .intro_left .intro_title {
+      margin-top: 0; } }
+
+/*
+* -----------------------------------------------
+* Tablet
+* (376px ~ 768px)
+* -----------------------------------------------
+*/
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .header {
+    height: 80px; }
+    .header .container {
+      background-color: #1c1c1c;
+      justify-content: space-between;
+      padding: 0 5%; }
+      .header .container .mobile_logo {
+        display: block;
+        color: #fffffd;
+        font-family: S-CoreDream-9Black;
+        font-size: 4vw; }
+      .header .container .mobile_menu {
+        display: block;
+        color: #fffffd;
+        font-family: S-CoreDream-9Black;
+        font-size: 3vw; }
+      .header .container nav {
+        display: none; }
+  .profile {
+    margin-top: 80px; }
+    .profile .container {
+      flex-direction: column-reverse;
+      justify-content: center; }
+      .profile .container .intro_left {
+        width: 100%; }
+        .profile .container .intro_left .intro_title {
+          transform: none;
+          align-items: flex-start;
+          background-color: transparent;
+          color: #fffffd;
+          text-align: left; }
+          .profile .container .intro_left .intro_title .position {
+            display: none; }
+          .profile .container .intro_left .intro_title .title {
+            padding-bottom: 10%;
+            line-height: 1.3;
+            font-family: MapoFlowerIsland;
+            font-size: 8.5vw; }
+          .profile .container .intro_left .intro_title .desc {
+            font-size: 3vw; }
+            .profile .container .intro_left .intro_title .desc .mobile_desc {
+              margin-top: 5%;
+              display: block;
+              font-family: S-CoreDream-1Thin;
+              font-weight: 300; }
+      .profile .container .intro_right {
+        width: 100%; }
+        .profile .container .intro_right figure {
+          transform: none; }
+          .profile .container .intro_right figure::after {
+            display: none; }
+  .about .container {
+    flex-direction: column;
+    height: auto; }
+    .about .container .about_left {
+      width: 90%;
+      margin: 5%;
+      position: relative; }
+      .about .container .about_left::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        background-color: #1c1c1c; }
+    .about .container .about_right {
+      width: 100%;
+      align-items: center;
+      transform: translateY(-53vw); }
+      .about .container .about_right .about_title {
+        margin-bottom: 10%;
+        font-size: 9vw; }
+      .about .container .about_right .about_content {
+        width: 90%;
+        margin: 0 5%;
+        font-size: 3vw; } }
+
+/*
+* -----------------------------------------------
+* Tablet- landscape 
+* (813px ~ 1024px)
+* -----------------------------------------------
+*/
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .header {
+    height: 80px; }
+    .header .container nav {
+      margin: 0 7%; }
+  .profile {
+    margin-top: 80px; }
+    .profile .container .intro_left .intro_title {
+      margin-top: 0; } }
+
+/*
+* -----------------------------------------------
+* Mobile 
+* (320px ~ 375px)
+* -----------------------------------------------
+*/
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  .header .container {
+    padding: 0 5%; }
+  .profile {
+    margin-top: 80px; }
+    .profile .container .intro_left .intro_title {
+      padding: 5% 0 10% 10%; }
+      .profile .container .intro_left .intro_title .desc {
+        font-size: 4vw; }
+        .profile .container .intro_left .intro_title .desc .mobile_desc {
+          font-family: S-CoreDream-1Thin;
+          font-weight: 300; }
+    .profile .container .intro_right figure {
+      margin: 0; }
+  .about .container .about_left {
+    width: 100%;
+    margin: 0; }
+  .about .container .about_right .about_content {
+    margin: 5% 0 10% 10%;
+    font-size: 4vw; } }
+
+/*
+* -----------------------------------------------
+* Mobile - landscape 
+* (567px ~ 812px)
+* -----------------------------------------------
+*/
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  .header .container nav {
+    margin: 0 3%; }
+  .profile .container .intro_left .intro_title {
+    margin-bottom: 40%; } }
+
+/*
+* ------------------------------------------------
+* keyframe
+*
+*/
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1); }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9); }
+  77% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0); } }

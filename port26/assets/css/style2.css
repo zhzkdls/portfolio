@@ -1,0 +1,54 @@
+
+/* layout */
+#contents {}
+#section1 {height: 10000px;}
+#section2 {}
+#section3 {}
+#section4 {}
+#section5 {}
+
+/* scroll */
+.scroll {
+    position: fixed; left: 20px; top: 20px; z-index: 10000;
+    background: rgba(0,0,0,0.3); 
+    width: 40px; height: 40px; 
+    text-align: center; 
+    line-height: 40px; 
+    color: #fff;
+}
+
+/* fixed */
+.fixed {position: fixed; left: 0; bottom: 0; z-index: 10;}
+.z100 {z-index: 100};
+.z200 {z-index: 200};
+.z300 {z-index: 300};
+.z400 {z-index: 400};
+.z500 {z-index: 500};
+.z600 {z-index: 600};
+.z700 {z-index: 700};
+.z800 {z-index: 800};
+.z900 {z-index: 900};
+
+/* sec1 */
+.sec1 {}
+.sec1 .back-bg {
+    width: 100vw; height: 100vh; z-index: 1;
+    background: linear-gradient(180deg, rgba(231,175,215,1) 0%, rgba(248,220,228,1) 8%, rgba(255,237,233,1) 15%); 
+}
+.sec1 .well1 {width: 40vw; z-index: 100;}
+.sec1 .bg1 {width: 300vw; z-index: 99;}
+
+
+/* mediaquery */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+/* 레이아웃*/
+#section1 {width: 100vw; height: 185vh;}
+#section2 {width: 100vw; height: 265vh; background: #f38573;}
+#section3 {width: 100vw; height: 490vh; background: #f6d855; }
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* 상단 메뉴바 */
+#header {position: fixed; left: 0; top: 0; z-index: 1; width: 22.5vw; height: 18vh; background: #fff; overflow: hidden; 
+font-family: 'Saira Semi Condensed', sans-serif;}
+#header h3 {float: left;  padding-left: 1.5vw; padding-top: 2.5vh; font-size: 3vw; font-weight: 700; line-height: 6vh;}
+#header span {
+float: left; position:relative;  width:70px; height: 70px; line-height: 70px; text-align:center; font-weight: 900; background : #000; color: #fff; border-radius: 50%; transform: translate(50%, 50%);}
+#header span:after {content:''; display:block; position: absolute; width: 90px; height: 90px; border: 1px dotted #000; transform: translate(-12%, -87%); border-radius: 50%;}
+/*#header span:after {content:''; display:block; position: absolute; right: 50%; top: 50%; transform: translateX(-50%); }*/
+/*#header span:before {content:''; display:inline-block; z-index: 999; width: 5vw; height: 5vh; background: #ccc; }*/
+/* content :""; display:block; position: absolute; bottom:-20px; left: 50%; transform: translateX(-10px); border: 10px solid transparent; border-top-color:#000;*/
+
+/* intro_데코 */
+.deco-wrap {position: relative;} 
+.deco1 {position: absolute; left: 0; top: 0; width: 45vw; height: 17vh; background: #9cd3c3;} 
+.deco2 {position: absolute; left: 0; top: 17vh; width: 10vw; height: 83vh; background: #f6d855;}
+.deco3 {position: absolute; left: 10vw; top: 17vh; width: 35vw; height: 21vh; background: #f0634c;}
+.deco4 {position: absolute; left: 10vw; top: 38vh; width: 35vw; height: 13vh; background: #f38573;}
+.deco5 {position: absolute; left: 45vw; top: 0; width: 35vw; height: 38vh; background: #8965ba; }
+.deco6 {position: absolute; left: 45vw; top: 38vh; width: 35vw; height: 13vh; background: #54965b;}
+
+/* intro_타이틀 */
+.sec1 {position: relative;}
+.intro_tit {position: absolute; left: 14vw; top: 61vh; font-size: 6vw; line-height: 13vh; font-family: 'Saira Semi Condensed', sans-serif; font-weight: 700;}
+
+
+/* intro_이미지 */
+.intro_img1 {width: 12vw; height: 12vh; position: absolute; left: 58vw; top: 3vh; transform: rotate(-80deg); border: 7px solid rgba(255,255,255,0.3); border-radius: 0.3vw;}
+.intro_img2 {width: 13vw; height: 13vh; position: absolute; left: 83vw; top: 27vh; transform: rotate(5deg); border: 0.3vw solid rgba(0,0,0,0.3); border-radius: 0.1vw; }
+.intro_img3 {width: 14vw; height: 13vh; position: absolute; left: 77vw; top: 70vh; }
+
+
+/*
+.intro_sent p {font-size: 2vw;  
+            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Cabin', sans-serif;
+            font-family: 'Signika', sans-serif;
+            font-family: 'Cantarell', sans-serif;
+            font-family: 'Alatsi', sans-serif;
+            font-family: 'Ramabhadra', sans-serif;
+            font-family: 'Mukta Malar', sans-serif;}
+.intro_sent .en1 {position: absolute; left: 45vw; top: 69.5vh;}
+.intro_sent .en2 {position: absolute; left: 47.5vw; top: 74.5vh;}
+.intro_sent .en3 {position: absolute; left: 46.5vw; top: 79.5vh;}
+.intro_sent .en4 {position: absolute; left: 49vw; top: 84.5vh;}
+*/
+
+/* intro_문구 */
+.intro_cont {position: absolute; left: 45vw; top: 73vh; width: 30%; font-size: 1.5vw; 
+            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Cabin', sans-serif;
+            font-family: 'Signika', sans-serif;
+            font-family: 'Cantarell', sans-serif;
+            font-family: 'Alatsi', sans-serif;
+            font-family: 'Ramabhadra', sans-serif;
+            font-family: 'Mukta Malar', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;}
+.intro_cont .hello {font-weight: 700; }
+
+/* 스킬 */
+.skill {position: relative; text-align: center; line-height: 30vh; font-weight: 700; font-family: 'Oswald', sans-serif;}
+.skill .skill_tit {position: absolute; left: 5vw; top: 30vh; font-size: 12vw; color: #fff;}
+.skill .photoshop {font-size: 8vw; padding-top: 70vh;}
+.skill .illustrator {font-size: 8vw;}
+.skill .html {font-size: 8vw;}
+.skill .css {font-size: 8vw;}
+.skill .javascript {font-size: 8vw;}
+
+
+/* WORK */
+.work {position: relative; font-family: 'Oswald', sans-serif;}
+.work .work_tit {position: absolute; left: 5vw; top: 30vh; font-size: 12vw; color: #fff;}
+/* WORK1 */
+.webs_tit {position: absolute; left: 58vw; top: 95vh; font-size: 3vw; width: 25vw; height: 10vh; background: #fff; text-align: center; border: 2px solid black; z-index: 2;}
+.work1 {position: absolute; left: 10vw; top: 90vh; width: 50vw; height: 90vh; background: rgb(108,172,188); z-index: 1;}
+.work1 img {}
+.work1_2 {position: absolute; left: 11vw; top: 92vh; width: 50vw; height: 90vh; background: #fff; border: 2px solid black;}
+/* WORK2 */
+.resp_tit {position: absolute; left: 11vw; top: 230vh; font-size: 3vw; width: 25vw; height: 10vh; background: #fff; text-align: center; border: 2px solid black; z-index: 2;}
+.work2 {position: absolute; left: 35vw; top: 225vh; width: 50vw; height: 90vh; background: rgb(108,172,188); z-index: 1;}
+.work2_2 {position: absolute; left: 34vw; top: 227vh; width: 50vw; height: 90vh; background: #fff; border: 2px solid black;}
+/* WORK3 */
+.mega_tit {position: absolute; left: 58vw; top: 365vh; font-size: 3vw; width: 25vw; height: 10vh; background: #fff; text-align: center; border: 2px solid black; z-index: 2;}
+.work3 {position: absolute; left: 10vw; top: 360vh; width: 50vw; height: 90vh; background: rgb(108,172,188); z-index: 1;}
+.work3_2 {position: absolute; left: 11vw; top: 362vh; width: 50vw; height: 90vh; background: #fff; border: 2px solid black;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
