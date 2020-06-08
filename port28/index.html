@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeongHae Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+</head>
+<body>
+
+
+    <header id="header">
+        <h1 class="logo">S.HAE<br>PORTFOLIO</h1>
+    </header>
+  
+    <!-- mainview -->
+    <section id="mainview">
+      <article class="main_back">
+        <div class="slider">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </article>
+      <article class="main_front">
+        <h2>S.HAE<br>PORTFOLIO</h2>
+        <div class="m-imgbox">
+          <div class="m-img"></div>
+        </div>
+      </article>
+    </section> <!-- //mainview -->
+
+    <!-- about -->
+    <section id="about">
+
+      <div class="about-title">
+        <h2>ABOUT</h2>
+      </div>
+  
+      <div class="about-pages">
+        <div>
+          <h3>about 1</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, expedita reprehenderit ad veritatis
+            recusandae, voluptatem neque similique dolores omnis doloremque autem. Assumenda aliquam nesciunt illo unde
+            esse maiores adipisci dolores!</p>
+        </div>
+        <div>
+          <h3>about 2</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, expedita reprehenderit ad veritatis
+            recusandae, voluptatem neque similique dolores omnis doloremque autem. Assumenda aliquam nesciunt illo unde
+            esse maiores adipisci dolores!</p>
+        </div>
+        <div>
+          <h3>about 3</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, expedita reprehenderit ad veritatis
+            recusandae, voluptatem neque similique dolores omnis doloremque autem. Assumenda aliquam nesciunt illo unde
+            esse maiores adipisci dolores!</p>
+        </div>
+      </div>
+
+    </section>  <!-- //about -->
+
+
+
+
+
+
+
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+  <script>
+
+    // 슬라이드
+  $(document).ready(function(){
+    $('.slider').slick({
+      
+    });
+  });
+
+  // 화면나누기
+  function splitScroll(){
+  const controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement: '.about-title',
+    triggerHook: 0
+  })
+  .setPin('.about-title')
+  .addIndicators()
+  .addTo(controller);
+}
+
+splitScroll();
+
+
+
+
+</script>
+</body>
+</html>

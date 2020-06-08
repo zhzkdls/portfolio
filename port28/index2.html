@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <div class="sec1-left"
+                    data-0 = "width: 50%";
+                    data-200 = "width: 100%";>
+                    <h1>
+                        <strong>SEONG.HAE</strong>
+                        <strong>PORTFOLIO</strong>
+                    </h1>
+                    <h2>
+                        <strong class="split1">SEONG.HAE</strong>
+                        <strong class="split2">PORTFOLIO</strong>
+                    </h2>
+                </div>
+                <div class="sec1-right">
+                    
+                </div>
+            </div>
+            <div class="mimg">
+                <img src="img/photo9.jpg" alt="">
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="container">
+                <div class="sec2">
+                    <div class="about">
+                        <div class="about-left">
+                            <h2>
+                                <span>IT'S</span><br>
+                                <span>PRETTY</span><br>
+                                <strong>ABOUT</strong><br>
+                                <strong>ME</strong><br>
+                            </h2>
+                        </div>
+                        <div class="about-right">
+                            <div>
+                                <span class="ar-stit">about1</span>
+                                <div class="ar-circle">
+                                    <img src="img/photo2.jpg" alt="">
+                                </div>
+                                <p class="ar-desc">
+                                    도전을 두려워하지 않고 끊임없이 성장하는 신입 웹 퍼블리셔 "임성해"입니다.
+                                    포토샵과 일러스트레이터를 이용하여 디자인하며,
+                                    HTML5/CSS3/jQuery를 통해 <strong>웹페이지를 구현</strong>할 수 있습니다.
+                                    적합한 디자인과 효율적인 코딩을 위해 언제나 노력하는 <strong>웹 퍼블리셔</strong>가 되겠습니다
+                                </p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </div>
+    <!-- //contents -->
+    
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        let split1 = $(".split1").text().split("").join("</span><span aria-hidden='true'>");
+        split1 = "<span aria-hidden='true'>" + split1 + "</span>";
+        $(".split1").html(split1);
+        
+        let split2 = $(".split2").text().split("").join("</span><span aria-hidden='true'>");
+        split2 = "<span aria-hidden='true'>" + split2 + "</span>";
+        $(".split2").html(split2);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- //https://swabtheworld.com/en/ -->
