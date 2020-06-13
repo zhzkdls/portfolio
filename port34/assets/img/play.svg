@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Polygone_1_copie_2" data-name="Polygone 1 copie 2" class="cls-1" d="M1147.51,6743a24.505,24.505,0,1,1,24.5-24.51A24.544,24.544,0,0,1,1147.51,6743Zm0-47.62a23.115,23.115,0,1,0,23.11,23.11A23.142,23.142,0,0,0,1147.51,6695.38ZM1152,6719l-8,5v-10Z" transform="translate(-1123 -6694)"/>
+</svg>

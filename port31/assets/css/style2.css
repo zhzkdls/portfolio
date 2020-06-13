@@ -1,0 +1,48 @@
+/* layout */
+body {background: #ecdad1;}
+#contents {}
+#section1 {height: 100vh; }
+#section2 {height: 1000px; background: #333;}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* container */
+.container {width: 1400px; margin: 0 auto;}
+
+/* sec1 */
+.sec1 {}
+.sec1 .move_wrap {
+    position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+    margin: auto;
+    max-width: 800px; height: 600px;
+    background: #ccc;
+}
+.sec1 .move_wrap > div {
+    position: absolute; 
+    left: 50%; top: 50%;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff; 
+}
+.sec1 .move_wrap > div.backImg1  {left: 0%; top: 0%;}
+.sec1 .move_wrap > div.backImg2  {left: 50%; top: 50%;}
+.sec1 .move_wrap > div.centerImg {left: 50%; top: 0%;}
+.sec1 .move_wrap > div.frontImg1 {left: 10%; top: 50%;}
+.sec1 .move_wrap > div.frontImg2 {left: 50%; top: 50%;}
+.sec1 .move_wrap > div.frontImg3 {left: 20%; top: 0%;}
+.sec1 .move_wrap > div.frontImg4 {left: 40%; top: 50%;}
+.sec1 .move_wrap > div.textImg1  {left: 30%; top: 50%;}
+.sec1 .move_wrap > div.textImg2  {left: 50%; top: 0%;}
+.sec1 .move_wrap > div.textImg3  {left: 50%; top: 50%;}
+.sec1 .move_wrap > div.textImg4  {left: 50%; top: 0%;}
+.sec1 .move_wrap > div.textImg5  {left: 50%; top: 50%;}
+
+
+.sec1 .move_wrap > div span {
+    text-transform: uppercase;
+    background: #000;  color: #fff; 
+    font-size: 4vw; font-weight: 700;
+}
+

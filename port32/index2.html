@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="윤진아">
+    <meta name="description" content="윤진아 포트폴리오입니다.">
+    <meta name="keywords" content="포트폴리오, 웹 퍼블리셔, web publisher">
+    <title>윤진아 포트폴리오</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
+</head>
+<body>
+    <div class="scroll">
+        <span class="scroll_top">0</span>
+    </div>
+    <!-- //scroll -->
+
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1">
+
+                <div class="logo"
+                    data-0="left:50%; top: 50%"
+                    data-900="left:50%; top: 50%"
+                    data-1300="left:50%; top: 20%"
+                    data-3000="left:50%; top: -50%;"
+                >
+                    <img src="assets/img/logo1.svg" alt="">
+                </div>
+                <!-- //로고 -->
+
+                <div class="man"
+                    data-0="left:50%; top: 150%" 
+                    data-1500="left:50%; top: 50%"
+                    data-2500="left:50%; top: 50%"
+                    data-3000="left:50%; top: -50%;"
+                >
+                    <img src="assets/img/sec1_m.png" alt="">
+                </div>
+
+                <div class="bg"
+                    data-0="top: 150%;" 
+                    data-1500="top: 50%;"
+                    data-2500="top: 50%;"
+                    data-3000="top: -50%;"
+                    data-3500="top: -100%;"
+                >
+                    <img src="assets/img/sec1_bg.png" alt="">
+                </div>
+                <!-- //땅 -->
+
+                <div class="flower"
+                    data-0="top: 150%;" 
+                    data-1300="top: 100%;"
+                    data-1600="top: 60%;"
+                    data-2000="top: 20%;"
+                    data-2500="top: 15%;"
+                    data-3000="top: -80%;"
+                    data-3500="top: -150%;"
+                    >
+                    <div class="layer left1">
+                        <img src="assets/img/sec1_l1.png" alt="">
+                    </div>
+
+                    <div class="layer left2"
+                        data-1800="top: 50%;"
+                        data-2000="top: 20%;"
+                        data-3000="top: 20%;"
+                        data-3500="top: -150%;"
+                    >
+                        <img src="assets/img/sec1_l2.png" alt="">
+                    </div>
+                    
+                    <div class="layer left3"
+                        data-2400="top: 50%;"
+                        data-3000="top: 40%;"
+                        data-3400="top: 40%;"
+                        data-3500="top: -100%;"
+                    >
+                        <img src="assets/img/sec1_l3.png" alt="">
+                    </div>
+    
+                    <div class="layer right1">
+                        <img src="assets/img/sec1_r1.png" alt="">
+                    </div>
+
+                    <div class="layer right2"
+                        data-1800="top: 50%;"
+                        data-2000="top: 20%;"
+                        data-3000="top: 20%;"
+                        data-3500="top: -150%;"
+                    >
+                        <img src="assets/img/sec1_r2.png" alt="">
+                    </div>
+
+                    <div class="layer right3"
+                        data-2400="top: 50%;"
+                        data-3000="top: 40%;"
+                        data-3400="top: 40%;"
+                        data-3500="top: -100%;"
+                    >
+                        <img src="assets/img/sec1_r3.png" alt="">
+                    </div>
+
+                    <div class="layer img2"
+                        data-2200="opacity:0;"
+                        data-2300="opacity:1;"
+                        data-2800="top:-150%;"
+                    > 
+                        <img src="assets/img/sec1_flower.png" alt="">
+                    </div>
+                    <!-- //숲 -->
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="sec2">
+                
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3">
+            
+        </section>
+        <!-- //section3 -->
+        
+        <section id="section4">
+            
+        </section><!-- //section4 -->
+        
+        <section id="section5">
+            
+        </section>
+        <!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+        <section id="section7"></section><!-- //section7 -->
+    </div>
+    
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            
+            $(".scroll_top").text(wScroll);
+            
+        });
+    </script>
+</body>
+</html>

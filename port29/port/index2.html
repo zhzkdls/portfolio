@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hanhee's portfolio</title>
+    <meta name="author" content="최한희">
+    <meta name="description" content="최한희 포트폴리오">
+    <meta name="keywords" content="포트폴리오, 웹퍼블리셔, web, HTML5">
+    
+    <!-- CSS style-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <!--[if lt IE 11]> 
+    <script type="text/javascript">
+        alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+    </script>
+    <![endif]-->
+</head>
+<body>
+    
+    <div class="scroll">0</div>
+    
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <div class="main_text">
+                    <h1 class="fixed t1"
+                        data-0 = "transform: translate(-50%, -50%);"
+                        data-1000 = "transform: translate(-350%, -50%)"
+                    >Hanhee's Portfolio</h1>
+                </div>
+            </div>
+        </section>
+        <!-- //section1-->
+        
+        <section id="section2">
+            <div class="sec2" 
+                    data-2700 = "top: 0%;"
+                    data-3200 = "top: -200%;">
+                <div class="tit">
+                    <span>About<em aria-hidden="true" class="line"
+                        data-1700 = "width: 0%;"
+                        data-2200 = "width: 100%;"
+                    ></em></span>
+                    <span>Work</span>
+                    <span>Contact</span>
+                </div>
+            </div>
+            <div class="sec2-1">
+                <div class="simg">
+                    <img src="img/main_img.jpg" alt="">
+                </div>
+                <div class="stit">
+                    <div class="container">
+                        <h2>손 끝 하나의 터치로<br>컴퓨터를 살아 숨쉬게 만드는<br><strong>코딩의 매력!</strong></h2>
+                        <p>
+                            안녕하세요. 
+                            코딩과 사랑에 빠진 신입 웹퍼블리셔 최한희 입니다.<br>
+                            어릴적부터 인터넷 검색 능력이 뛰어나 별명이 'IT소녀'<br> 였을만큼 
+                            컴퓨터와 친숙하게 지내왔습니다.<br>보다 원활한 커뮤니케이션을 위해 
+                            그들의 언어인 HTML 부터 배워 첫 입을 떼고,<br>CSS로 존댓말을 배우며,<br> 
+                            JAVASCRIPT로 능동적인 의사소통을 시도하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2-2">
+                <div class="skill-wrap">
+                    <div><span>Photoshop</span></div>
+                    <div><span>illustration</span></div>
+                    <div><span>html</span></div>
+                    <div><span>css</span></div>
+                    <div><span>Javascript</span></div>
+                    <div><span>jQuery</span></div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2-->
+        
+        <section id="section3">
+            <div class="sec3"
+                data-11000 = "top: 0%;"
+                data-15000 = "top: -200%;"
+                >
+                <div class="tit">
+                    <span>About</span>
+                    <span>Work <em aria-hidden="true" class="line"
+                        data-9400 = "width: 0%;"
+                        data-9900 = "width: 100%;"></em></span>
+                    <span>Contact</span>
+                </div>
+            </div>   
+            <div class="sec3-1" 
+                data-13000="left:0%"
+                data-20000="left:-800%"
+                >
+                <div class="siteWrap">
+                    <div class="site">sdfsdfsd</div>
+                    <div class="site"></div>
+                    <div class="site"></div>
+                    <div class="site"></div>
+                </div> 
+            </div>
+        </section>
+        <!-- //section3-->
+        
+        <section id="section4"></section><!-- //section4-->
+        <section id="section5"></section><!-- //section5-->
+        <section id="section6"></section><!-- //section6-->
+        <section id="section7"></section><!-- //section7-->
+    </div>
+    <!-- //contents-->
+    
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            let wScroll = $(this).scrollTop();
+            
+            $(".scroll").text(wScroll);
+            
+            if( wScroll >= $("#section3").offset().top ){
+                $("#section3 .sec3").addClass("pos");
+            } else {
+                $("#section3 .sec3").removeClass("pos");
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+

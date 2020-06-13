@@ -1,0 +1,733 @@
+/* layout */
+body { background: #ecdad1; }
+#contents {}
+#section1 { height: 700px; width: 100%; margin: 0 auto; }
+#section2 {}
+#section3 { height: 700px; }
+#section4 { height: 800px; background-color: #d8c4b9; }
+#section5 { height: 1300px; }
+#section6 { height: 1300px; }
+#section7 { height: 1300px; }
+#section8 { height: 1300px; }
+
+/* container */
+.container { width: 1300px; margin: 0 auto; }
+
+/*row*/
+.row { padding: 10% 5% 0 5%; }
+
+/* play */
+.play { margin: 10px 0 0 30px; position: fixed; z-index: 20; }
+.play .play_wrap { background:#000; width:180px; height: 48px; overflow: hidden; }
+.play .play_wrap span { color: #f0ded6; font-size: 24px; font-weight: 500; 
+    padding: 5px 20px; display: inline-block; }
+
+/* sec1 */
+/* sec1-1 백그라운드 */
+.sec1 { width: 500px; margin: 0 auto; position: relative; }
+.sec1-1 {}
+.sec1-1 .sec1-1-bg .sec1-1-01 { width: 165px; height: 468px; margin-top: 37px; }
+.sec1-1 .sec1-1-bg .sec1-1-02 { width: 213px; height: 512px; float:right; }
+
+.sec1-1 .sec1-2-bg { position: absolute; top: 24%; left: 15%; }
+.sec1-1 .sec1-2-bg .sec1-1-03 { width: 304px; height: 529px; }
+
+.sec1-1 .sec1-3-bg { width:90%; margin: 0 auto; }
+.sec1-1 .sec1-3-bg .sec1-1-04 { 
+    position: absolute; width: 124px; height: 124px; top: 510px; 
+}
+.sec1-1 .sec1-3-bg .sec1-1-05 { 
+    position: absolute; width: 147px; height: 149px; top: 490px; right:50px;
+}
+/* sec1-2 글씨 */
+.sec1-2 { 
+    width: 600px; margin: 0 auto; position:absolute; left: 50%; top: 0; 
+    transform: translateX(-50%); 
+}
+.sec1-2 .move_wrap {}
+.sec1-2 .move_wrap > div {
+    text-transform: uppercase;
+    font-size: 60px; font-weight: 700;
+    background: #000; display: inline-block; color: #fff; padding: 0 15px 0 15px;
+}
+.sec1-2 .move_wrap .t1 { 
+    position:absolute; left: 30px; top: 80px; transform: rotate(10deg); 
+}
+.sec1-2 .move_wrap .t2 { 
+    position:absolute; left: 170px; top: 120px; transform: rotate(-10deg); 
+}
+.sec1-2 .move_wrap .t3 { 
+    position:absolute; left: 120px; top: 220px; transform: rotate(3deg); 
+}
+.sec1-2 .move_wrap .t4 { 
+    position:absolute; left: 150px; top: 300px; transform: rotate(-10deg); 
+}
+.sec1-2 .move_wrap .t5 { 
+    position:absolute; left: 100px; top: 390px; transform: rotate(3deg); 
+}
+/* sec1-3 팝업창이미지 */
+.sec1-3 {  width: 600px; margin: 0 auto; position:absolute; left: 50%; top: 0; 
+    transform: translateX(-50%);  }
+.sec1-3 .sec1-3-01 { width: 132px; height: 129px; position:absolute; left: 0; top: 148px; }
+.sec1-3 .sec1-3-02 { width: 209px; height: 210px; position:absolute; right: 20px; top: 30px; }
+
+/* sec2 */
+.sec2 { position: relative; transform: rotate(-3deg);}
+.sec2 .row { padding: 5% 0 5% 0; }
+.sec2 .move_silde {}
+.sec2 .move_silde .slide1 { 
+    width: 380px; height: 160px; 
+    position: relative;
+    background: #efded6; border: 2px solid #1f1d1c; 
+    padding: 10px; float: left; margin-right: 40px; }
+.sec2 .move_silde .slide_left { 
+    text-transform: uppercase; position: relative; text-align: center;
+}
+.sec2 .move_silde .slide_left p { 
+    transform: rotate(270deg);
+    transform-origin: left;
+    background: #020202; 
+    width: 160px; height: 25px; color: #f2e1d9;
+    line-height: 25px;
+    position: absolute;
+    top: 150px; left: 10px;
+ }
+.sec2 .move_silde .slide_right { margin: 20px 10px 10px 50px; }
+.sec2 .move_silde .slide_right span { font-size: 16px; font-weight: 500;}
+.sec2 .move_silde .slide_right h1 { font-size: 40px;font-weight: 900; position: relative;}
+.sec2 .move_silde .slide_right h1::after { 
+    content:''; width:90%; height: 1px; background-color: #020202; display: inline-block;
+    position:absolute; top: 0; left:0;
+}
+.sec2 .move_silde .image-face { z-index: 3; }
+.sec2 .move_silde .image-side { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: -1;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .image-side-side { 
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: -2;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide2 { 
+    width: 380px; height: 160px; 
+    background: #efded6; border: 2px solid #1f1d1c; 
+    padding: 10px; float: left; 
+    position: relative; margin-right: 40px; }
+.sec2 .move_silde .slide2 .image-side { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: -1;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide2 .image-side-side { 
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: -2;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide3 { 
+    width: 380px; height: 160px; 
+    background: #efded6; border: 2px solid #1f1d1c; 
+    padding: 10px; float: left; position: relative; 
+}
+.sec2 .move_silde .slide3 .image-side { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: -1;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide3 .image-side-side { 
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: -2;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide4 { 
+    width: 380px; height: 160px; 
+    background: #efded6; border: 2px solid #1f1d1c; 
+    padding: 10px; float: left; position: relative;
+    margin: 40px 40px 0 0; 
+}
+.sec2 .move_silde .slide4 .image-side { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: -1;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide4 .image-side-side { 
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: -2;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide5 { 
+    width: 380px; height: 160px; 
+    background: #efded6; border: 2px solid #1f1d1c; 
+    padding: 10px; float: left; position: relative;
+    margin: 40px 40px 0 0; 
+}
+.sec2 .move_silde .slide5 .image-side { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: -1;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide5 .image-side-side { 
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: -2;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide6 { 
+    width: 380px; height: 160px; 
+    background: #efded6; border: 2px solid #1f1d1c; 
+    padding: 10px; float: left; position: relative;
+    margin-top: 40px;
+ }
+.sec2 .move_silde .slide6 .image-side { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: -1;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec2 .move_silde .slide6 .image-side-side { 
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: -2;
+    width: 400px;
+    height: 180px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+/* sec3 */
+.sec3 {}
+.sec3 .sec3_left { float: left; width: 40%; position: relative; }
+.sec3 .sec3_left .image-face { 
+    z-index: 3;
+    overflow: hidden;
+    width: 298px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec3 .sec3_left .image-side {
+    position: absolute;
+    top: 15px; left: 15px;
+    z-index: -1;
+    width: 328px;
+    height: 455px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec3 .sec3_left .image-side-side {
+    position: absolute;
+    top: 30px; left: 30px;
+    z-index: -2;
+    width: 328px;
+    height: 455px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec3 .sec3_right { float: left; width: 60%; padding-top:10%; }
+.sec3 .sec3_right h1 { font-size: 30px; font-weight: 700;}
+.sec3 .sec3_right em { font-weight: 500; font-size: 20px; display: inline-block; padding: 15px 0;}
+
+/*sec4*/
+.sec4 { position: relative; }
+.sec4 .sec4-1 { width:40%; font-size: 15px; font-weight: 600;}
+.sec4 .sec4-2 { float: left; }
+.sec4 .sec4-2 .image-face { 
+    position: absolute;
+    top:300px;
+    z-index: 3;
+    width: 400px;
+    height: 268px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec4 .sec4-2 .image-side {
+    position: absolute;
+    top: 310px; left: 76px;
+    z-index: 2;
+    width: 430px;
+    height: 298px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec4 .sec4-2 .image-side-side {
+    position: absolute;
+    top: 320px; left: 86px;
+    z-index: 1;
+    width: 430px;
+    height: 298px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec4 .sec4-3 { width: 50%; float: right; position: relative; }
+.sec4 .sec4-3 .image-face { 
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+    width: 400px;
+    height: 268px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec4 .sec4-3 .image-side {
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: 2;
+    width: 430px;
+    height: 298px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec4 .sec4-3 .image-side-side {
+    position: absolute;
+    top: 20px; left: 20px;
+    z-index: 1;
+    width: 430px;
+    height: 298px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+/*sec5*/
+.sec5 { position: relative; }
+.sec5 .row { padding: 5% 5% 0 5%; }
+.sec5 .sec5-1 { position: relative; }
+.sec5 .sec5-1 .h2-1 { position: absolute; top:0; left:0; }
+.sec5 .sec5-1 .h2-2 { position: absolute; top:140px; left:120px; }
+.sec5 .sec5-1 .image-face { 
+    position: absolute;
+    top: 400px;
+    z-index: 3;
+    overflow: hidden;
+    width: 800px;
+    height: 413px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec5 .sec5-1 .image-face img { 
+    width:100%; height:100%; border:0px; display:block; position:absolute; top:0px; left:0px; transition: opacity 1s; }
+.sec5 .sec5-1 .image-face:hover img:last-child { opacity:0 }
+.sec5 .sec5-1 .image-side {
+    position: absolute;
+    top: 415px; left: 15px;
+    z-index: 2;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec5 .sec5-1 .image-side-side {
+    position: absolute;
+    top: 430px; left: 30px;
+    z-index: 1;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec5 .sec5-2 { position: relative; width: 40%; float: right; text-align: right; 
+display: inline-block; padding-top: 900px; }
+.sec5 .sec5-2 em { background-color: #000; display: inline-block; padding: 5px 10px; color:#dac6bd; font-size: 16px; }
+.sec5 .sec5-2 span { font-size: 13px; }
+.sec5 .sec5-2 .fz { font-size: 15px; }
+.sec5 .sec5-2 .click1 { 
+    position: absolute;
+    bottom: -90px; right:10px;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec5 .sec5-2 .click1:hover {
+    position: absolute;
+    bottom: -100px; right:0;
+    cursor: pointer;
+}
+.sec5 .sec5-2 .click1-side {
+    position: absolute;
+    bottom: -100px; right:0;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec5 .sec5-2 .click2 { 
+    position: absolute;
+    bottom: -90px; right:210px;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec5 .sec5-2 .click2:hover {
+    position: absolute;
+    bottom: -100px; right:200px;
+    cursor: pointer;
+}
+.sec5 .sec5-2 .click2-side {
+    position: absolute;
+    bottom: -100px; right:200px;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+
+/*sec6*/
+.sec6 { position: relative; }
+.sec6 .row { padding: 5% 5% 0 5%; }
+.sec6 .sec6-1 { position: relative; }
+.sec6 .sec6-1 .h2-1 { position: absolute; top:0; right:0; }
+.sec6 .sec6-1 .h2-2 { position: absolute; top:140px; right:120px; }
+.sec6 .sec6-1 .image-face { 
+    position: absolute;
+    top: 400px; right: 30px;
+    z-index: 3;
+    overflow: hidden;
+    width: 800px;
+    height: 413px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec6 .sec6-1 .image-face img { 
+    width:100%; height:100%; border:0px; display:block; position:absolute; top:0; right:0; transition: opacity 1s; }
+.sec6 .sec6-1 .image-face:hover img:last-child { opacity:0 }
+.sec6 .sec6-1 .image-side {
+    position: absolute;
+    top: 415px; right: 15px;
+    z-index: 2;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec6 .sec6-1 .image-side-side {
+    position: absolute;
+    top: 430px; right: 0;
+    z-index: 1;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec6 .sec6-2 { position: relative; width: 40%; float: left; 
+display: inline-block; padding-top: 900px; }
+.sec6 .sec6-2 em { background-color: #000; display: inline-block; padding: 5px 10px; color:#dac6bd; font-size: 16px; }
+.sec6 .sec6-2 span { font-size: 13px; }
+.sec6 .sec6-2 .fz { font-size: 15px; }
+.sec6 .sec6-2 .click1 { 
+    position: absolute;
+    bottom: -90px; left:0;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec6 .sec6-2 .click1:hover {
+    position: absolute;
+    bottom: -100px; left:10px;
+    cursor: pointer;
+}
+.sec6 .sec6-2 .click1-side {
+    position: absolute;
+    bottom: -100px; left:10px;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec6 .sec6-2 .click2 { 
+    position: absolute;
+    bottom: -90px; left:200px;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec6 .sec6-2 .click2:hover {
+    position: absolute;
+    bottom: -100px; left:210px;
+    cursor: pointer;
+}
+.sec6 .sec6-2 .click2-side {
+    position: absolute;
+    bottom: -100px; left:210px;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+
+/*sec7*/
+.sec7 { position: relative; }
+.sec7 .row { padding: 5% 5% 0 5%; }
+.sec7 .sec7-1 { position: relative; }
+.sec7 .sec7-1 .h2-1 { position: absolute; top:0; left:0; }
+.sec7 .sec7-1 .h2-2 { position: absolute; top:140px; left:180px; }
+.sec7 .sec7-1 .image-face { 
+    position: absolute;
+    top: 400px;
+    z-index: 3;
+    overflow: hidden;
+    width: 800px;
+    height: 413px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec7 .sec7-1 .image-face img { 
+    width:100%; height:100%; border:0px; display:block; position:absolute; top:0px; left:0px; transition: opacity 1s; }
+.sec7 .sec7-1 .image-face:hover img:last-child { opacity:0 }
+.sec7 .sec7-1 .image-side {
+    position: absolute;
+    top: 415px; left: 15px;
+    z-index: 2;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec7 .sec7-1 .image-side-side {
+    position: absolute;
+    top: 430px; left: 30px;
+    z-index: 1;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec7 .sec7-2 { position: relative; width: 40%; float: right; text-align: right; 
+display: inline-block; padding-top: 900px; }
+.sec7 .sec7-2 em { background-color: #000; display: inline-block; padding: 5px 10px; color:#dac6bd; font-size: 16px; }
+.sec7 .sec7-2 span { font-size: 13px; }
+.sec7 .sec7-2 .fz { font-size: 15px; }
+.sec7 .sec7-2 .click1 { 
+    position: absolute;
+    bottom: -90px; right:10px;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec7 .sec7-2 .click1:hover {
+    position: absolute;
+    bottom: -100px; right:0;
+    cursor: pointer;
+}
+.sec7 .sec7-2 .click1-side {
+    position: absolute;
+    bottom: -100px; right:0;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec7 .sec7-2 .click2 { 
+    position: absolute;
+    bottom: -90px; right:210px;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec7 .sec7-2 .click2:hover {
+    position: absolute;
+    bottom: -100px; right:200px;
+    cursor: pointer;
+}
+.sec7 .sec7-2 .click2-side {
+    position: absolute;
+    bottom: -100px; right:200px;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+
+/*sec8*/
+.sec8 { position: relative; }
+.sec8 .row { padding: 5% 5% 0 5%; }
+.sec8 .sec8-1 { position: relative; }
+.sec8 .sec8-1 .h2-1 { position: absolute; top:0; right:0; }
+.sec8 .sec8-1 .h2-2 { position: absolute; top:140px; right:120px; }
+.sec8 .sec8-1 .image-face { 
+    position: absolute;
+    top: 400px; right: 30px;
+    z-index: 3;
+    overflow: hidden;
+    width: 800px;
+    height: 413px;
+    padding: 15px;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+}
+.sec8 .sec8-1 .image-face img { 
+    width:100%; height:100%; border:0px; display:block; position:absolute; top:0; right:0; transition: opacity 1s; }
+.sec8 .sec8-1 .image-face:hover img:last-child { opacity:0 }
+.sec8 .sec8-1 .image-side {
+    position: absolute;
+    top: 415px; right: 15px;
+    z-index: 2;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec8 .sec8-1 .image-side-side {
+    position: absolute;
+    top: 430px; right: 0;
+    z-index: 1;
+    width: 830px;
+    height: 443px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec8 .sec8-2 { position: relative; width: 40%; float: left; 
+display: inline-block; padding-top: 900px; }
+.sec8 .sec8-2 em { background-color: #000; display: inline-block; padding: 5px 10px; color:#dac6bd; font-size: 16px; }
+.sec8 .sec8-2 span { font-size: 13px; }
+.sec8 .sec8-2 .fz { font-size: 15px; }
+.sec8 .sec8-2 .click1 { 
+    position: absolute;
+    bottom: -90px; left:0;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec8 .sec8-2 .click1:hover {
+    position: absolute;
+    bottom: -100px; left:10px;
+    cursor: pointer;
+}
+.sec8 .sec8-2 .click1-side {
+    position: absolute;
+    bottom: -100px; left:10px;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+.sec8 .sec8-2 .click2 { 
+    position: absolute;
+    bottom: -90px; left:200px;
+    z-index: 3;
+    overflow: hidden;
+    width: 170px;
+    height: 45px;
+    padding: 0;
+    border: 2.2px solid #151414;
+    background-color: #f0ded6;
+    text-align: center;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+.sec8 .sec8-2 .click2:hover {
+    position: absolute;
+    bottom: -100px; left:210px;
+    cursor: pointer;
+}
+.sec8 .sec8-2 .click2-side {
+    position: absolute;
+    bottom: -100px; left:210px;
+    z-index: 1;
+    width: 170px;
+    height: 45px;
+    border: 2.2px solid #151414;
+    background: #dbc6bc;
+}
+

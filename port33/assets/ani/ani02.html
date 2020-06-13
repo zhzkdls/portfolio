@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Cube Animation</title>
+    <style>
+        html {overflow: hidden;}
+        body {
+        height: 100vh;
+        background: #f8bbd0;
+        perspective: 1000px; 
+        display: flex;
+        align-items: center;
+        justify-content :center;
+        }
+        .cube {
+        position:relative;
+        width: 100px; height: 100px;
+        transform-style: preserve-3d;
+        transform: rotateX(-20deg) rotateY(-360deg);
+        animation: rol 8s linear infinite;
+        }
+        .cube div {
+        width: 100px; height: 100px;
+        position: absolute; left: 0; top: 0;
+        background: #000;
+        opacity:.75;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:#fff;
+        }
+        .cube div:nth-child(1) {
+        background: #ef5350;
+        transform-origin: center top;
+        transform: rotateX(90deg) translateY(-100px);
+        animation: top 4s 8s ease-in-out infinite;
+        
+        }
+        .cube div:nth-child(2) {
+        background: #e57373;
+        transform-origin: center bottom;
+        transform: rotateX(-90deg) translateY(100px);
+        animation: bottom 4s 8s ease-in-out infinite;
+        }
+        .cube div:nth-child(3) {
+        background: #f44336;
+        transform: rotatey(-90deg) translatex(-100px);
+        transform-origin: left center;
+        animation: left 4s 8s ease-in-out infinite;
+        }
+        .cube div:nth-child(4) {
+        background: #d32f2f;
+        transform: rotatey(90deg) translatex(100px);
+        transform-origin: right center;
+        animation: right 4s 8s ease-in-out infinite;
+        }
+        .cube div:nth-child(5) {
+        background: #e53935;
+        transform: rotatex(0deg) translatex(0px);
+        transform-origin: center center;
+        animation: front 4s 8s ease-in-out infinite;
+        }
+        .cube div:nth-child(6) {
+        background: #d32f2f;
+        transform: rotatey(180deg) translatez(100px);
+        transform-origin: center center;
+        animation: back 4s 8s ease-in-out infinite;
+        }
+        @keyframes rol {
+        0% {transform: rotatex(0) rotatey(0) rotatez(0) translatez(0);}
+        100% {transform: rotatex(360deg) rotatey(360deg) rotatez(360deg) translatez(0);}
+        }
+        @keyframes top {
+        0% {transform: rotatex(90deg) translatey(-100px) translatez(0);}
+        50% {transform: rotatex(90deg) translatey(-100px) translatez(100px);}
+        100% {transform: rotatex(90deg) translatey(-100px) translatez(0);}
+        }
+        @keyframes bottom {
+        0% {transform: rotatex(-90deg) translatey(100px) translatez(0);}
+        50% {transform: rotatex(-90deg) translatey(100px) translatez(100px);}
+        100% {transform: rotatex(-90deg) translatey(100px) translatez(0);}
+        }
+        @keyframes left {
+        0% {transform: rotatey(-90deg) translatex(-100px) scaley(1);}
+        50% {transform: rotatey(-90deg) translatex(-100px) scaley(3);}
+        100% {transform: rotatey(-90deg) translatex(-100px) scaley(1);}
+        }
+        @keyframes front {
+        0% {transform: rotatex(0deg) translatex(0px) scaley(1);}
+        50% {transform: rotatex(0deg) translatex(0px) scaley(3);}
+        100% {transform: rotatex(0deg) translatex(0px) scaley(1);}
+        }
+        @keyframes back {
+        0% {transform: rotatey(180deg) translatez(0px) scaley(1);}
+        50% {transform: rotatey(180deg) translatez(0px) scaley(3);}
+        100% {transform: rotatey(180deg) translatez(0px) scaley(1);}
+        }
+        @keyframes right {
+        0% {transform: rotatey(90deg) translatex(100px) scaley(1);}
+        50% {transform: rotatey(90deg) translatex(100px) scaley(3);}
+        100% {transform: rotatey(90deg) translatex(100px) scaley(1);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div>H</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+</body>
+</html>

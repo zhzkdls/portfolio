@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jungwoo roh</title>
+
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!--웹폰트-->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="info">
+        <span class="scroll_top">0</span>
+    </div>
+    <!-- //info -->
+
+    <nav id="nav">
+        <h1></h1>
+    </nav>
+    <!-- //nav -->
+
+    <section id="contents">
+
+
+        <section id="section2">
+            <div class="sec2">
+                <div class="ca">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+
+            </div>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3">
+            <div class="sec3">
+                <div class="ca">
+                    <canvas id="myChart2" width="400" height="400"></canvas>
+                </div>
+
+            </div>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section4">
+            <div class="sec4">
+                <div class="ca">
+                    <canvas id="chartjs-3" width="400" height="400"></canvas>
+                </div>
+
+            </div>
+        </section>
+        <!-- //section2 -->
+
+
+    </section>
+    <!-- //contents -->
+
+
+
+
+
+    <!-- script -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/docs/latest/gitbook/gitbook-plugin-chartjs/chartjs-plugin-deferred.js"></script>
+    <script>
+        new Chart(document.getElementById("chartjs-3"), {
+            "type": "radar",
+            "data": {
+                "labels": ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+                "datasets": [{
+                    "label": "My First Dataset",
+                    "data": [65, 59, 90, 81, 56, 55, 40],
+                    "fill": true,
+                    "backgroundColor": "rgba(255, 99, 132, 0.2)",
+                    "borderColor": "rgb(255, 99, 132)",
+                    "pointBackgroundColor": "rgb(255, 99, 132)",
+                    "pointBorderColor": "#fff",
+                    "pointHoverBackgroundColor": "#fff",
+                    "pointHoverBorderColor": "rgb(255, 99, 132)"
+                }, {
+                    "label": "My Second Dataset",
+                    "data": [28, 48, 40, 19, 96, 27, 100],
+                    "fill": true,
+                    "backgroundColor": "rgba(54, 162, 235, 0.2)",
+                    "borderColor": "rgb(54, 162, 235)",
+                    "pointBackgroundColor": "rgb(54, 162, 235)",
+                    "pointBorderColor": "#fff",
+                    "pointHoverBackgroundColor": "#fff",
+                    "pointHoverBorderColor": "rgb(54, 162, 235)"
+                }]
+            },
+            "options": {
+                "scales": {
+                    "xAxes": [{
+                        "ticks": {
+                            "beginAtZero": true
+                        }
+                    }]
+                }
+            }
+        });
+
+    </script>
+    <script>
+
+
+
+
+
+
+
+    </script>
+    <script>
+        new Chart(document.getElementById("myChart2"), {
+            "type": "horizontalBar",
+            "data": {
+                "labels": ["January", "February", "March", "April", "May", "June", "July"],
+                "datasets": [{
+                    "label": "My First Dataset",
+                    "data": [65, 59, 80, 81, 56, 55, 40],
+                    "fill": false,
+                    "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)", "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"],
+                    "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)", "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"],
+                    "borderWidth": 1
+                }]
+            },
+            "options": {
+                "scales": {
+                    "xAxes": [{
+                        "ticks": {
+                            "beginAtZero": true
+                        }
+                    }]
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+<!-- https://sebas.design/ -->

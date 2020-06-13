@@ -1,0 +1,66 @@
+/* layout */
+#contents {}
+#section1 {height: 3000px; background-image: linear-gradient(to top, #d5939c, #7f85b4);}
+#section2 {height: 3000px; background-image: linear-gradient(to top, #f1bfc2, #d5939c);}
+#section3 {height: 3000px; background: #777;}
+#section4 {height: 3000px; background: #666;}
+#section5 {height: 3000px; background: #555;}
+#section6 {height: 3000px; background: #444;}
+
+/* scroll */
+.scroll {position: fixed; top: 20px; left: 20px; z-index: 100000;}
+.scroll span {display: inline-block; width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white; opacity: 1;}
+
+/* sec1 */
+.sec1 {position: relative;}
+
+
+.sec1 .logo {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%)}
+.sec1 .logo img {width: 500px;}
+
+/* sec2 */
+.sec2 {position: relative;}
+.sec2 .man {position: fixed; left: 50%; top: 150%; transform: translate(-50%, -50%); z-index: 11;}
+.sec2 .man img {width: 300px;}
+
+.sec2 .bg {position: fixed; left: 0%; top: 150%; width: 100%; height: 500px; z-index: 10;}
+.sec2 .leafL1 {position: fixed; left: 0%; top: 50%; transform: translateY( -50%); z-index: 21;}
+.sec2 .leafL1 img {width: 600px;}
+
+.sec2 .leafL2 {position: fixed; left: 0%; top: 50%; transform: translateY( -50%); z-index: 31;}
+.sec2 .leafL2 img {width: 500px;}
+
+.sec2 .leafL3 {position: fixed; left: 0%; top: 50%; transform: translateY( -50%); z-index: 41;}
+.sec2 .leafL3 img {width: 400px;}
+
+.sec2 .leafR1 {position: fixed; right: 0%; top: 50%; transform: translateY( -50%); z-index: 21;}
+.sec2 .leafR1 img {width: 600px;}
+
+.sec2 .leafR2 {position: fixed; right: 0%; top: 50%; transform: translateY( -50%); z-index: 31;}
+.sec2 .leafR2 img {width: 500px;}
+
+.sec2 .leafR3 {position: fixed; right: 0%; top: 50%; transform: translateY( -50%); z-index: 41;}
+.sec2 .leafR3 img {width: 400px;}
+
+
+.sec2 .flowerL1 {position: fixed; left: 5%; top: 65%; transform: translateY(-50%); z-index: 25;}
+.sec2 .flowerL1 img {width: 400px;}
+
+.sec2 .flowerL2 {position: fixed; left: 5%; top: 85%; transform: translateY(-50%); z-index: 51;}
+.sec2 .flowerL2 img {width: 300px;}
+
+.sec2 .flowerR1 {position: fixed; right: 5%; top: 65%; transform: translateY(-50%); z-index: 25;}
+.sec2 .flowerR1 img {width: 400px;}
+
+.sec2 .flowerR2 {position: fixed; right: 5%; top: 85%; transform: translateY(-50%); z-index: 51;}
+.sec2 .flowerR2 img {width: 400px;}
+
+
+
+
+
+
+
+
+
+

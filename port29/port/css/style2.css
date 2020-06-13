@@ -1,0 +1,133 @@
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* layout */
+#contents {}
+#section1 {position: relative; z-index: 1000; height: 1600px; background: #3366ff;}
+#section2 {position: relative; background: #fff; z-index: 900;  }
+#section3 {height: 12000px; background: ;}
+#section4 {height: 8000px; background: red;}
+#section5 {}
+#section6 {}
+
+
+/* container */
+.container {width: 1400px; margin: 0 auto; position: relative;}
+
+/* fixed */
+.fixed {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+/* scroll */
+.scroll {position: fixed; left: 10px; top: 10px; z-index: 10000; width: 40px; height: 40px; line-height: 40px; text-align: center; background: rgba(255,255,255,0.4); color: #000;}
+
+/* sec1 */
+.sec1 {height: 100vh; background: #3366ff;}
+.sec1 .main_text {
+    display: flex; align-items: center; justify-content: center; height: 100vh;
+}
+.sec1 .main_text h1 {
+    line-height: 5vw;
+	color: #fff; font-family: 'Playfair Display', serif; font-size: 5vw;
+}
+
+
+/* sec2 */
+.sec2 {
+    position: fixed; left: 0; top: 0; z-index: 900;
+    width: 100vw; height: 100vh; background: #fff;
+}
+.sec2 .tit {
+    width: 90%; margin: 0 auto;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    display: flex; 
+    justify-content: space-between;
+}
+.sec2 .tit span {
+    color: #3366ff;
+    font-size: 12vw; line-height: 14vw;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+}
+.sec2 .tit span::after {
+    font-size: 20px; position: absolute; right: 0; top: -8vw;
+}
+.sec2 .tit span:nth-child(1)::after {content: '01';}
+.sec2 .tit span:nth-child(2)::after {content: '02';}
+.sec2 .tit span:nth-child(3)::after {content: '03';}
+.sec2 .tit span:nth-child(2) {opacity: .6}
+.sec2 .tit span:nth-child(3) {opacity: .6}
+.sec2 .tit span .line{
+    width: 0; height: .6vw; background: #3366ff;
+    position: absolute; bottom: 1.1vw; left: 0;
+    border-radius: 6px;
+}
+.sec2-1 {padding-bottom: 20vh;}
+.sec2-1 .simg {padding-top: 180vh;}
+.sec2-1 .stit h2 {
+    font-size: 5vw; font-weight: bold; padding-top: 14vw; 
+    font-family: 'S-CoreDream-3Light';
+}
+.sec2-1 .stit h2 strong {
+    position: relative;
+}
+.sec2-1 .stit h2 strong::after {
+    content: '';
+    position: absolute; left: 0; bottom: 3px;
+    width: 100%; height: 26px;  z-index: -1;
+    border-radius: 16px;
+    background-image: linear-gradient(to left, #a18cd1 0%, #fbc2eb 100%);
+}
+.sec2-1 .stit p {
+    padding-top: 4vw; line-height: 3.2vw;
+    font-size: 2vw; font-family: 'S-CoreDream-3Light';}
+
+.sec2-2 {}
+.sec2-2 .skill-wrap {
+    background: linear-gradient(to bottom, #fff 0%, #fcc5e4 10%, #fda34b 30%, #ff7882 45%, #c8699e 60%, #7046aa 71%, #0c1db8 87%, #1a1a1a 100%); 
+    text-align: center;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    padding: 40vw 0; color: #fff;
+}
+.sec2-2 .skill-wrap > div {padding: 10vh 0;}
+
+
+/* sec3 */
+.sec3 {position: relative; height: 100vh; background: #1a1a1a; z-index: 100;}
+.sec3.pos {position: fixed; left: 0; top: 0; width: 100vw;}
+.sec3 .tit {
+    width: 90%; margin: 0 auto;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+    display: flex; 
+    justify-content: space-between;
+}
+.sec3 .tit span {
+    color: #00ff33;
+    font-size: 12vw; line-height: 14vw;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+}
+.sec3 .tit span::after {
+    font-size: 20px; position: absolute; right: 0; top: -8vw;
+}
+.sec3 .tit span:nth-child(1)::after {content: '01';}
+.sec3 .tit span:nth-child(2)::after {content: '02';}
+.sec3 .tit span:nth-child(3)::after {content: '03';}
+.sec3 .tit span:nth-child(1) {opacity: .6}
+.sec3 .tit span:nth-child(3) {opacity: .6}
+.sec3 .tit span .line{
+    width: 0; height: .6vw; background: #00ff33;
+    position: absolute; bottom: 1.1vw; left: 0;
+    border-radius: 6px;
+}
+
+.sec3-1 {
+    width: 600vw; height: 3000px; background: pink; position: fixed; 
+    left: 99%; top: 0; z-index: 90;}
+.sec3-1 .siteWrap {overflow: hidden; width: 600vw; padding: 10vw; box-sizing: border-box;}
+.sec3-1 .siteWrap .site {float: left; width: 100vw; height: 600px; background: #444; }
+
+
+

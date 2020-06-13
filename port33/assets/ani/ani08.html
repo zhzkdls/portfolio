@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Bar</title>
+    <style>
+        html {overflow: hidden;}
+        body {
+        height:100vh;
+        background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+        }
+        .bar {
+        width:5px; height: 400px;
+        background: #fff;
+        position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+        margin: auto;
+        animation: bar 2s ease infinite;  
+        }
+
+        @keyframes bar {
+        0% {transform: rotate(0); height: 0;}
+        25% {transform: rotate(0); height: 400px;}
+        75% {transform: rotate(360deg); height: 400px;}
+        100% {transform: rotate(360deg); height: 0;} 
+        }
+    </style>
+</head>
+<body>
+    <div class="bar"></div>
+</body>
+</html>

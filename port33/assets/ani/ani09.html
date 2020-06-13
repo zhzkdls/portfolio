@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Animation</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Nunito:800");
+        * {
+        box-sizing: border-box;
+        }
+        *::before, *::after {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Nunito';
+        background: #ffd7d7;
+        min-height: 100vh;
+        margin: 0;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        #container {
+        width: 20rem;
+        height: 18rem;
+        position: relative;
+        }
+
+        span {
+        position: absolute;
+        z-index: 1;
+        width: 7rem;
+        height: 8rem;
+        background: #fefdfb;
+        text-align: center;
+        transform: rotate(-45deg);
+        }
+
+        h1 {
+        margin: 0;
+        font-size: 2.45rem;
+        font-weight: 800;
+        line-height: 1.1;
+        color: transparent;
+        background: #b63667;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        text-shadow: 0 0.125rem 0 #ff6678;
+        }
+
+        .heart {
+        position: relative;
+        }
+        .heart .shape {
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 1rem 0;
+        background: #fefdfb;
+        transform: rotate(45deg);
+        }
+        .heart .shape:nth-child(2) {
+        z-index: -2;
+        top: 5.5rem;
+        left: 5rem;
+        width: 10.5rem;
+        height: 10rem;
+        background: #f2a9b7;
+        }
+        .heart .shape:nth-child(3) {
+        z-index: -1;
+        top: 4.75rem;
+        left: 5rem;
+        width: 10rem;
+        height: 9.5rem;
+        background: #c6839b;
+        }
+        .heart .shape::before, .heart .shape::after {
+        position: absolute;
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: inherit;
+        border-radius: 100%;
+        }
+        .heart .shape::before {
+        right: 5rem;
+        }
+        .heart .shape::after {
+        bottom: 5rem;
+        }
+
+        .stars {
+        position: absolute;
+        left: -1rem;
+        width: 3rem;
+        height: 3rem;
+        background: #fff2e6;
+        overflow: hidden;
+        }
+
+        .star {
+        position: absolute;
+        }
+        .star:nth-child(1)::before, .star:nth-child(1)::after {
+        position: absolute;
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        background: #ffd7d7;
+        border-radius: 100%;
+        }
+        .star:nth-child(2)::before, .star:nth-child(2)::after {
+        position: absolute;
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        background: #ffd7d7;
+        border-radius: 100%;
+        }
+        .star:nth-child(1)::before {
+        top: -1.5rem;
+        left: -1.5rem;
+        }
+        .star:nth-child(1)::after {
+        top: -1.5rem;
+        left: 1.5rem;
+        }
+        .star:nth-child(2)::before {
+        top: 1.5rem;
+        left: -1.5rem;
+        }
+        .star:nth-child(2)::after {
+        top: 1.5rem;
+        left: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="heart">
+          <div class="shape">
+            <span>
+              <h1 class="message">Luv 2 Code</h1>
+            </span>
+          </div>
+          <div class="shape"></div>
+          <div class="shape"></div>
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+    </div>
+      <script src="../js/TweenMax.min.js"></script>
+      <script>
+        let tl = new TimelineMax();
+
+        tl.set("#container", {rotation: -5})
+          .to("#container", 1, {
+            rotation: 15, 
+            repeat: -1,
+            yoyo: true,
+            ease: Power1.easeInOut
+        })
+        TweenMax.to(".stars", .5, {
+          scaleX: 0, 
+          scaleY: 0,
+          opacity: 0.5,
+          yoyo: true,
+          repeat: -1,
+          ease: Power1.easeInOut
+        })
+      </script>
+</body>
+</html>

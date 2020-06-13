@@ -1,0 +1,36 @@
+
+
+/* layout */
+#contents {}
+#section1 {height: 3000px; background-image: linear-gradient(to top, #7f85b4, #d5939c);} /* height는 가상으로 잡아준 것 */
+#section2 {height: 3000px; background-image: linear-gradient(to top, #f1bfc2, #7f85b4);} /* 먼저 쓴 컬러가 밑으로 감 */
+#section3 {height: 3000px; background: #777;}
+#section4 {height: 3000px; background: #666;}
+#section5 {height: 3000px; background: #555;}
+#section6 {height: 3000px; background: #444;}
+
+/* scroll */
+.scroll {position: fixed; top: 20px; left: 20px; z-index: 100000;}
+.scroll span {display: inline-block; width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white; opacity: 1;}
+
+/* logo */
+.sec1 .logo {width:538px; height:448px;}
+
+/* sec1 */
+.sec1 .logo{position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); width:500px; }
+.sec1 .man {position: fixed; left:50%; top: 150%; transform:translate(-50%, -50%); z-index:96;}
+.sec1 .man img {}
+.sec1 .bg{position:fixed; top:150%; z-index:95; width:100%;}
+
+.sec1 .flower{position:fixed; left:0; top:150%; z-index:100; perspective:100px; width:100%;}
+.sec1 .flower .left1{position:absolute; top:0;}
+.sec1 .flower .left2{position:absolute; top:300px; z-index:101;}
+.sec1 .flower .left3{position:absolute; top:900px; z-index:102;}
+.sec1 .flower .right1{position:absolute; right:0; top:0; }
+.sec1 .flower .right2{position:absolute; right:-5%; top:300px; z-index:101;}
+.sec1 .flower .right3{position:absolute; right:0; top:900px; z-index:102;}
+.sec1 .flower .img2{position:relative; top:0; z-index:103; width:100%; opacity:0; transition-duration:.3s;}
+
+
+
+

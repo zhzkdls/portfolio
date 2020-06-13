@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Animation</title>
+    <style>
+        html {overflow: hidden;}
+        body {
+        height: 100vh;
+        background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        }
+
+        .circle_wrap {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .circle {
+        position:relative;
+        width: 100px; height: 100px; 
+        /* background: #fff; */
+        animation: rotate 1s linear infinite;
+        }
+
+        .circle::before {
+        content:''; 
+        width: 40px; height: 40px;
+        background: rgba(241,196,15,0.5);
+        border-radius: 50%;
+        position: absolute; top: 0; left: 0;
+        box-shadow: 60px 60px 0 rgba(241,196,15,0.5);
+        animation: center 2s ease-in-out infinite;
+        
+        }
+
+        .circle::after {
+        content:'';
+        width: 40px; height: 40px;
+        background: rgba(231,76,15,0.5);
+        border-radius: 50%;
+        position: absolute; top: 0; left: calc(100% - 40px);
+        box-shadow: -60px 60px 0 rgba(231,76,15,0.5);
+        animation: center 2s ease-in-out infinite;
+        mix-blend-mode: overlay;
+        }
+
+        @keyframes rotate {
+        0% {transform: rotate(0deg)}
+        100% {transform: rotate(360deg)}
+        }
+        @keyframes center {
+        50% {
+            top: calc(50% - 20px);
+            left: calc(50% - 20px);
+            box-shadow: 0 0 0 rgba(241,196,15,0.5);
+            background-color: rgba(231,76,15,0.5);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle_wrap">
+        <div class="circle"></div>
+      </div>
+</body>
+</html>

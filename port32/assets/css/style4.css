@@ -1,0 +1,322 @@
+/* layout */
+#contents {}
+#section1 {height: 3000px; background-image: linear-gradient(to top, #9298c4, #d5939c);}
+#section2 {height: 3000px; background-image: linear-gradient(to top, #b19aca, #9298c4);}
+#section3 {height: 3000px; background-image: linear-gradient(to top, #f1bfc2, #f1bfc2, #b19aca);}
+#section4 {height: 3000px; background-image: linear-gradient(to top, #ffdecf, #f1bfc2);}
+#section5 {height: 3000px; background-image: linear-gradient(to top, #fff8ea, #ffecd7, #ffdecf);}
+#section6 {height: 4300px; background-image: linear-gradient(to top, #d9ced5, #fff8ea);}
+#section7 {height: 2000px; background-image: linear-gradient(to top, #ffcfc5, #ffcfc5);}
+#section8 {height: 1000px; background-image: linear-gradient(to top, #fff3ea, #ffcfc5 90%);}
+/* scroll */
+.scroll {position: fixed; top: 20px; left: 20px; z-index: 100000;}
+.scroll span {display: inline-block; width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white; opacity: 1;}
+
+/* bgm */
+.bgm {position:fixed; top:20px; left:50px; z-index:1000000;}
+.bgm img {width:30px; opacity:0.5;}
+
+/* sec1 */
+.sec1 {position:relative;} 
+
+.sec1 .logo {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); opacity:1;}
+.sec1 .logo img {width:500px;}
+
+/* sec2 */
+.sec2 {position:relative;}
+.sec2 .men {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); z-index:11;}
+.sec2 .men img {width:320px;}
+
+.sec2 .bg {position:fixed; left:0; top:150%; width:100%; height:500px; z-index:10;}
+.sec2 .leafL1 {position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:21;}
+.sec2 .leafL1 img {width:600px;}
+
+.sec2 .leafL2 {position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:31;}
+.sec2 .leafL2 img {width:500px;}
+
+.sec2 .leafL3 {position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:41;}
+.sec2 .leafL3 img {width:400px;}
+
+.sec2 .leafR1 {position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:21;}
+.sec2 .leafR1 img {width:600px;}
+
+.sec2 .leafR2 {position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:31;}
+.sec2 .leafR2 img {width:500px;}
+
+.sec2 .leafR3 {position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:41;}
+.sec2 .leafR3 img {width:400px;}
+
+.sec2 .flowerL1 {position:fixed; left:5%; top:65%; transform:translateY(-50%); z-index:25;}
+.sec2 .flowerL1 img {width:400px;}
+
+.sec2 .flowerL2 {position:fixed; left:5%; top:85%; transform:translateY(-50%); z-index:51;}
+.sec2 .flowerL2 img {width:300px;}
+
+.sec2 .flowerR1 {position:fixed; right:5%; top:65%; transform:translateY(-50%); z-index:25;}
+.sec2 .flowerR1 img {width:400px;}
+
+.sec2 .flowerR2 {position:fixed; right:5%; top:85%; transform:translateY(-50%); z-index:51;}
+.sec2 .flowerR2 img {width:400px;}
+
+.sec2 .cloudL {position:fixed; left:5%; top:0%; }
+.sec2 .cloudL img {width:450px;}
+
+.sec2 .cloudC {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%);}
+.sec2 .cloudC img {width:800px;}
+
+.sec2 .cloudR {position:fixed; right:5%; top:0%;}
+.sec2 .cloudR img {width:300px;}
+
+/* sec3 */
+.sec3 {position:relative;}
+
+.sec3 .cloudG1 {position:fixed; left:60%; top:15%; transform:translate(-50%, -50%); z-index:61;} 
+.sec3 .cloudG1 img {width:200px;}
+
+.sec3 .cloudG2 {position:fixed; left:30%; top:30%; transform:translate(-50%, -50%); z-index:61;}
+.sec3 .cloudG2 img {width:260px;}
+
+.sec3 .cloudG3 {position:fixed; left:70%; top:50%; transform:translate(-50%, -50%); z-index:61;}
+.sec3 .cloudG3 img {width:300px;}
+
+.sec3 .cloudG4 {position:fixed; left:25%; top:75%; transform:translate(-50%, -50%); z-index:61;}
+.sec3 .cloudG4 img {width:350px;}
+
+/* 배경 greeting 구름 */
+.sec3 .cloudG5 {position:fixed; left:50%; top:150%; transform:translate(-50%, -50%);}
+.sec3 .cloudG5 img {width:1500px;}
+
+.sec3 .cloudG6 {position:fixed; left:90%; top:90%; transform:translate(-50%, -50%);}
+.sec3 .cloudG6 img {width:200px;}
+
+.sec3 .cloudG7 {position:fixed; left:45%; top:120%; transform:translate(-50%, -50%);}
+.sec3 .cloudG7 img {width:1100px;}
+
+.sec3 .greetings {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); font-size:32px; color:#3b4166; text-align:center; white-space:nowrap;}
+.sec3 .greetings span.doubleL img {position:absolute; left:-5%; width:30px;}
+.sec3 .greetings span.doubleR img {position:absolute; right:-5%; width:30px;}
+.sec3 .greetings em {display:inline-block; padding:0 5px; font-size:42px; font-weight:800; color:#5e68aa; animation: shake .6s infinite alternate; transform-origin:50% 100%;}
+@keyframes shake {0% {transform:rotateZ(5deg);}  100% {transform:rotateZ(-5deg);}}
+
+
+/* sec4 */
+.sec4{position:relative;}
+.sec4 .cloudS1 {position:fixed; left:20%; top:5%;} /*10 left 값 먹임 나머지 동일 */
+.sec4 .cloudS1 img {width:600px;}
+
+.sec4 .cloudS2 {position:fixed; left:25%; top:30%; transform:translateY(-50%);} /*20 left 값 먹임*/
+.sec4 .cloudS2 img {width:250px;}
+
+.sec4 .cloudS3 {position:fixed; right:15%; top:23%; transform:translateY(-50%);}
+.sec4 .cloudS3 img {width:700px;}
+
+.sec4 .cloudS4 {position:fixed; right:35%; top:48%; transform:translateY(-50%);} /*20 값 먹임*/
+.sec4 .cloudS4 img {width:200px;}
+
+/* sec4_다음 구름 */
+.sec4 .cloudS5 {position:fixed; left:130%; top:10%;}
+.sec4 .cloudS5 img {width:600px;}
+
+.sec4 .cloudS6 {position:fixed; left:120%; top:38%; transform:translateY(-50%);}
+.sec4 .cloudS6 img {width:250px;}
+
+.sec4 .cloudS7 {position:fixed; left:180%; top:35%; transform:translateY(-50%);}
+.sec4 .cloudS7 img {width:700px;}
+
+.sec4 .cloudS8 {position:fixed; left:450%; top:25%; transform:translateY(-50%);}
+.sec4 .cloudS8 img {width:800px;}
+
+.sec4 .car {position:fixed; left:-10%; top:75%; transform:translateY(-50%); z-index:61; animation: pumping .4s linear infinite alternate;}
+.sec4 .car img {width:800px;}
+@keyframes pumping {0% {top:74%;} 50% {top:74%;} 100% {top:75%;}}
+
+.sec4 .sec4_bg { position:fixed; left:0%; top:120%; transform:translateY(-50%); z-index:85;}
+.sec4 .sec4_bg img {width:100vw;}
+
+.sec4 .skills {position:fixed; left:150%; top:58%; transform:translate(-50%, -50%);}
+.sec4 .skills ul {position:relative; width:100vw; height:500px;}
+.sec4 .skills ul li {display:inline-block;}
+.sec4 .skills ul li.skill_1 {position:absolute; left:15%; bottom:0%;}
+.sec4 .skills ul li.skill_2 {position:absolute; left:30%; bottom:0%;}
+.sec4 .skills ul li.skill_3 {position:absolute; left:50%; bottom:0%;}
+.sec4 .skills ul li.skill_4 {position:absolute; left:70%; bottom:0%;}
+.sec4 .skills ul li.skill_5 {position:absolute; left:90%; bottom:0%;}
+.sec4 .skills ul li.skill_6 {position:absolute; left:110%; bottom:0%;}
+
+.sec4 .skills ul li h3.skill_title {margin-bottom:15px; font-size:37px; color:#535a84;  background:url(../img/pickhand.png) no-repeat center right; background-size:50px; animation: pick .5s linear infinite alternate;}
+@keyframes pick {0%{background-position:center right 10px;} 100%{background-position: center right 0px;}}
+.sec4 .skills ul li h3.skill_title em {font-weight:800; color:#3b4166;}
+
+.sec4 .skills ul li h3.skillLevel {font-family:'Montserrat', sans-serif; font-size:33px; font-weight:500; color:#7f85a8;}
+.sec4 .skills ul li h3.skillLevel .tag {font-size:15px; font-weight:300; color:#9699aa; line-height:12px;}
+.sec4 .skills ul li h3.skillLevel .point {position:relative; margin-top:-5px; font-family:'Dosis', sans-serif; font-size:80px; font-weight:200; color:#3b4166;}
+.sec4 .skills ul li h3.skillLevel .point::after {position:absolute; top:50%; transform:translateY(-50%); z-index:71; content:""; margin-left:50px; width:100px; height:100px; border-radius:50%; background-color:rgba(255,255,255,0.2);}
+.sec4 .skills ul li h3.skillLevel .point .number {position:relative; z-index:75;}
+.sec4 .skills ul li h3.skillLevel .point .number::after {position:absolute; top:0; content:"%";}
+
+/* sec5 */
+.sec5 {position:relative;}
+
+.sec5 .balloon_bg1 {position:fixed; left:50%; top:0; transform:translateX(-50%);}
+.sec5 .balloon_bg1 img {width:950px;} /* 풍선-top */
+
+.sec5 .balloon_bg2 {position:fixed; left:10%; top:35%;}
+.sec5 .balloon_bg2 img {width:700px;} /* 풍선-left */
+
+.sec5 .balloon_bg3 {position:fixed; left:70%; top:105%; transform:translate(-50%, -50%);}
+.sec5 .balloon_bg3 img{width:700px;} /* 풍선-right */
+
+.sec5 .balloon_bg4 {position:fixed; left:50%; top:120%; transform:translate(-50%, -50%);}
+.sec5 .balloon_bg4 img {width:900px;} /* 풍선-bottom */
+
+.sec5 .balloon {position:fixed; left:90%; top:30%; transform:translateX(-50%); z-index:81; animation: shake1 2s ease-in-out infinite alternate; transform-origin:90% 120%; transform:scale(1);}
+.sec5 .balloon img {width:300px;}
+@keyframes shake1 {0% {transform:rotateZ(5deg);}  100% {transform:rotateZ(-5deg);}}
+
+.sec5 .balloon1 {position:fixed; right:80%; top:70%; transform:translateX(50%); z-index:85;}
+.sec5 .balloon1 img {width:350px;}
+
+.sec5 .balloon2 {position:fixed; right:10%; top:70%; z-index:85;}
+.sec5 .balloon2 img {width:220px;}
+
+.sec5 .balloon3 {position:fixed; right:50%; top:65%; transform:translateX(50%);}
+.sec5 .balloon3 img {width:200px;}
+
+.sec5 .sec5_text1 {position:fixed; left:30%; top:50%; transform:translate(-50%, -50%); z-index:85; font-size:22px; line-height:45px; color:#3b4166;}
+.sec5 .sec5_text1 em {font-size:28px; font-weight:800; color:#5e68aa;}
+.sec5 .sec5_text1 em:hover {position:relative;}
+
+/***  사진 넣을 예정  ****/
+.sec5 .sec5_text1 em:hover::after{display:block; position:absolute; left:5%; top:50px; content:"마우스오버 - 사진 넣을 예정"; width:250px; height:50px; font-size:18px; text-align:center; line-height:50px; background:thistle;}
+.sec5 .sec5_text1 span.double_L img {position:absolute; left:-17%; top:0; width:20px;}
+.sec5 .sec5_text1 span.double_R img {position:absolute; right:-12%; top:0; width:20px;}
+
+.sec5 .sec5_text2 {position:fixed; right:10%; top:50%; transform:translate(-50%, -50%); text-align:right; font-size:22px; line-height:45px; color:#3b4166;}
+.sec5 .sec5_text2 em {font-size:28px; font-weight:800; color:#5e68aa;}
+.sec5 .sec5_text2 span.double_L img {position:absolute; left:-20%; top:0; width:20px;}
+.sec5 .sec5_text2 span.double_R img {position:absolute; right:-20%; top:0; width:20px;}
+
+.sec5 .sec5_text3 {position:fixed; left:50%; top:150%; transform:translate(-50%, -50%); z-index:85; text-align:center; font-size:22px; line-height:45px; color:#3b4166;}
+.sec5 .sec5_text3 em {font-size:28px; font-weight:800; color:#5e68aa;}
+.sec5 .sec5_text3 span.double_L img {position:absolute; left:-10%; top:0; width:20px;}
+.sec5 .sec5_text3 span.double_R img {position:absolute; right:-10%; top:0; width:20px;}
+
+.sec5 .sec5_bg {position:fixed; left:0; top:65%; z-index:85;}
+.sec5 .sec5_bg img {width:100vw;}
+
+/* sec6 */
+.sec6 {position:relative;}
+.sec6 .starL1 {position:fixed; left:23%; top:-5%; animation: star1 1.5s 1 alternate;}
+.sec6 .starL1 img {width:200px;}
+@keyframes star1 {from,60%,75%,90%,to {animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0% {opacity: 0; transform: translate3d(0, -3000px, 0);} 60% {opacity: 1; transform: translate3d(0, 25px, 0);} 75% {transform: translate3d(0, -10px, 0);} 90% {transform: translate3d(0, 5px, 0);} to {transform: translate3d(0, 0, 0);}}
+
+.sec6 .starL2 {position:fixed; left:20%; top:-5%; animation: star2 1.5s 1 alternate;}
+.sec6 .starL2 img {width:300px;}
+@keyframes star2 {from,65%,80%,95%,to {animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);}
+    0% {opacity: 0; transform: translate3d(0, -3000px, 0);} 55% {opacity: 1; transform: translate3d(0, 25px, 0);} 70% {transform: translate3d(0, -10px, 0);} 85% {transform: translate3d(0, 5px, 0);} to {transform: translate3d(0, 0, 0);}}
+
+.sec6 .starR1 {position:fixed; right:24%; top:-5%; animation: star1 1.5s 1 alternate;}
+.sec6 .starR1 img {width:200px;}
+
+.sec6 .starR2 {position:fixed; right:21%; top:-5%; animation: star2 1.5s 1 alternate;}
+.sec6 .starR2 img {width:300px;}
+
+.sec6 .snow_bg {position:fixed; left:0; top:85%;}
+.sec6 .snow_bg img{width:100vw;}
+
+.sec6 .star_title {position:fixed; left:52%; top:63%; transform:translateX(-50%) translateY(-50%) perspective(600px) ; transform-style: preserve-3d;}
+.sec6 .star_title img {width:350px;}
+.sec6 .star_title span {position:absolute; left:42%; top:24%; transform:translate(-50%, -50%); font-family:'Prompt', sans-serif; font-weight:700; font-size:18px; color:#333858; letter-spacing:1px; text-align:center;}
+
+.sec6 .knoll {position:fixed; left:0; top:30%; transform:translate3d(0,200px,0) scale(10);}
+.sec6 .knoll img{width:100vw;}
+
+/* sec7 */
+.sec7 {position:relative;}
+.sec7 .sec7_starL {position:fixed; left:15%; top:20%; transform:translateY(-50%);}
+.sec7 .sec7_starL:hover{}
+.sec7 .sec7_starL img{width:70px;}
+
+.sec7 .sec7_starR {position:fixed; right:7%; top:70%; transform:translateY(-50%);}
+.sec7 .sec7_starR img{width:250px;}
+
+.sec7 .portfolio {position:fixed; left:50%; top:50%; width:100%; height:100vh; transform:translate(-50%, -50%);}
+/* left랑 top값 50% 줘야 하는게 맞는지; 불투명 딤 화면 때문에 100 뷰포트들 줌.. */
+
+.sec7 .portfolio > ul {position:absolute; left:54%; top:45%;  transform:translate(-50%, -50%); width:65%; /*border:1px solid blue;*/}
+.sec7 .portfolio > ul > li {float:left; padding:20px 40px; width:50%; /*border:1px solid orange;*/ box-sizing:border-box;}
+.sec7 .portfolio > ul > li a span{font-family:'Montserrat', sans-serif; font-weight:900; font-size:25px; color:#7f85a8; letter-spacing:1px; text-transform:uppercase;}
+.sec7 .portfolio > ul > li a span em {margin-left:30px; }
+.sec7 .portfolio > ul > li a p {margin-left:73px; margin-top:15px; font-size:15px; color:#7f85a8;} /* 간격 어떻게 할지 구조등 다시 생각해보기 */
+.sec7 .portfolio > ul > li a:hover span,
+.sec7 .portfolio > ul > li a:hover p{color:#474d74;}
+
+.sec7 .portfolio > ul > li ul {margin-left:73px;}
+.sec7 .portfolio > ul > li ul li {display:inline-block; position:relative; margin-right:15px; font-size:14px; color:#7f85a8;}
+.sec7 .portfolio > ul > li ul li::after {position:absolute; right:-10px; top:3px; content:""; width:1px; height:13px; background-color:#7f85a8;}
+.sec7 .portfolio > ul > li ul li:last-child::after{width:0;}
+
+.sec7 .portfolio > ul > li:nth-of-type(1) p {margin-left:67px;}
+.sec7 .portfolio > ul > li:nth-of-type(1) ul {margin-left:67px;}
+
+.sec7 #boxes {}
+.sec7 #boxes #mask {display:none; position:absolute; left:0; top:0; z-index:90; background-color:rgba(0,0,0,0.5); }
+.sec7 #boxes .window {display:none; position:absolute; left:0; top:0; z-index:100; width:1200px; height:500px; padding:20px; background-color:#fff; border-radius:5px;}
+.sec7 #boxes #dialog1 {}
+.sec7 #boxes #dialog2 {}
+.sec7 #boxes #dialog3 {}
+.sec7 #boxes #dialog4 {}
+.sec7 #boxes #dialog5 {overflow:auto;}
+.sec7 #boxes #dialog6 {}
+
+/* sec8 */
+.sec8 {position:relative;} 
+.sec8 .contact {position:fixed; left:24%; top:22%; z-index:91; animation: swingC 3s ease-in-out infinite alternate; transform-origin:center; cursor:pointer;}
+.sec8 .contact img {width:500px;}
+@keyframes swingC {20% {transform: rotate3d(0, 0, 1, 3deg);} 40% {transform: rotate3d(0, 0, 1, -3deg);} 60% {transform: rotate3d(0, 0, 1, 2deg);} 80% {transform: rotate3d(0, 0, 1, -2deg);} to {transform: rotate3d(0, 0, 1, 0deg);}}
+
+/* 폼 구성인데.. 넣을 자리가 애매해서 뻈습니다.
+.sec8 .con_box {position:relative; left:70%; top:15%; transform:translate(-50%, -50%); width:400px; height:400px; background:rgba(255,255,255,0.8); box-shadow:20px 2px 20px rgba(255,180,173,0.5); border-radius:50%;}
+.sec8 .con_box p {position:absolute; left:50%; top:63px; transform:translateX(-50%); font-size:15px; color:#545b83; text-align:center; white-space:nowrap; line-height:25px;}
+
+.sec8 .con_box form {position:absolute; left:50%; top:58%; z-index:100; transform:translate(-50%, -50%);}
+.sec8 .con_box input {display:block; margin-bottom:3px; padding:0 10px; width:200px; height:30px; font-size:13px; color:#545b83; border:1px solid #e0e0e0; border-radius:3px;}
+.sec8 .con_box input::placeholder{color:#7f85a8;}
+.sec8 .con_box input.email{margin-bottom:10px;}
+
+.sec8 .con_box textarea {overflow:auto; padding:10px; width:200px; height:80px; font-size:13px; color:#545b83; resize: none; border:1px solid #e0e0e0; border-radius:3px;}
+.sec8 .con_box textarea::placeholder{color:#7f85a8;}
+
+.sec8 .con_box .close {position:absolute; left:50%; top:40px; transform:translateX(-50%);}
+.sec8 .con_box .close span {display:block; position:relative; width:20px; height:3px; background:#7f85a8; border-radius:5px; transform:rotate(45deg);}
+.sec8 .con_box .close span::after{display:block; content:""; position:absolute; left:0px; width:20px; height:3px; background:#7f85a8; border-radius:5px; transform:rotate(-90deg);}
+*/
+
+.sec8 .con_info {position:fixed; left:50%; top:50%; z-index:95;}
+.sec8 .con_info .con_star {position:absolute; right:-15%; top:45%; z-index:91; transform:translateY(-50%);}
+.sec8 .con_info .con_star img{width:70px;}
+.sec8 .con_info p {margin-bottom:3px; position:relative; z-index:95; font-family:'Montserrat', sans-serif; font-weight:500; color:#7f85a8; font-size:20px;}
+.sec8 .con_info p:nth-of-type(2) {margin-bottom:19px;}
+.sec8 .con_info p span {margin-right:50px; font-weight:600;}
+.sec8 .con_info p a {color:#7f85a8; transition-duration:.3s;}
+.sec8 .con_info p a:hover {color:#474d74;}
+
+.sec8 .con_info .sns {}
+.sec8 .con_info .sns ul {}
+.sec8 .con_info .sns ul li {display:inline-block; margin-right:20px;}
+.sec8 .con_info .sns ul li a {color:#7f85a8; font-size:22px; transition-duration:.5s;}
+.sec8 .con_info .sns ul li a:hover {color:#474d74;}
+
+.sec8 .con_knoll {position:fixed; left:0; bottom:-5%; z-index:81;}
+.sec8 .con_knoll img{width:100vw;}
+
+
+
+
+
+
+
+
+
+

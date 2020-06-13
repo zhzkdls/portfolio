@@ -1,0 +1,21 @@
+/* layout */
+#contents {}
+
+#section2 {height: 100vh; background-color: #5b8794;}
+
+/* container */
+.container {}
+
+
+/* sec2*/
+.sec2 {}
+.sec2 .ca {width: 500px; padding: 10%;}
+
+
+/* sec3*/
+.sec3 {}
+.sec3 .ca {width: 500px; padding: 10%;}
+
+/* sec3*/
+.sec4 {}
+.sec4 .ca {width: 500px; padding: 10%;}

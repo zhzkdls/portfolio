@@ -1,0 +1,88 @@
+/* layout */
+body {
+    background: url(../img/background01.png) center center; 
+    background-attachment: fixed;
+    background-size: 300px;
+}
+#contents { }
+#section1 {height: 1500px;}
+#section2 {height: 3000px;}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* container */
+.container {width: 1400px; margin: 0 auto;}
+
+/* scroll */
+.scroll {
+    position: fixed; top: 20px; left: 20px; color: #000; z-index: 1000;
+    background: red;
+    width: 50px; height: 50px; border-radius: 50%; text-align: center;
+    line-height: 50px; color: #fff;
+    font-size: 16px; font-weight: bold;
+}
+
+/* sec1 */
+.sec1 {}
+.sec1 h1 {
+    position: fixed; left: 50%; top: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 6vw; line-height: 6.3vw;
+    font-family: 'Abril Fatface';
+    text-align: center;
+}
+.sec1 h1 span {display: block;}
+.sec1 h1 span:nth-of-type(1) {color: #564862;}
+.sec1 h1 span:nth-of-type(2) {color: #564862;}
+.sec1 h1 span:nth-of-type(3) {color: #486d88;}
+.sec1 h1 span:nth-of-type(4) {color: #b44561;}
+
+.deco .corner {position: fixed; }
+.deco .leftTop {left: 0; top: 0; width: 40vw;}
+.deco .leftBottom {left: 0; bottom: 0; width: 35vw;}
+.deco .rightTop {right: 0; top: 0; width: 40vw;}
+.deco .rightBottom {right: 0; bottom: 0; width: 35vw;}
+
+/* sec1 animation */
+.sec1 h1 span:nth-of-type(1) {opacity: 0; transform: translateY(20px); transition: all 0.4s 0.1s ease;}
+.sec1 h1 span:nth-of-type(2) {opacity: 0; transform: translateY(20px); transition: all 0.4s 0.4s ease;}
+.sec1 h1 span:nth-of-type(3) {opacity: 0; transform: translateY(20px); transition: all 0.4s 0.8s ease;}
+.sec1 h1 span:nth-of-type(4) {opacity: 0; transform: translateY(20px); transition: all 0.4s 1.2s ease;}
+
+#section1.show .sec1 h1 span:nth-of-type(1) {opacity: 1; transform: translateY(0);}
+#section1.show .sec1 h1 span:nth-of-type(2) {opacity: 2; transform: translateY(0);}
+#section1.show .sec1 h1 span:nth-of-type(3) {opacity: 3; transform: translateY(0);}
+#section1.show .sec1 h1 span:nth-of-type(4) {opacity: 4; transform: translateY(0);}
+
+
+/* sec2 */
+.sec2 {}
+.sec2 .clock {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.sec2 .finger {position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 10vw;}
+
+
+
+
+/* mediaquery */
+@media (max-width: 800px){
+    .sec1 h1 {font-size: 10vw; line-height: 10.3vw;}
+    .deco .leftTop {width: 50vw;}
+    .deco .leftBottom {width: 45vw;}
+    .deco .rightTop {width: 50vw;}
+    .deco .rightBottom {width: 45vw;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

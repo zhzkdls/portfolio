@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+body{
+    background:#fff;
+}
+#wrap {
+    width:100%;
+    font-family: 'Lato', sans-serif;
+    background: #2196f3 url(../img/bg.png) no-repeat center 0;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+#status {
+    width:100%;
+}
+#status .row {
+    padding:0 6px;
+    
+}
+#status .row .container {
+    width:100%; height:auto;
+}
+#status .row .container .status {
+    width:100%; height:22px;
+    padding-top:7px;
+    box-sizing:border-box;
+}
+#status .row .container .status img {
+    display:block; width:100%; height:100%;
+}
+
+#header {
+    width:100%; height:55px;
+}
+
+#header .row {
+    padding:0 15px;
+}
+#header .row .container {
+    width:100%; height:100%;
+    text-align:justify;
+    text-align-last:justify;
+}
+
+#header .row .container .btn_prev {
+    display:inline-block;
+    width:16px; height:16px; 
+    background:url(../img/arrow_left.png) no-repeat center 0;
+    background-size:100% 100%;
+}
+
+#header .row .container h2.title {
+    display:inline-block;
+    font-size:18px;
+    font-family: 'Lato', sans-serif;
+    font-weight:normal;
+    letter-spacing:1px;
+    color:#fff;
+    line-height:55px;
+}
+#header .row .container .btn_search {
+    display:inline-block;
+    width:19px; height:19px; 
+    background:url(../img/search.png) no-repeat center 0;
+    background-size:100% 100%;
+}
+#contents {
+    background-color: #fff;
+    width:100%; height:100%;
+}
+#contents .row {
+    padding:0 30px;
+    height:100%;
+}
+#contents .row .container {
+    width:100%; height:100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.swiper-container{
+    width:100%;
+    padding-top:28px;
+    background-color:pink;
+}
+.swiper-container .swiper-wrapper {
+
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+    width:100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide .thumb {
+    display:block;
+    width:300px; height:400px;
+}
+.swiper-wrapper .swiper-slide .thumb object {
+    display:block; width:100%; height:100%;
+    fill:#2196f3;
+}

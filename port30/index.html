@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="jungwoo roh">
+    <meta name="description" content="포트폴리오">
+    <meta name="keywords" content="포트폴리오, 웹퍼블리셔, 웹접근성, HTML5, 웹스5기">
+	<title>jung-woo roh</title>
+	
+	<!--CSS STYLE-->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+        </script>
+    <![endif]-->
+
+	
+</head>
+<body>
+	<div class="info">
+        <span class="scroll_top">0</span>
+    </div>
+    <!-- //info -->
+    
+    <nav id="nav">
+        <a href="#" class="ir_su btn_menu">open</a>
+        <div class="clear nav_menu">
+            <div class="menu_left">
+                <ul>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">works</a></li>
+                </ul>
+            </div>
+            <div class="menu_right">
+                <span class="menu_img">
+                    <img src="assets/img/mels_pink.png" alt="">
+                </span>
+                <a href="#" class="ir_su btn_close">close</a>
+            </div>
+        </div>
+    </nav>
+    <!-- //nav -->
+	<section id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <div class="sleft">
+                    <div class="sl_cont1"></div>
+                    <div class="sl_cont2"></div>
+                </div>
+                <div class="sright">
+                    <div class="sr_cont1"><h2>안녕하세요?<br/>웹퍼블리셔 노정우입니다.</h2></div>
+                    <div class="sr_cont2"><h2>자기소개 시작. 자기소개 시작. 자기소개 시작. 자기소개 시작. 자기소개 시작.자기소개 시작. 자기소개 시작. 자기소개 시작.</h2></div>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2">
+            <div class="sec_box1 skrollable skrollable-between" data-1000="right:-900px" data-4000="right:2200px;">CSS</div>
+            <div class="sec_box2 skrollable skrollable-between" data-2000="right:-900px" data-5000="right:2200px;">html</div>
+            <div class="sec_box3 skrollable skrollable-between" data-3000="right:-900px" data-6000="right:2200px;">jquery</div>         
+            <div class="sec_box4 skrollable skrollable-between" data-1000="bottom:100px;" data-6000="bottom:200px">SKILLS</div>         
+        </section>
+        <!--//section2-->
+
+		<section id="section3">
+            <div class="sec3">
+                <div class="w_left">
+                    <h3>웹사이트1</h3>
+                    <p class="desc">
+                       사이트 소개글은 최대 네줄까지! 사이트 소 사이트 소개글 사이트 소개글 사이트 소개글 사이트 소개글 사이트 소개글 사이트 소개글 사이트 소개글
+                    </p>
+                    <ul class="details">
+                        <li>viewport : PC</li>
+                        <li>IE support : IE10</li>
+                        <li>HTML &middot; CSS &middot; jquery</li>
+                    </ul>
+                    <a href="#" class="btn_go">Website View</a>
+                </div>
+                <div class="w_right">
+                    <div class="img_wrap">
+                        <span class="img1"><img src="assets/img/tst1.png" alt=""></span>
+                        <span class="img2"><img src="assets/img/tst2.png" alt=""></span>
+                        <span class="img3"><img src="assets/img/tst3.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+		</section>
+		<!-- //section3 -->
+		
+		<section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+        <section id="section7"></section><!-- //section7 -->
+    </section>
+    <!-- //contents -->
+	
+
+	<!-- script -->
+	<script src="assets/js/jquery.min_1.12.4.js"></script>
+	<script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="assets/js/skrollr.min.js"></script>
+	<script>
+		//skrollr
+		var s = skrollr.init({
+			edgeStrategy: 'set',
+			easing: 'linear'
+		});
+
+        //menu
+        $('.btn_menu').click(function(){
+            $('.nav_menu').show();
+        });
+        $('.btn_close').click(function(){
+            $('.nav_menu').hide();
+        });
+
+		//상단 비쥬얼
+	    $(window).scroll(function() {
+            var wScroll = parseInt($(this).scrollTop());
+            var cont = $("#contents > section");
+			
+			$(".scroll_top").text(wScroll);
+			
+			if(wScroll >= $(".sright .sr_cont2").offset().top){
+				$(".sleft .sl_cont1").addClass("show");
+			} else {
+				$(".sleft .sl_cont1").removeClass("show");
+			}
+		});
+	</script>
+</body>
+</html>

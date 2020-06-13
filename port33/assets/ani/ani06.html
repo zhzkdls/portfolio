@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Step Animation</title>
+    <style>
+        html {overflow: hidden;}
+        body {background: #b08eff;}
+
+        #animation {
+        width: 600px; height: 450px;
+        background-image: url(http://hsnym48.dothome.co.kr/animation/css/step.jpg);
+        position: absolute; left: 50%; top: 50%;
+        margin-left: -300px;
+        margin-top: -225px;
+        animation: ani 1s steps(24, start) infinite;
+        }
+        #animation.btnStart {animation-play-state: running;}
+        #animation.btnStop {animation-play-state: paused;}
+
+        @keyframes ani {
+        0% {background-position: 0 0;}
+        100% {background-position: -14400px 0;}
+        }
+        .btn {position: relative; z-index: 100;}
+        .btn a {background: #966bfc; color:#fff; padding:8px 20px 10px 20px;
+        display: inline-block; text-decoration: none; margin: 20px;
+        margin-right: 0; border-radius: 5px; text-transform: capitalize;}
+    </style>
+</head>
+<body>
+    <div id="animation"></div>
+
+    <div class="btn">
+    <a href="#c" class="btnStart">start</a>  
+    <a href="#c" class="btnStop">stop</a>
+    </div>
+    <!-- jQuery-->
+    <script src="../js/jquery.min_1.12.4.js"></script>
+    <script>
+        // 시작 버튼을 클릭했을 때
+        $(".btnStart").click(function(){
+        // alert("시작 버튼을 클릭했습니다.")
+        $("#animation").removeClass().addClass("btnStart");
+        });
+
+        // 정지 버튼을 클릭했을 때
+        $(".btnStop").click(function(){
+        // alert("정지 버튼을 클릭했습니다.")
+        $("#animation").removeClass().addClass("btnStop");
+        });
+    </script>
+
+</body>
+</html>

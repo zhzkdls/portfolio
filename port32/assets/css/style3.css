@@ -1,0 +1,193 @@
+/* layout */
+#contents {}
+#section1 {height: 3000px; background-image: linear-gradient(to top, #9298c4, #d5939c);}
+#section2 {height: 3000px; background-image: linear-gradient(to top, #b19aca, #9298c4);}
+#section3 {height: 3000px; background-image: linear-gradient(to top, #f1bfc2, #f1bfc2, #b19aca);}
+#section4 {height: 3000px; background-image: linear-gradient(to top, #ffdecf, #f1bfc2);}
+#section5 {height: 3000px; background-image: linear-gradient(to top, #fff8ea, #fff8ea, #ffdecf);}
+#section6 {height: 3000px; background: #fff8ea;}
+
+/* scroll */
+.scroll {position: fixed; top: 20px; left: 20px; z-index: 100000;}
+.scroll span {display: inline-block; width: 50px; height: 50px; background: rgba(0,0,0,0.7); text-align: center; line-height: 50px; color: white; opacity: 1;}
+
+/* sec1 */
+.sec1 {position:relative;} 
+
+.sec1 .logo {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); opacity:1;}
+.sec1 .logo img {width:500px;}
+
+/* sec2 */
+.sec2 {position:relative;}
+.sec2 .men {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); z-index:11;}
+.sec2 .men img {width:320px;}
+
+.sec2 .bg {position:fixed; left:0; top:150%; width:100%; height:500px; z-index:10;}
+.sec2 .leafL1 {position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:21;}
+.sec2 .leafL1 img {width:600px;}
+
+.sec2 .leafL2 {position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:31;}
+.sec2 .leafL2 img {width:500px;}
+
+.sec2 .leafL3 {position:fixed; left:0; top:50%; transform:translateY(-50%); z-index:41;}
+.sec2 .leafL3 img {width:400px;}
+
+.sec2 .leafR1 {position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:21;}
+.sec2 .leafR1 img {width:600px;}
+
+.sec2 .leafR2 {position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:31;}
+.sec2 .leafR2 img {width:500px;}
+
+.sec2 .leafR3 {position:fixed; right:0; top:50%; transform:translateY(-50%); z-index:41;}
+.sec2 .leafR3 img {width:400px;}
+
+.sec2 .flowerL1 {position:fixed; left:5%; top:65%; transform:translateY(-50%); z-index:25;}
+.sec2 .flowerL1 img {width:400px;}
+
+.sec2 .flowerL2 {position:fixed; left:5%; top:85%; transform:translateY(-50%); z-index:51;}
+.sec2 .flowerL2 img {width:300px;}
+
+.sec2 .flowerR1 {position:fixed; right:5%; top:65%; transform:translateY(-50%); z-index:25;}
+.sec2 .flowerR1 img {width:400px;}
+
+.sec2 .flowerR2 {position:fixed; right:5%; top:85%; transform:translateY(-50%); z-index:51;}
+.sec2 .flowerR2 img {width:400px;}
+
+.sec2 .cloudL {position:fixed; left:5%; top:0%; }
+.sec2 .cloudL img {width:450px;}
+
+.sec2 .cloudC {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%);}
+.sec2 .cloudC img {width:800px;}
+
+.sec2 .cloudR {position:fixed; right:5%; top:0%;}
+.sec2 .cloudR img {width:300px;}
+
+/* sec3 */
+.sec3 {position:relative;}
+
+.sec3 .cloudG1 {position:fixed; left:60%; top:15%; transform:translate(-50%, -50%);} 
+.sec3 .cloudG1 img {width:200px;}
+
+.sec3 .cloudG2 {position:fixed; left:30%; top:30%; transform:translate(-50%, -50%);}
+.sec3 .cloudG2 img {width:260px;}
+
+.sec3 .cloudG3 {position:fixed; left:70%; top:50%; transform:translate(-50%, -50%);}
+.sec3 .cloudG3 img {width:300px;}
+
+.sec3 .cloudG4 {position:fixed; left:25%; top:75%; transform:translate(-50%, -50%);}
+.sec3 .cloudG4 img {width:350px;}
+
+.sec3 .cloudG5 {position:fixed; left:75%; top:90%; transform:translate(-50%, -50%);}
+.sec3 .cloudG5 img {width:200px;}
+
+.sec3 .cloudG6 {position:fixed; left:40%; top:120%; transform:translate(-50%, -50%);}
+.sec3 .cloudG6 img {width:1100px;}
+
+.sec3 .greetings {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); font-size:32px; color:#3b4166; text-align:center; white-space:nowrap;}
+.sec3 .greetings span.doubleL img {position:absolute; left:-5%; width:30px;}
+.sec3 .greetings span.doubleR img {position:absolute; right:-5%; width:30px;}
+.sec3 .greetings em {display:inline-block; padding:0 5px; font-size:42px; font-weight:800; color:#5e68aa; animation: shake .6s infinite alternate; transform-origin:50% 100%;}
+@keyframes shake {0% {transform:rotateZ(5deg);}  100% {transform:rotateZ(-5deg);}}
+.sec3 .greetings .emoji{position:absolute; left:50%; bottom:-40%; transform:translateX(-50%); width:50px; background:../img/test.}
+
+
+/* sec4 */
+.sec4{position:relative;}
+.sec4 .cloudS1 {position:fixed; left:20%; top:5%;} /*10 left 값 먹임 나머지 동일 */
+.sec4 .cloudS1 img {width:600px;}
+
+.sec4 .cloudS2 {position:fixed; left:25%; top:30%; transform:translateY(-50%);} /*20 left 값 먹임*/
+.sec4 .cloudS2 img {width:250px;}
+
+.sec4 .cloudS3 {position:fixed; right:15%; top:23%; transform:translateY(-50%);}
+.sec4 .cloudS3 img {width:700px;}
+
+.sec4 .cloudS4 {position:fixed; right:35%; top:48%; transform:translateY(-50%);} /*20 값 먹임*/
+.sec4 .cloudS4 img {width:200px;}
+
+/* sec4_다음 구름 */
+.sec4 .cloudS5 {position:fixed; left:130%; top:10%;}
+.sec4 .cloudS5 img {width:600px;}
+
+.sec4 .cloudS6 {position:fixed; left:120%; top:38%; transform:translateY(-50%);}
+.sec4 .cloudS6 img {width:250px;}
+
+.sec4 .cloudS7 {position:fixed; left:180%; top:35%; transform:translateY(-50%);}
+.sec4 .cloudS7 img {width:700px;}
+
+.sec4 .cloudS8 {position:fixed; left:450%; top:25%; transform:translateY(-50%);}
+.sec4 .cloudS8 img {width:800px;}
+
+.sec4 .car {position:fixed; left:-10%; top:75%; transform:translateY(-50%); z-index:61; animation: pumping .4s linear infinite alternate;}
+.sec4 .car img {width:800px;}
+@keyframes pumping {0% {top:74%;} 50% {top:74%;} 100% {top:75%;}}
+
+.sec4 .sec4_bg { position:fixed; left:0%; top:120%; transform:translateY(-50%); z-index:85;} /* 85준 이유는 풍선숨기려고 */
+.sec4 .sec4_bg img {width:100vw;}
+
+.sec4 .skills {position:fixed; left:150%; top:58%; transform:translate(-50%, -50%);}
+.sec4 .skills ul {position:relative; width:100vw; height:500px; /*border:1px solid red;*/}
+.sec4 .skills ul li {display:inline-block;}
+.sec4 .skills ul li.skill_1 {position:absolute; left:10%; bottom:0%;}
+.sec4 .skills ul li.skill_2 {position:absolute; left:30%; bottom:0%;}
+.sec4 .skills ul li.skill_3 {position:absolute; left:50%; bottom:0%;}
+.sec4 .skills ul li.skill_4 {position:absolute; left:70%; bottom:0%;}
+.sec4 .skills ul li.skill_5 {position:absolute; left:90%; bottom:0%;}
+.sec4 .skills ul li.skill_6 {position:absolute; left:110%; bottom:0%;}
+
+.sec4 .skills ul li h3.skill_title {margin-bottom:15px; font-size:37px; color:#535a84;  background:url(../img/pickhand.png) no-repeat center right; background-size:50px; animation: pick .5s linear infinite alternate;}
+@keyframes pick {0%{background-position:center right 10px;} 100%{background-position: center right 0px;}}
+.sec4 .skills ul li h3.skill_title em {font-weight:800; color:#3b4166;}
+
+.sec4 .skills ul li h3.skillLevel {font-family:'Montserrat', sans-serif; font-size:33px; font-weight:500; color:#7f85a8;}
+.sec4 .skills ul li h3.skillLevel .tag {font-size:15px; font-weight:300; color:#9699aa; line-height:12px;}
+.sec4 .skills ul li h3.skillLevel .point {position:relative; margin-top:-5px; font-family:'Dosis', sans-serif; font-size:80px; font-weight:200; color:#3b4166;}
+.sec4 .skills ul li h3.skillLevel .point::after {position:absolute; top:50%; transform:translateY(-50%); z-index:71; content:""; margin-left:50px; width:100px; height:100px; border-radius:50%; background-color:rgba(255,255,255,0.2);}
+.sec4 .skills ul li h3.skillLevel .point .number {position:relative; z-index:75;}
+.sec4 .skills ul li h3.skillLevel .point .number::after {position:absolute; top:0; content:"%";}
+
+/* sec5 */
+.sec5 {position:relative;}
+
+.sec5 .balloon_bg1 {position:fixed; left:50%; top:0; transform:translateX(-50%);}
+.sec5 .balloon_bg1 img {width:850px;} /* 맨 위 */
+
+.sec5 .balloon_bg2 {position:fixed; left:10%; top:35%;}
+.sec5 .balloon_bg2 img {width:700px;} /* 왼 글 */
+
+.sec5 .balloon_bg3 {position:fixed; left:70%; top:105%; transform:translate(-50%, -50%);}
+.sec5 .balloon_bg3 img{width:700px;} /* 오 글 */
+
+.sec5 .balloon_bg4 {position:fixed; left:50%; top:120%; transform:translate(-50%, -50%);}
+.sec5 .balloon_bg4 img {width:900px;} /* 맨 아래 */
+
+.sec5 .balloon {position:fixed; left:90%; top:30%; transform:translateX(-50%); z-index:81; animation: shake1 2s ease-in-out infinite alternate; transform-origin:90% 120%;}
+.sec5 .balloon img {width:300px;}
+@keyframes shake1 {0% {transform:rotateZ(5deg);}  100% {transform:rotateZ(-5deg);}}
+
+.sec5 .balloon1 {position:fixed; right:80%; top:70%; transform:translateX(50%); z-index:85;}
+.sec5 .balloon1 img {width:350px;}
+
+.sec5 .balloon2 {position:fixed; right:10%; top:70%; z-index:85;}
+.sec5 .balloon2 img {width:220px;}
+
+.sec5 .balloon3 {position:fixed; right:50%; top:65%; transform:translateX(50%);}
+.sec5 .balloon3 img {width:200px;}
+
+.sec5 .sec5_text1 {position:fixed; left:30%; top:50%; transform:translate(-50%, -50%); z-index:85; font-size:25px; line-height:45px; color:#3b4166;}
+.sec5 .sec5_text1 span.double_L img {position:absolute; left:-20%; top:0; width:20px;}
+.sec5 .sec5_text1 span.double_R img {position:absolute; right:-15%; top:0; width:20px;}
+
+/* 위에 이모지때 애니메이션 쓰기 
+.sec5 .test{position:fixed; left:50%; top:50%; transition:0.3s; animation: pung .5s infinite alternate;}
+@keyframes pung {0% {transform: scale(0);} 20%{transform:scale(0.3);} 30%{transform:scale(1);} 40%{transform:scale(1); top:50%;} 60%{top:60%;} 70%{top:70%;} 80%{top:80%;} 90%{top:90%;} 100%{top:100%; opacity:0;}}*/
+
+
+
+
+
+
+
+
+
+

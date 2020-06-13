@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to the kym Portfolio</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+   
+    <div class="scroll"></div><!-- //scroll -->
+    
+    <div id="contents">
+        <section id="section1">
+            <div class="continer">
+                <div class="sec1">
+                    <h1 
+                        data-1000 = "transform: translate(-50%, -50%) scale(1)"
+                        data-1500 = "transform: translate(-50%, -50%) scale(0)"
+                    ><span>Welcome</span><span>to the</span><span>kym</span><span>Portfolio</span></h1>
+                </div>
+            </div>
+            <div class="deco">
+                <div class="corner leftTop"
+                    data-0 = "left: -50%; top: -50%;"
+                    data-500 = "left: 0%; top: 0%;"
+                    data-1500 = "left: 0%; top: 0%;"
+                    data-2000 = "left: -10%; top: -10%;"
+                ><img src="assets/img/topLeft.png" alt></div>
+                <div class="corner leftBottom"
+                    data-0 = "left: -50%; bottom: -50%;"
+                    data-500 = "left: 0%; bottom: 0%;"
+                    data-1500 = "left: 0%; bottom: 0%;"
+                    data-2000 = "left: -10%; bottom: -10%;"
+                ><img src="assets/img/bottomLeft.png" alt></div>
+                <div class="corner rightTop"
+                    data-0 = "right: -50%; top: -50%;"
+                    data-500 = "right: 0%; top: 0%;"
+                    data-1500 = "right: 0%; top: 0%;"
+                    data-2000 = "right: -10%; top: -10%;"
+                ><img src="assets/img/topRight.png" alt></div>
+                <div class="corner rightBottom"
+                    data-0 = "right: -50%; bottom: -50%;"
+                    data-500 = "right: 0%; bottom: 0%;"
+                    data-1500 = "right: 0%; bottom: 0%;"
+                    data-2000 = "right: -10%; bottom: -10%;"
+                ><img src="assets/img/bottomRight.png" alt></div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="container">
+                <div class="sec2">
+                    <div class="clock"
+                        data-1300 = "transform: translate(-50%, -50%) scale(0) rotate(180deg)"
+                        data-2300 = "transform: translate(-50%, -50%) scale(1) rotate(0deg)"
+                    ><img src="assets/img/clock.png" alt></div>
+                    <div class="finger"
+                        data-2000 = "transform: translate(-50%, -50%) scale(0) rotate(0deg)"
+                        data-2500 = "transform: translate(-50%, -50%) scale(1) rotate(0deg)"
+                        data-2800 = "transform: translate(-50%, -50%) scale(1) rotate(0deg)"
+                        data-3200 = "transform: translate(-50%, -50%) scale(1) rotate(50deg)"
+                    ><img src="assets/img/finger.png" alt></div>
+                </div>
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </div>
+    <!-- //contents -->
+    
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+         //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        function start(){
+            $("#section1").addClass("show");
+        }
+        setInterval(start, 2000)
+        
+        $(window).scroll(function () {
+            var wScroll = $(this).scrollTop();
+            $(".scroll ").text(wScroll);
+        });
+    </script>
+    
+</body>
+</html>

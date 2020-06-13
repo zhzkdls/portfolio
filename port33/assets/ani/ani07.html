@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Animation2</title>
+    <style>
+        html {overflow: hidden;}
+        body {
+        height: 100vh;
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(134,67,80,1) 100%);}
+
+        .loading {
+        /*   width: 20px;  height: 150px; background:#fff; */
+        position: absolute; left: 50%; top: 50%; margin-left:-10px; margin-top: -75px; 
+        animation: loading 1s cubic-bezier(.58,-0.8,.64,1.49) infinite;
+        }
+        .loading .circle1 { 
+        display: block; width: 20px; height: 20px; background: #fff; border-radius: 50%;
+        }
+
+        .loading .circle2 { 
+        display: block; width: 20px; height: 20px; background: #fff; border-radius: 50%; margin-top: 110px;
+        }
+
+        @keyframes loading{ 
+        0% {transform: rotate(0deg)}
+        100% {transform: rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <span class="circle1"></span>  
+        <span class="circle2"></span>
+    </div>
+</body>
+</html>

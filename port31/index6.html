@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="ChoiMinJing">
+    <meta name="description" content="포트폴리오">
+    <meta name="keywords" content="반응형사이트, 웹퍼블리셔, 웹접근성, HTML5, 포트폴리오, webs">
+    <title>민정 포트폴리오</title>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style6.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section id="contents">
+        <section id="section1">
+           <div class="welcome">
+                <div class="buttons">
+                    <button class="btn btn-primary btn-marquee">
+                    <span data-text="welcome">welcome</span>
+                    </button>
+                </div>
+            </div><!--//play-->
+            <div class="container">
+                <div class="sec1">
+                    <div class="move_wrap">
+                        <div class="leftText backImg1"><img src="assets/img/frontimg3.svg" alt></div>
+                        <div class="leftText choice_title">
+                            <div class="choice_text1"><p>Life is a choice, not a destiny.</p></div>
+                        </div>
+                        <div class="leftText centerImg"><img src="assets/img/centerimg.svg" alt></div>
+                        
+                        <div class="rightText circleImg1"><div class="circle"></div></div>
+                        <div class="rightText circleImg2"><div class="circle"></div></div>
+                        <div class="rightText circleImg3"><div class="circle"></div></div>
+                        <div class="rightText circleImg4"><div class="circle"></div></div>
+                        <div class="rightText circleImg5"><div class="circle"></div></div>
+                        
+                        
+                        <div class="port_title">
+                            <div class="port_text1"><span>portfolio</span></div>
+                            <div class="port_text2"><span>portfolio</span></div>
+                            <div class="port_text3"><span>portfolio</span></div>
+                        </div>
+                        <div class="port_mj">
+                            <div class="port_text4"><span>MINJUNG</span></div>
+                        </div>
+                        <div class="leftText port_center1"><span>portfolio</span></div>
+                        <div class="rightText port_center2"><span>portfolio</span></div>
+                        <div class="rightText frontImg1"><img src="assets/img/frontimg2.svg" alt></div>
+                        
+                    </div><!--move_wrap-->
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section2"></section><!-- //section2 -->
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </section>
+    <!-- //contents -->
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!--제이쿼리연결-->
+    <script>
+        var leftText = $(".leftText");
+        var rightText = $(".rightText");
+        var x = 0;
+        var y = 0;
+        var folloxX = 0;
+        var folloxY = 0;
+        var friction = 1/10;
+
+        function animate(){
+            x += (folloxX - x) * friction;
+            y += (folloxY - y) * friction;
+
+            leftText.css({'transform': 'translateX('+ -x +'%)'});
+            rightText.css({'transform': 'translateX('+ x +'%)'});
+            window.requestAnimationFrame(animate);
+        }
+
+        $(window).on('mousemove click',function(e){
+            var iMouseX = Math.max(-100, Math.min(100, $(window).width()/2 - e.clientX));
+            var iMouseY = Math.max(-100, Math.min(100, $(window).height()/2 - e.clientY));
+            folloxX = (12 * iMouseX) / 100;
+            folloxY = (12 * iMouseY) / 100;
+        });
+        
+        animate();
+    </script>
+    <!--마우스 스크립트-->
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- https://www.fatfatfatfestival.it/-->

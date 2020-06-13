@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+</head>
+<body>
+    <div class="scroll">
+        <span class="scroll_top">0</span>
+    </div>
+    <!-- //scroll -->
+   
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1">
+                <div class="logo"
+                    data-1800= "top: 50%";
+                    data-2400= "top: -50%";
+                ><img src="assets/img/logo1.svg" alt=""></div>
+                
+            </div>
+        </section>
+        <!-- //section1 -->
+        
+        <section id="section2">
+            <div class="sec2">
+                
+                <div class="bg"
+                    data-1300= "top: 150%";
+                    data-1900= "top: 75%";
+                ><img src="assets/img/sec2_bg.png" alt=""></div>
+                
+                <div class="man"
+                    data-1300= "top: 150%";
+                    data-1900= "top: 75%";
+                ><img src="assets/img/sec2_m.png" alt=""></div>
+                
+                <div class="leafL1" 
+                    data-1500= "top: 170%";
+                    data-2000= "top: 70%";>
+                    <img src="assets/img/sec1_l1.png" alt="">
+                </div>
+                <div class="leafL2" 
+                    data-1500= "top: 150%";
+                    data-2000= "top: 80%";>
+                    <img src="assets/img/sec1_l2.png" alt="">
+                </div>
+                <div class="flowerL1"
+                    data-2000= "opacity:0;"
+                    data-2500= "opacity:1;"
+                    >
+                    <img src="assets/img/sec2_fL1.png" alt="">
+                </div>
+                <div class="flowerL2"
+                    data-2000= "opacity:0;"
+                    data-2500= "opacity:1;"
+                    >
+                    <img src="assets/img/sec2_fL2.png" alt="">
+                </div>
+                
+                <div class="leafL3" 
+                    data-1500= "top[swing]: 130%";
+                    data-2000= "top[swing]: 100%";>
+                    <img src="assets/img/sec1_l3.png" alt="">
+                </div> 
+                
+                <div class="leafR1" 
+                    data-1500= "top[swing]: 170%";
+                    data-2000= "top[swing]: 70%";>
+                    <img src="assets/img/sec1_r1.png" alt="">
+                </div>
+                <div class="leafR2" 
+                    data-1500= "top[swing]: 150%";
+                    data-2000= "top[swing]: 80%";>
+                    <img src="assets/img/sec1_r2.png" alt="">
+                </div>
+                <div class="leafR3" 
+                    data-1500= "top[swing]: 130%";
+                    data-2000= "top[swing]: 100%";>
+                    <img src="assets/img/sec1_r3.png" alt="">
+                </div>
+                <div class="flowerR1"
+                    data-2000= "opacity:0;"
+                    data-2500= "opacity:1;"
+                    >
+                    <img src="assets/img/sec2_fR1.png" alt="">
+                </div>
+                <div class="flowerR2"
+                    data-2000= "opacity:0;"
+                    data-2500= "opacity:1;"
+                    >
+                    <img src="assets/img/sec2_fR2.png" alt="">
+                </div>
+                
+                
+            </div>
+        </section>
+        <!-- //section2 -->
+        
+        <section id="section3">
+            
+        </section>
+        <!-- //section3 -->
+        
+        <section id="section4">
+            
+        </section><!-- //section4 -->
+        
+        <section id="section5">
+            
+        </section>
+        <!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+        <section id="section7"></section><!-- //section7 -->
+    </div>
+    
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            
+            $(".scroll_top").text(wScroll);
+            
+        });
+    </script>
+</body>
+</html>

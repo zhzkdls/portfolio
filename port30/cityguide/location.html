@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="city guide">
+	<meta name="description" content="여행 사이트 입니다.">
+	<meta name="keywords" content="city guide">
+	<title>City Guide</title>
+    
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/location.css">
+
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico&display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="status">
+            <div class="row">
+                <div class="container">
+                    <div class="status">
+                        <img src="assets/img/status_bar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div><!--//status-->
+
+        <div id="header">
+            <div class="row">
+                <div class="container">
+                    <a href="#" class="btn_prev"></a>
+                    <h2 class="title">Location</h2>
+                    <a href="#" class="btn_search"></a>
+                </div>
+            </div>
+        </div><!--//header-->
+        <div id="contents">
+            <div class="row">
+                <div class="container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="thumb"><img src="assets/img/nyc.svg" alt="" ></span>
+                                <span class="city">New York City</span>
+                                <span class="desc">Located at the southern tip of the State of New York, the city is the center of the New York metropolitan area, one of the most populous urban agglomerations in the world.</span>
+                                <a href="" class="btn_choose"></a>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div><!--//swiper-container-->
+                </div><!--//container-->
+            </div><!--//row-->
+        </div><!--//contents-->
+
+    </div><!--//wrap-->
+
+    <script src="assets/js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //initialize swiper when document ready
+                var mySwiper = new Swiper ('.swiper-container', {
+                // Optional parameters
+                direction: 'vertical',
+                loop: true
+            })
+        });
+  </script>
+</body>
+</html>
