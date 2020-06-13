@@ -1,0 +1,151 @@
+/* layout */
+#contents {}
+#section1 {width: 100%; height: 100vh;}
+#section2 {background: #000; overflow: hidden;}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+
+/* container */
+.container {width: 1200px; margin: 0 auto;}
+
+/* scroll */
+.scroll {position: fixed; left: 20px; top: 20px; width: 50px; height: 50px; background: rgba(255,255,255,0.3); text-align: center; line-height: 50px; color: #fff; font-size: 12px;}
+
+/* sec1 */
+.sec1 {}
+.sec1 .about {
+    position: absolute; left: 50%; top: 50%; 
+    transform: translate(-50%, -50%); font-family: 'Kanit';
+    font-size: 12vw; line-height: .8;
+    font-weight: 500; text-align: center;
+}
+.sec1 .about span {display: block;}
+.sec1 .about span:nth-child(1) {padding-right: 10vw;}
+.sec1 .about span:nth-child(2) {padding-left: 24vw;}
+.sec1 .about span:nth-child(3) {padding-left: 10vw;}
+.sec1 .about span:nth-child(4) {padding-right: 5vw;}
+
+
+/* culture */
+.culture {} 
+.culture .header {}
+.culture .header h2 {margin-left: -5%; font-family: 'Montserrat'; font-weight: 600; color: #fff; font-size: 31vw; letter-spacing: -20px;}
+.culture .header .header_cont{}
+.culture .header .img1 {position: relative; width: 44vw; margin: -23% 0 0 50%;}
+.culture .header .img1 img {width: 100%; display: block;}
+.culture .header .text {margin: 145px 0 145px; padding: 0 calc((100% - 150px)/11*3 + 100px); white-space: nowrap;}
+.culture .header .text span {font-family: 'Heebo'; display: block; color: #fff; font-size: 9vw; line-height: 1; font-weight: 500; letter-spacing: -5px; box-sizing: border-box;}
+
+/* values */
+.values {}
+.values .culture_values {overflow: hidden; width: 100%;}
+.values .culture_values .culture_value {display: flex; justify-content: flex-start; color: #fff; margin-bottom: 8vw; padding-top: 2px;}
+.values .culture_values .culture_value .culture_value_item { font-family: 'Heebo'; color: #fff; width: calc((100% - 200px)/10*3 + 30px); margin: 0 0 0 calc((100% - 140px)/8*1.5);}
+.values .culture_values .culture_value .culture_value_item em {font-family: 'Gothic A1'; font-weight: 800; font-size: 8vw; letter-spacing: -1.5px; line-height: 1;}
+.values .culture_values .culture_value .culture_value_item h4 {font-size: 3.5vw; line-height: 1; font-weight: 500; letter-spacing: 0px; margin-top: 20px;}
+.values .culture_values .culture_value .culture_value_item p {font-size: 1.4vw; line-height: 1.3; margin-top: 25px; font-weight: 400;}
+
+.values .culture_values .culture_value:nth-child(2n) {justify-content: flex-end;}
+.values .culture_values .culture_value:nth-child(2n) .culture_value_item {margin-right: calc((100% - 140px)/8*2);}
+.values .culture_values .culture_value:nth-child(4) .culture_value_item span {font-size: 3.5vw; font-weight: 500; display: block; line-height: 1;}
+
+/* offices */
+.offices {color: #fff; margin-top: 100px;}
+.offices .office_tit {max-width: 2000px; display: flex; justify-content: center;}
+.offices .office_tit h2 {font-family: 'Heebo'; font-size: 9vw; white-space: normal; font-weight: 500; letter-spacing: -2px; max-width: calc((100% - 180px)/10*5 + 60px); padding-left: 7%; white-space: normal; line-height: 1;}
+.offices .office_contatiner {width: 100vw; height: 100vh; display: flex; flex-direction: column; align-content: center; justify-content: center;}
+.offices_cont1 {}
+.offices_cont1 .office {width: 5000px; font-family: 'Heebo'; display: flex; /*flex-direction: column; */}
+.offices_cont1 .office .offices_item {width: 100vw; display: flex; justify-content: center;  box-sizing: border-box; padding-bottom: 100px;}
+.offices_cont1 .office .offices_item .office_img {width: 35%; display: flex; align-content: flex-start; align-items: center; margin-left: -10%;}
+.offices_cont1 .office .offices_item .office_img div {width: 70%;}
+.offices_cont1 .office .offices_item .office_img img {width: 100%; display: block; }
+.offices_cont1 .office .offices_item .office_desc {display: flex; flex-direction: column; align-content: flex-start; justify-content: center; padding-left: 5%;}
+.offices_cont1 .office .offices_item .office_desc h3 {text-transform: uppercase; line-height: 1; font-size: 3vw; margin-bottom: 30px; font-weight: 700;}
+.offices_cont1 .office .offices_item .office_desc p {width: 295px; font-size: 1.3vw; font-weight: 400; line-height: 1.2;}
+.offices_cont1 .office .offices_item .office_desc a {display: block; width: 100%; color: #fff; margin-top: 60px; display: flex; opacity: .5;}
+.offices_cont1 .office .offices_item .office_desc a span {margin-right: 13%; font-weight: 500;}
+.offices_cont1 .office .offices_item .office_desc a address {width: 100%;}
+.offices_cont1 .office .offices_item .office_desc a address span {font-size: 1.3vw; display: block; line-height: 1.2; margin-right: 0; white-space: nowrap;}
+
+.offices_cont2 {display: block;}
+.offices_cont2 .line {position: relative; width: 1500px; height: 2px; margin-left: 50%; background: #fff; position: relative;}
+.offices_cont2 .line .line_points {position: absolute; display: flex; justify-content: space-between;}
+.offices_cont2 .line .line_points .point {}
+.offices_cont2 .line .line_points .point:before {
+	content: ''; display: block; position: absolute; left: 0; top: -15px; 
+	width: 30px; height: 30px; background-color: #000;
+	border: 1px solid #fff; border-radius: 50%;
+}
+
+.offices_cont3 .office_code {font-family: 'Heebo'; font-size: 1.2vw; width: 100%; text-align: center; margin-top: -2%; margin-left: 10px; position: relative; z-index: 1; font-weight: 500; opacity: .5;}
+.offices_cont3 .office_code span {}
+
+
+/* team */
+.team {font-family: 'Heebo'; color: #fff; margin-top: 80px;}
+.team .team_tit {text-transform: uppercase; margin-left: 66px; margin-bottom: 110px;}
+.team .team_tit span {display: block; font-size: 5.5vw; line-height: 1; font-weight: 500; letter-spacing: -2px;}
+
+.team .team_slider_wrap {}
+.team_slider {width: 100%; padding: 50px 0; display: flex; justify-content: space-around; align-items: center;}
+.team_slider .team_slider_item {width: 290px; height: auto; display: flex; flex-direction: column;}
+.team_slider .team_slider_item:nth-child(2) {width: 213px;}
+.team_slider .team_slider_item:nth-child(3) {width: 314px;}
+.team_slider .team_slider_item:nth-child(4) {width: 253px;}
+.team_slider .team_slider_item a {display: block; width: 100%; height: 100%; color: #fff; font-family: 'Heebo';}
+.team_slider .team_slider_item a .slider_img {width: 100%;}
+.team_slider .team_slider_item a .slider_img img {width: 100%;}
+.team_slider .team_slider_item a .slider_name {margin-top: 15px;}
+.team_slider .team_slider_item a .slider_name p {display: block; font-size: 16px; font-weight: 500; letter-spacing: 0px;}
+
+.slider_nav {width: 100%; height: 60px; margin-top: 50px;}
+.slider_nav .slider_nav_controls {font-family: 'Heebo'; display: flex; justify-content: flex-end;  margin-right: 30px;}
+.slider_nav .slider_nav_controls p {font-size: 14px; text-align: right; line-height: 1.2; font-weight: 500; margin-right: 5%;}
+.slider_nav .slider_nav_controls p span{display: block; }
+.slider_nav .slider_nav_controls button {background: none; color: #fff; padding: 0 28px;}
+.slider_nav .slider_nav_controls button span {display: block; width: 20px; font-weight: 500;}
+
+/* culture_video */ 
+.culture_video {}
+.culture_video .video_wrap {margin: 80px 0; padding: 0 calc((100% - 180px)/10*1/2);}
+.culture_video .video_wrap video {width: 100%;}
+
+/* culture_nutshell */
+.culture_nutshell {margin-top: 10vw; margin-bottom: 20vw;}
+.culture_nutshell .nutshell_tit {font-family: 'Heebo'; color: #fff; margin-left: calc((100% - 300px)/16*4 + 60px);}
+.culture_nutshell .nutshell_tit span {display: block; font-size: 9vw; font-weight: 500; line-height: 1; letter-spacing: -3px;}
+
+.culture_nutshell .nutshell_cont {color: #fff; margin-top: 10vw; margin-left: calc((100% - 300px)/16*3 + 40px); max-width: calc((100% - 300px)/16*10 + 180px);}
+.culture_nutshell .nutshell_cont p {font-family: 'Heebo'; text-transform: uppercase; margin-bottom: 3em; line-height: 1.2; font-size: 2vw; font-weight: 400;}
+.culture_nutshell .nutshell_cont .nutshell_box {display: flex; width: 100%;}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_logo {flex-grow: 1; text-align: right; margin-right: 10%;}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_logo svg {}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_quote {width: 370px;}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_quote p {font-size: 18px; text-transform: none; font-weight: 400; line-height: 1.4; margin-bottom: 0;}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_quote p span {display: block;}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_quote .pen {margin: 5px 0 10px 0; border-bottom: 1px solid #fff; padding: 0 10px;}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_quote .pen svg {}
+.culture_nutshell .nutshell_cont .nutshell_box .nutshell_quote h4 {font-family: 'Heebo'; text-transform: uppercase; letter-spacing: 2px;}
+
+/* join-us */
+.join_us {font-family: 'Heebo'; padding: 30px 0 175px; display: flex; position: relative;}
+.join_us a {
+	color: #fff; margin: 0 0 0 calc((100% - 300px)/16*5 + 30px); max-width: calc((100% - 300px)/16*6 + 100px); padding: 50px;
+	display: block; z-index: 1;
+}
+.join_us a span {display: block; font-size: 9vw; font-weight: 500; line-height: 1;}
+.join_us img {display: block; width: 350px; height: 350px; position: absolute; top: 15%; right: 23%;}
+
+/* footer */
+.footer {background-color: #000;}
+.footer .line {display: block; width: 90%; height: 1px; margin: 0 auto; background: #fff;}
+.footer .footer_wrap {display: flex; justify-content: space-between; padding: 20px calc((100% - 300px)/16*1);}
+.footer .footer_wrap .logo {}
+.footer .footer_wrap ul {display: flex; flex-grow: 1; padding-left: 2%;}
+.footer .footer_wrap li {font-family: 'Heebo'; display: inline-block; margin-right: 1%;}
+.footer .footer_wrap li a {color: #fff; font-size: 13px; text-transform: uppercase; padding: 10px 15px; font-weight: 500;}
+.footer .footer_wrap span {font-family: 'Heebo'; color: #fff; font-size: 14px; line-height: 35px; font-weight: 500; display: block; text-align: right;}

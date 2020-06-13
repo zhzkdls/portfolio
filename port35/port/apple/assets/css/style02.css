@@ -1,0 +1,36 @@
+/* container */
+.container {width: 1000px; margin: 0 auto;}
+
+/* row */
+.row {position: relative; margin: 0 20px;}
+
+/* header */
+#header {height: 100px;}
+#header .header-data {
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: 30px;
+    display: block;
+    color: #a8a8a8;
+}
+#header .header-title {
+    font-weight: bold;
+    font-size: 32px;
+}
+#header .header-id {
+    position: absolute;
+    right: 0; bottom: 5px;
+    width: 40px; height: 40px;
+    background: linear-gradient(149.16deg, #A4A9B5 10.18%, rgba(164, 169, 181, 0) 81.31%), #C4C4C4;
+    border-radius: 50%; 
+    font-size: 18px; font-weight: 300; color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* mediaquery */
+@media (max-width: 1020px){
+    .container {width: 100%;} 
+}
