@@ -1,3 +1,55 @@
+$(function(){
+    imagesProgress();     
+});
+
+
+//imageProgress
+function imagesProgress(){
+    var $container = $("#progress"),
+        $progressBar = $container.find(".progress-box"),
+        $progressText = $container.find(".progress-text"),
+        imgLoad = imagesLoaded("body"),	
+        imgTotal = imgLoad.images.length,	
+        imgLoaded = 0,										
+        current = 0,							
+        progressTimer = setInterval(updateProgress, 2000 / 60);	
+
+        $progressText.css("display","block");
+
+    imgLoad.on("progress", function(){
+        imgLoaded++;
+    });
+
+    function updateProgress(){
+        var target = ( imgLoaded / imgTotal) * 100;
+
+        current += ( target - current) * 0.1;
+        $progressBar.css({ width: current + '%' });
+        $progressText.text( Math.floor(current) + '%' );
+
+        if(current >= 100){
+            clearInterval(progressTimer);
+            $container.addClass("progress-complete");
+            $progressBar.add($progressText)
+                .delay(300)
+                .animate({opacity: 0},2000,function(){
+                    $container.animate({opacity: '0'},1500,'easeInOutQuint').animate({top: '-100%'},1500,'easeInOutQuint');
+                    $("body").addClass("active");
+                });
+            setInterval(function(){
+                $("#section1").addClass("show");
+            },3000)
+            
+        }
+        if(current > 99.9){
+            current = 100;
+        };
+
+    };
+};
+window.setTimeout(imagesProgress, 740);
+
+
 //skrollr
 var s = skrollr.init({
     edgeStrategy: 'set',
@@ -5,15 +57,6 @@ var s = skrollr.init({
 });
 
 //menu
-document.querySelectorAll('a[href^="#"]').forEach(elem => {
-    elem.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(elem.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 $('#toggle').click(function() {
      $('#overlay').toggleClass("show");
         if( $("#overlay").hasClass("show") ){
@@ -27,16 +70,22 @@ $('#toggle').click(function() {
 var all = $("#overlay .column a")
 var overlay = $("#overlay")
 all.click(function(){
-$(overlay).toggleClass("show");
+    $(overlay).toggleClass("show");
+    $("#toggle").text("Menu");
 });
 
-//sec1
-setInterval(show, 2000);
-function show(){
-    $("#section1").addClass("show");
-};
+
 
 //sec2 skill count
+document.querySelectorAll('a[href^="#"]').forEach(elem => {
+    elem.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 function counter() {
     if( $('.content-item .content-item-num').size() ){
         var count = $('.content-item .content-item-num');

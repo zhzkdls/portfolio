@@ -53,17 +53,20 @@ body, html {overflow: visible !important;}
 /* header menuBtn */
 .overlay {
   position: fixed;
+  background: #000;
   height: 100%;
   width: 100%;
+/*  opacity: 0.85;*/
+/*  z-index: 100; */
   top: 0;
   left: 0;
   visibility: hidden;
-  transition: all .35s ease;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
-  height: 0;
-  z-index: 999;
 }
-.overlay.show {
+.overlay.open {
+/*  background: pink;*/
   visibility: visible;
   height: 100%;
 }
@@ -93,11 +96,11 @@ body, html {overflow: visible !important;}
 }
 .column:nth-child(1) {grid-area: a; background: #fff;}
 .column:nth-child(2) {grid-area: b; background: #F38473;}
-.column:nth-child(3) {grid-area: c; background: #f6d855;}
-.column:nth-child(4) {grid-area: d; background: #dda0b3;}
+.column:nth-child(3) {grid-area: c; background: #dda0b3;}
+.column:nth-child(4) {grid-area: d; background: #f6d855;}
 .column:nth-child(5) {grid-area: e; background: #9cd3c3;}
 
-.column {font-family: 'Jura', sans-serif; }
+.column {font-family: 'Jura', sans-serif;}
 .column .m1 {padding: 230px 0 0 30px;}
 .column .m1 h3 {font-size: 45px; font-weight: 900; }
 .column .m1 h3 a {color: #000; position: relative; display: block;}
@@ -130,16 +133,14 @@ body, html {overflow: visible !important;}
     width: 100%;
     position: relative;
     cursor: pointer;
-/*
     color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255,255,255,0.3);
-*/
-    color: rgba(255,255,255,0.9);
-    -webkit-text-stroke: 1.5px #000;
+    -webkit-text-stroke: 1.5px #fff;
     overflow: hidden;
     transition: .1s ease;
 }
-.column .m2:hover {color: rgb(0,0,0);}
+.column .m2:hover {color: rgba(0,0,0,0.8);}
+
+
 
 
 /* sec1 */ 
@@ -291,6 +292,12 @@ body, html {overflow: visible !important;}
 
 /** sec2 skill count **/
 .content-item-num::after {content: "%";}
+
+
+
+
+
+
 
 
 /* sec3 */
@@ -672,10 +679,10 @@ a {
 
 
 .ani-area.n1 .ani-lt {position: absolute; left: 200px; top: 0; width: 200px; height: 130px; background: url("../img/ani-img8.png") no-repeat; background-size: 180%; background-position: right 5%; }
-.ani-area.n1 .ani-rt {position: absolute; right: 350px; top: 0; width: 500px; height: 130px;
+.ani-area.n1 .ani-rt {position: absolute; right: 400px; top: 0; width: 500px; height: 130px;
   background: url("../img/ani-img8.png") no-repeat; background-size: cover; background-position: center 20%;}
-.ani-area.n1 .ani-motion {position: absolute; left: 150px; bottom: 0; width: 400px; height: 400px;}
-.ani-area.n1 .ani-desc {position: absolute; right: 130px; bottom: 0; width: 400px; height: 400px; background: url("../img/ani-img7.png") no-repeat; background-size: 175%; background-position: 40% center;}
+.ani-area.n1 .ani-motion {position: absolute; left: 180px; bottom: 0; width: 400px; height: 400px;}
+.ani-area.n1 .ani-desc {position: absolute; right: 160px; bottom: 0; width: 400px; height: 400px; background: url("../img/ani-img7.png") no-repeat; background-size: 175%; background-position: 40% center;}
 .ani-wrap .ani-desc .textbox {
     position: absolute;
     left: 0;
@@ -845,7 +852,7 @@ a {
 .ani-area.n2 .ani-num {position: absolute; left: 50%; top: 350px; transform: translate(-50%, -50%); font-size: 300px; font-weight: 900; color: rgba(0,0,0,0.3);}
 .ani-area.n2 .ani-cont {position: absolute; left: 50%; top: 355px; transform: translate(-50%, -50%); font-size: 40px; font-weight: 700; color: #fff; text-align: center; line-height: 40px;}
 .ani-area.n2 .ani-lt {position: absolute; left: 300px; top: 0; width: 300px; height: 300px; background: url("../img/ani-img12.png") no-repeat; background-size: 160%; background-position: center center;}
-.ani-area.n2 .ani-rt {position: absolute; right: 150px; top: 0; width: 400px; height: 130px; background: url("../img/ani-img21.png") no-repeat; background-size: cover; background-position: center center;}
+.ani-area.n2 .ani-rt {position: absolute; right: 400px; top: 0; width: 400px; height: 130px; background: url("../img/ani-img21.png") no-repeat; background-size: cover; background-position: center center;}
 .ani-area.n2 .ani-desc {position: absolute; left: 50px; bottom: 0; width: 550px; height: 250px; background: url("../img/ani-img26.png") no-repeat; background-size: cover; background-position: center 33%;}
 .ani-area.n2 .ani-motion {position: absolute; right: 160px; bottom: 0; width: 400px; height: 400px; background: #fff;}
 
@@ -955,7 +962,7 @@ a {
 .ani-area.n3 .ani-num {position: absolute; left: 50%; top: 350px; transform: translate(-50%, -50%); font-size: 300px; font-weight: 900; color: rgba(0,0,0,0.3);}
 .ani-area.n3 .ani-cont {position: absolute; left: 50%; top: 355px; transform: translate(-50%, -50%); font-size: 40px; font-weight: 700; color: #fff; text-align: center; line-height: 40px;}
 .ani-area.n3 .ani-lt {position: absolute; left: 150px; top: 0; width: 200px; height: 130px; background: url("../img/ani-img25.jpg") no-repeat; background-size: 120%; background-position: right 5%;}
-.ani-area.n3 .ani-rt {position: absolute; right: 500px; top: 0; width: 500px; height: 130px; background: url("../img/ani-img25.png") no-repeat; background-size: cover; background-position: center 30%;}
+.ani-area.n3 .ani-rt {position: absolute; right: 600px; top: 0; width: 500px; height: 130px; background: url("../img/ani-img25.png") no-repeat; background-size: cover; background-position: center 30%;}
 .ani-area.n3 .ani-motion {position: absolute; left: 200px; bottom: 0; width: 400px; height: 400px;}
 .ani-area.n3 .ani-desc {position: absolute; right: 0; bottom: 0; width: 600px; height: 400px; background: url("../img/ani-img25.png") no-repeat; background-size: cover; background-position: center bottom;}
 .ani-area.n3 .ani-desc .textbox {padding: 20% 15%;}
@@ -1008,10 +1015,10 @@ a {
 .ani.n4 .ani-area.n4 {position: relative; height: 600px;}
 .ani-area.n4 .ani-num {position: absolute; left: 50%; top: 350px; transform: translate(-50%, -50%); font-size: 300px; font-weight: 900; color: rgba(0,0,0,0.3);}
 .ani-area.n4 .ani-cont {position: absolute; left: 50%; top: 355px; transform: translate(-50%, -50%); font-size: 40px; font-weight: 700; color: #fff; text-align: center; line-height: 40px;}
-.ani-area.n4 .ani-lt {position: absolute; left: 300px; top: 0; width: 300px; height: 300px; background: url("../img/momo.jpeg") no-repeat; background-size: cover;}
-.ani-area.n4 .ani-rt {position: absolute; right: 250px; top: 0; width: 400px; height: 130px; background: url("../img/ani-img26.png") no-repeat; background-size: cover; background-position: center center;}
+.ani-area.n4 .ani-lt {position: absolute; left: 300px; top: 0; width: 300px; height: 300px; background: url("../img/momo.png") no-repeat; background-size: cover;}
+.ani-area.n4 .ani-rt {position: absolute; right: 450px; top: 0; width: 400px; height: 130px; background: url("../img/ani-img26.png") no-repeat; background-size: cover; background-position: center center;}
 .ani-area.n4 .ani-desc {position: absolute; left: 50px; bottom: 0; width: 550px; height: 250px; background: url("../img/ani-img15.png") no-repeat; background-size: cover; background-position: center center;}
-.ani-area.n4 .ani-motion {position: absolute; right: 110px; bottom: 0; width: 400px; height: 400px;}
+.ani-area.n4 .ani-motion {position: absolute; right: 160px; bottom: 0; width: 400px; height: 400px;}
 
 
 /** sec4 ani.n4 bar animation **/
@@ -1037,7 +1044,7 @@ a {
 .ani-area.n5 .ani-num {position: absolute; left: 50%; top: 350px; transform: translate(-50%, -50%); font-size: 300px; font-weight: 900; color: rgba(0,0,0,0.3);}
 .ani-area.n5 .ani-cont {position: absolute; left: 50%; top: 355px; transform: translate(-50%, -50%); font-size: 40px; font-weight: 700; color: #fff; text-align: center; line-height: 40px;}
 .ani-area.n5 .ani-lt {position: absolute; left: 150px; top: 0; width: 200px; height: 130px; background: url("../img/ani-img20.png") no-repeat; background-size: cover; background-position: center 45%; }
-.ani-area.n5 .ani-rt {position: absolute; right: 500px; top: 0; width: 500px; height: 130px; background: url("../img/ani-img25.png") no-repeat; background-size: cover; background-position: center bottom;}
+.ani-area.n5 .ani-rt {position: absolute; right: 600px; top: 0; width: 500px; height: 130px; background: url("../img/ani-img25.png") no-repeat; background-size: cover; background-position: center bottom;}
 .ani-area.n5 .ani-motion {position: absolute; left: 200px; bottom: 0; width: 400px; height: 400px;}
 .ani-area.n5 .ani-desc {position: absolute; right: 0; bottom: 0; width: 600px; height: 400px; background: url("../img/ani-img6.jpg") no-repeat; background-size: cover; background-position: center center;}
 .ani-area.n5 .ani-desc .textbox {padding: 20% 15%;}
@@ -1206,37 +1213,6 @@ a {
     
     /** sec3 work4 **/
     .site-wrap .site.s4 {height: 870px;}
-    
-    /* sec4 */
-    /** n1 **/
-    .ani-area.n1 .ani-lt {width: 180px; height: 120px;}
-    .ani-area.n1 .ani-rt {width: 480px; height: 120px;}
-    .ani-area.n1 .ani-motion {width: 370px; height: 370px;}
-    .ani-area.n1 .ani-desc {width: 370px; height: 370px;}
-    
-    /** n2 **/
-    .ani-area.n2 .ani-lt {width: 280px; height: 280px;}
-    .ani-area.n2 .ani-rt {width: 380px; height: 120px;}
-    .ani-area.n2 .ani-desc {width: 530px; height: 230px;}
-    .ani-area.n2 .ani-motion {width: 380px; height: 380px;}
-    
-    /** n3 **/
-    .ani-area.n3 .ani-lt {width: 180px; height: 110px;}
-    .ani-area.n3 .ani-rt {width: 480px; height: 110px;}
-    .ani-area.n3 .ani-motion {width: 370px; height: 370px;}
-    .ani-area.n3 .ani-desc {width: 570px; height: 370px;}
-    
-    /** n4 **/
-    .ani-area.n4 .ani-lt {width: 280px; height: 280px;}
-    .ani-area.n4 .ani-rt {width: 380px; height: 110px;}
-    .ani-area.n4 .ani-desc {width: 530px; height: 230px;}
-    .ani-area.n4 .ani-motion {width: 370px; height: 370px;}
-    
-    /** n5 **/
-    .ani-area.n5 .ani-lt {width: 180px; height: 110px;}
-    .ani-area.n5 .ani-rt {width: 480px; height: 110px;}
-    .ani-area.n5 .ani-motion {width: 370px; height: 370px;}
-    .ani-area.n5 .ani-desc {width: 570px; height: 370px;}
 }
 
     
@@ -1290,7 +1266,6 @@ a {
     /* sec2 */
     /** sec2 skill-wrap **/
     .sec2 .skill-wrap .skill {width: 200px;}
-    .mTitle h2.skill_tit {font-size: 13vw; letter-spacing: -0.15em;}
     
     
     /* sec3 */
@@ -1313,37 +1288,9 @@ a {
     /** sec3 work4 **/
     .site-wrap .site.s4 {height: 700px;}
     
-    /* sec4 */
-    .ani-area.n1 .ani-lt {left: 50px; top: 0;}
-    .ani-area.n1 .ani-rt {right: 200px; top: 0;}
-    .ani-area.n1 .ani-motion {left: 50px; bottom: 0; z-index: 1;}
-    .ani-area.n1 .ani-desc {right: 30px; bottom: 0;}
-    
-    .ani-area.n2 .ani-lt {left: 150px; top: 0;}
-    .ani-area.n2 .ani-rt {right: 50px; top: 0;}
-    .ani-area.n2 .ani-desc {left: 10px; bottom: 0;}
-    .ani-area.n2 .ani-motion {right: 50px; bottom: 0;}
-    
-    .ani-area.n3 .ani-lt {left: 50px; top: 0;}
-    .ani-area.n3 .ani-rt {right: 200px; top: 0;}
-    .ani-area.n3 .ani-motion {left: 50px; bottom: 0; z-index: 1;}
-    .ani-area.n3 .ani-desc {right: 0; bottom: 0;}
-    
-    .ani-area.n4 .ani-lt {left: 150px; top: 0;}
-    .ani-area.n4 .ani-rt {right: 50px; top: 0;}
-    .ani-area.n4 .ani-desc {left: 50px; bottom: 0;}
-    .ani-area.n4 .ani-motion {right: 50px; bottom: 0;}
-    
-    .ani-area.n5 .ani-lt {left: 150px; top: 0;}
-    .ani-area.n5 .ani-rt {right: 200px; top: 0;}
-    .ani-area.n5 .ani-motion {left: 50px; bottom: 0; z-index: 1;}
-    .ani-area.n5 .ani-desc {right: 0; bottom: 0;}
-   
-    
-    
     /* sec6 */
     .tact-wrap {padding: 0 20vw;}
-    .cTitle .tact_tit {font-size: 80px;}
+    .cTitle .tact_tit {font-size: 85px;}
     .sTitle {padding: 30px 0 50px 0;}
 
     
@@ -1436,13 +1383,12 @@ a {
             'e'
         ;
     }
-    .m1 h3 {text-align: center;}
-    .m1 h3 a { padding-top: 130px; font-size: 45px;}
-    .m1 h3 a:hover:before{width: 100%;}
-    .column .m1 p.blank1 {display:none;}
-    .column .m1 p.kakao {display:none;}
+    
+    .column .m1 h4 {display:block;}
+    .m1 h4 a:hover:before{width: 100%;}
+    .column .m1 p.blank1 {padding-top: 5px;}
     .column .m1 p.address {display:none;}
-    .column .m1 {padding: 3% 30%;}
+    .column .m1 {padding: 5% 30%;}
     .column .m1 h3 {font-size: 35px;}
     .column .m1 h4 {font-size: 30px;}
     .column .m1 p {font-size: 20px;}
@@ -1613,46 +1559,6 @@ a {
     .site .site-area.s4 .site-left2 {flex: none; width: 100%; text-align: left;}
     .site .site-area.s4 .site-tit2 {font-size: 6vw; padding-top: 0; padding-bottom: 1vw;}
     .site .site-area.s4 .site-desc2 {font-size: 2.5vw;}
-        
-    /* sec4 */
-    .ani-area.n1 .ani-lt {display: none;}
-    .ani-area.n1 .ani-rt {display: none;}
-    .ani-area.n1 .ani-motion {left: 50px; bottom: 0; z-index: 0;}
-    .ani-area.n1 .ani-desc {display: none;}
-    
-    .ani-area.n2 .ani-lt {display: none;}
-    .ani-area.n2 .ani-rt {display: none;}
-    .ani-area.n2 .ani-desc {display: none;}
-    .ani-area.n2 .ani-motion {right: 50px; bottom: 0;}
-    
-    .ani-area.n3 .ani-lt {display: none;}
-    .ani-area.n3 .ani-rt {display: none;}
-    .ani-area.n3 .ani-motion {left: 50px; bottom: 0; z-index: 0;}
-    .ani-area.n3 .ani-desc {display: none;}
-    
-    .ani-area.n4 .ani-lt {display: none;}
-    .ani-area.n4 .ani-rt {display: none;}
-    .ani-area.n4 .ani-desc {display: none;}
-    .ani-area.n4 .ani-motion {right: 50px; bottom: 0;}
-    
-    .ani-area.n5 .ani-lt {display: none;}
-    .ani-area.n5 .ani-rt {display: none;}
-    .ani-area.n5 .ani-motion {left: 50px; bottom: 0; z-index: 0;}
-    .ani-area.n5 .ani-desc {display: none;}
-    
-    .ani.n1 .ani-area.n1 {height: 450px;}    
-    .ani.n2 .ani-area.n2 {height: 450px;}    
-    .ani.n3 .ani-area.n3 {height: 450px;}    
-    .ani.n4 .ani-area.n4 {height: 450px;}    
-    .ani.n5 .ani-area.n5 {height: 450px;}    
-    .ani-area .ani-num {display: none;}
-    .ani-area .ani-cont {display: none;}  
-    .code-wrap {display: none;}    
-        
-    /* sec6 */
-    .cTitle .tact_tit {font-size: 70px;}
-        
-        
 
     
 }
@@ -1664,12 +1570,10 @@ a {
     }
     
     /* menu */
-    .column .m1 {}
-    .column .m1 h3 {}
-    .m1 h3 a { padding-top: 130px; font-size: 35px;}
+    .column .m1 {padding: 10% 25% 4% 35%;}
+    .column .m1 h3 {font-size: 25px;}
     .column .m1 h4 {font-size: 20px;}
     .column .m1 p {font-size: 16px;}
-    
     
     /** sec1 Deco layout **/
     .sec1 .deco-wrap .deco1 {background-color: #9cd3c3; left: 0; top: 0; width: 55vw; height: 6vh;}
@@ -1766,20 +1670,8 @@ a {
     /* sec4 */
     .code-wrap {padding-left: 5%;}
     
-    .ani.n1 .ani-area.n1 {height: 400px;}    
-    .ani.n2 .ani-area.n2 {height: 400px;}    
-    .ani.n3 .ani-area.n3 {height: 400px;}    
-    .ani.n4 .ani-area.n4 {height: 400px;}    
-    .ani.n5 .ani-area.n5 {height: 400px;} 
-    .ani-area.n1 .ani-motion {width: 330px; height: 330px;}
-    .ani-area.n2 .ani-motion {width: 330px; height: 330px;}
-    .ani-area.n3 .ani-motion {width: 330px; height: 330px;}
-    .ani-area.n4 .ani-motion {width: 330px; height: 330px;}
-    .ani-area.n5 .ani-motion {width: 330px; height: 330px;}
-
-    
-    
-    
+    .ani-area.n1 .ani-num {left: 10%; top: 10%; font-size: 60px; font-weight: 900; color: rgba(0,0,0,0.3);}
+/*.ani-area.n1 .ani-cont {position: absolute; left: 50%; top: 370px; transform: translate(-50%, -50%); font-size: 40px; font-weight: 700; color: #fff; text-align: center; line-height: 40px;}*/
 
     /* sec6 */
     .tact-wrap {padding: 0 12vw;}
@@ -1813,7 +1705,6 @@ a {
     .cTitle .tact_tit {font-size: 55px;}
     .sTitle .tact_subtit {font-size: 3.5vw;}
     .sTitle .tact_subtit span{letter-spacing: -0.09rem;}
-   
 }
 
     
