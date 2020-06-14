@@ -1,0 +1,653 @@
+/* layout */
+#contents {}
+
+#section1 {
+    position: relative;
+    height: 100vh;
+    background: #62BC88;
+}
+
+#section2 {
+    position: relative;
+    height: 1950px;
+}
+
+#section3 {
+    position: relative;
+    height: 1950px;
+}
+
+#section4 {}
+
+#section5 {}
+
+#section6 {}
+
+/* container */
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0)
+}
+
+/* sec1 */
+.sec1 {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 .main-logo {
+    width: 26vw;
+}
+
+.cloud {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+}
+
+
+
+/* sec2 */
+.sec2 {
+    text-align: center;
+    padding-top: 15vw;
+}
+
+.sec2 .location {
+    width: 20%;
+    height: 5vw;
+}
+
+.sec2 h2 {
+    font-size: 4vw;
+    line-height: 7vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sec2 p {
+    font-family: 'NanumSquareRound';
+    font-size: 1.3vw;
+}
+
+.sec2 .mbox {
+    display: flex;
+    margin-top: 20vh;
+}
+
+.sec2 .mbox > div {
+    width: 50%;
+    height: 400px;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.sec2 .bbox {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*drop*/
+.sec2 .bbox .drop01 {
+    position: absolute;
+    top: 12vw;
+    left: 31vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+.sec2 .bbox .drop02 {
+    position: absolute;
+    top: 24vw;
+    right: 23vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop03 {
+    position: absolute;
+    top: 53vw;
+    right: 11vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop04 {
+    position: absolute;
+    top: 69vw;
+    left: 27vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop05 {
+    position: absolute;
+    top: 74vw;
+    right: 23vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop06 {
+    position: absolute;
+    top: 93vw;
+    right: 20vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop07 {
+    position: absolute;
+    bottom: 24vw;
+    left: 22vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+.sec2 .bbox .drop08 {
+    position: absolute;
+    bottom: 8vw;
+    right: 12vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop09 {
+    position: absolute;
+    bottom: 5vw;
+    left: 15vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+/*circle*/
+.sec2 .bbox .circle01 {
+    position: absolute;
+    top: 8vw;
+    right: 33vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle02 {
+    position: absolute;
+    top: 13vw;
+    right: 16vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle03 {
+    position: absolute;
+    top: 41vw;
+    right: 20vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle04 {
+    position: absolute;
+    top: 45vw;
+    right: 16vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle05 {
+    position: absolute;
+    top: 50vw;
+    right: 41vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle06 {
+    position: absolute;
+    top: 54vw;
+    left: 44vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle07 {
+    position: absolute;
+    top: 49vw;
+    left: 15vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle08 {
+    position: absolute;
+    top: 49vw;
+    left: 15vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle09 {
+    position: absolute;
+    top: 61vw;
+    right: 13vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle10 {
+    position: absolute;
+    top: 70vw;
+    right: 38vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+/*note*/
+.sec2 .bbox .note01 {
+    position: absolute;
+    top: 9vw;
+    left: 22vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note02 {
+    position: absolute;
+    top: 32vw;
+    left: 21vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note03 {
+    position: absolute;
+    top: 32vw;
+    right: 32vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note04 {
+    position: absolute;
+    top: 40vw;
+    left: 38vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note05 {
+    position: absolute;
+    top: 40vw;
+    left: 38vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note06 {
+    position: absolute;
+    top: 80vw;
+    left: 19vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note07 {
+    position: absolute;
+    top: 84vw;
+    right: 19vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+/*line*/
+.sec2 .bbox .line01 {
+    position: absolute;
+    top: 20vw;
+    right: 8vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line02 {
+    position: absolute;
+    top: 19vw;
+    left: 11vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line03 {
+    position: absolute;
+    top: 22vw;
+    left: 30vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line04 {
+    position: absolute;
+    top: 64vw;
+    left: 22vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line05 {
+    position: absolute;
+    top: 63vw;
+    right: 35vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line06 {
+    position: absolute;
+    top: 77vw;
+    left: 13vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line07 {
+    position: absolute;
+    top: 80vw;
+    right: 13vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line08 {
+    position: absolute;
+    top: 90vw;
+    left: 13vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line09 {
+    position: absolute;
+    bottom: 10vw;
+    right: 23vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+
+
+.sec2 .tool {
+    position: relative;
+    margin-top: 10vw;
+}
+
+.sec2 .tool .text {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.sec2 .tool .text h3 {
+    font-size: 2.5vw;
+    line-height: 2.6vw;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0.6vw;
+    font-weight: 800;
+}
+
+.sec2 .tool .text h3 em {
+
+    display: block;
+    font-weight: 800;
+}
+
+.sec2 .tool .tool-box {
+    padding: 0 20vw;
+    margin-right: 0.2vw;
+}
+
+
+/*sec3*/
+
+.sec3 .skill {
+    position: relative;
+    margin-top: 6vw;
+    margin-left: 3vw;
+}
+
+.sec3 .skill .skill_box {
+    width: 100%;
+    height: 41vw;
+    position: relative;
+    left: 0;
+    display: flex;
+}
+
+/*skill_box01*/
+
+.sec3 .skill .skill_box .skill_box01 {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    background: url(../img/skill_box01.svg) no-repeat;
+}
+
+.sec3 .skill .skill_box .skill_box01 .img_box {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.sec3 .skill .skill_box .skill_box01 .img_box ul {
+    height: 100%;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    
+}
+
+.sec3 .skill .skill_box .skill_box01 .img_box ul li {
+    height: 30%;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5vw;
+    position: relative;
+    
+}
+/*ps*/
+.sec3 .skill .skill_box .skill_box01 .img_box ul li .ps {
+    width: 20%; 
+    position: absolute;
+}
+.sec3 .skill .skill_box .skill_box01 .img_box ul li .ps_line {
+    width: 60%; 
+    position: absolute;
+    margin: 3vw 0 0 4.5vw;
+}
+/*ai*/
+.sec3 .skill .skill_box .skill_box01 .img_box ul li .ai {
+    width: 20%; 
+    position: absolute;
+}
+.sec3 .skill .skill_box .skill_box01 .img_box ul li .ai_line {
+    width: 60%; 
+    position: absolute;
+    margin: 3vw 0 0 4.5vw;
+}
+/*html*/
+.sec3 .skill .skill_box .skill_box01 .img_box ul li .html {
+    width: 20%; 
+    position: absolute;
+}
+.sec3 .skill .skill_box .skill_box01 .img_box ul li .html_line {
+    width: 60%; 
+    position: absolute;
+    margin: 3vw 0 0 4.5vw;
+}
+
+.sec3 .skill .skill_box .skill_box01 .img_box ul li span {
+    position: absolute;
+    margin: 0.5vw 0 0 4.5vw;
+}
+
+/*skill_box02*/
+
+.sec3 .skill .skill_box .skill_box02 {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    background: url(../img/skill_box02.svg) no-repeat;
+    top: 1.4vw;
+}
+
+
+.sec3 .skill .skill_box .skill_box02 .img_box {
+    width: 74%;
+    height: 77%;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+}
+.sec3 .skill .skill_box .skill_box02 .img_box ul {height: 100%;}
+.sec3 .skill .skill_box .skill_box02 .img_box ul li {
+    height: 30%;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+
+    
+}
+
+/*coupang*/
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .coupang {
+    width: 26%; 
+    position: absolute;
+}
+
+/*WEMAKEPRICE*/
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .wmf {
+    width: 26%; 
+    position: absolute;
+}
+
+/*WEMAKEPRICE*/
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .wmf {
+    width: 26%; 
+    position: absolute;
+}
+
+/*O2UX*/
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .O2UX {
+    width: 26%; 
+    position: absolute;
+}
+
+/*공통*/
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .text {
+    position: absolute;
+    margin: 0.5vw 0 0 5.5vw;
+}
+
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .text span {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+.sec3 .skill .skill_box .skill_box02 .img_box ul li .text em {
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.sec3 .skill .skill_box .grow {
+    flex-grow: 1;
+}
+/*line*/
+.sec3 .skill .skill_box::after {
+    content: '';
+    height: 0.3vw;
+    width: 36.1vw;
+    background: #3f3b3a;
+    position: absolute;
+    top: 17.2vh;
+    left: 55vh;
+}
+
+.sec3 .skill .project {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-58%, -50%);
+    width: 20vw;
+}
+
+.sec3 .skill .project em {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.site-wrap {
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site-wrap > div {
+    width: 48%;
+    margin-bottom: 50px;
+}
+
+.site-wrap .site1 {}
+
+.site-wrap .site2 {
+    margin-top: 5vw;
+}
+
+.site-wrap .site3 {
+    margin-top: -10vw;
+}
+
+.site-wrap .site4 {}
+
+.site-wrap .site5 {}
+
+.site-wrap .site6 {}
+
+.line {
+    position: absolute;
+    left: 50%;
+    top: 35vw;
+    z-index: -1;
+    transform: translateX(-50%);
+    width: 1.5vw;
+    height: 2000px;
+}
+
+
+
+
+/* mediaquery */
+@media (max-width: 1420px) {
+    .container {
+        width: 100%;
+    }
+}

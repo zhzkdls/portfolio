@@ -1,0 +1,4102 @@
+ * {
+     cursor: url(../img/mouse_cursor.svg), auto;
+     cursor: -webkit-image-set(url(../img/mouse_cursor.svg) 1x, url(../img/mouse_cursor.svg) 2x), auto;
+  }
+
+  * a:hover,
+  * button:hover,
+  * a:hover *,
+  * button:hover * {
+     cursor: url(../img/mouse_cursor_hover.svg), auto;
+     cursor: -webkit-image-set(url(../img/mouse_cursor_hover.svg) 1x, url(../img/mouse_cursor_hover.svg) 2x), auto;
+  }
+
+
+/* progress */
+.progress {
+    background: radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+.progress .lo-text {
+    font-size: 3.5vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    
+}
+.progress .lo {
+    margin-left: 4%
+}
+
+.progress .main-lo {
+    position: absolute;
+    width: 3%;
+    top: 50%;
+    left: 45.3%;
+    transform: translate(-50%, -50%);
+}
+
+.progress .bar-wrap {
+    position: absolute; left: 50%; top: 56%;
+    transform: translate(-50%, -50%);
+    width: 20vw; height: 1vw; background: #3D3D3E;
+    border-radius: 15px;
+}
+.progress .bar-wrap .progress-bar {
+    width: 0;
+    height: 1vw;
+    background: #61BB87;
+    border-radius: 15px;
+}
+
+.progress-text {
+    font-size: 1.5vw;
+    margin-top: 45px;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+/*///////////////// svg ////////////////////*/
+
+.mainbar-svg .st0{fill:#3F3B3A;}
+.mainbar-svg .st1{fill:none;stroke:#5EA87C; stroke-miterlimit:10; stroke-width: 15.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;}
+
+.mainlo-svg .st0 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.mainlo-svg .st1 {
+    fill: #62BC88;
+}
+
+
+/* main-logo-svg */
+.main-logo-svg .st0{fill:#61BB87;stroke:#3E3A39;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.main-logo-svg .st1{fill:none;stroke:#3E3A39;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.main-logo-svg .st2{fill:#3E3A39;}
+.main-logo-svg .st3{fill:#FFFFFF;}
+.main-logo-svg .st4{fill:#61BB87;}
+
+/* tool-box-svg */
+
+.tool-box-svg .st0 {
+    opacity: 0.53;
+    fill: #3E3A39;
+}
+
+.tool-box-svg .st0 {
+    opacity: 0.53;
+    fill: #3E3A39;
+    enable-background: new;
+}
+
+.tool-box-svg .st1 {
+    fill: #FFFFFF;
+}
+
+.tool-box-svg .st2 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-miterlimit: 10;
+    stroke-width: 6;
+}
+
+.tool-box-svg .st3 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.tool-box-svg .st4 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.tool-box-svg .st5 {
+    fill: #3E3A39;
+}
+
+.tool-box-svg .st6 {
+    fill: #3C3C3D;
+}
+
+/* location-svg */
+
+.location-svg .st0 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.location-svg .st1 {
+    fill: #62BC88;
+}
+
+/* profile-svg */
+
+.profile-svg .st0 {
+    fill: #61BB87;
+}
+
+.profile-svg .st1 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.profile-svg .st2 {
+    fill: #3C3C3D;
+}
+
+.profile-svg .st3 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+/* mbox-svg */
+
+.mbox-svg .st0 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.mbox-svg .st1 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.mbox-svg .st2 {
+    fill: none;
+    stroke: #333333;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.mbox-svg .st3 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.mbox-svg .st4 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.mbox-svg .st5 {
+    fill: #FFFFFF;
+}
+
+.mbox-svg2 .st0 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.mbox-svg2 .st1 {
+    fill: #61BB87;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.mbox-svg2 .st2 {
+    fill: #FFFFFF;
+
+}
+
+/* skill-svg */
+
+.skill-svg .st0 {
+    opacity: 0.53;
+    fill: #3F3B3A;
+    enable-background: new;
+}
+
+.skill-svg .st1 {
+    fill: #FFFFFF;
+    stroke: #000000;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st2 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st3 {
+    enable-background: new;
+}
+
+.skill-svg .st4 {
+    fill: #3F3B3A;
+}
+
+.skill-svg .st4-1 {
+    fill: #3F3B3A;
+    fill-opacity: 0.5;
+}
+
+
+
+.skill-svg .st5 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st6 {
+    fill: #61B584;
+}
+
+.skill-svg .st7 {
+    fill: none;
+    stroke: #5FAE80;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 15.5;
+}
+
+.skill-svg .st8 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st9 {
+    fill: #61B584;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st10 {
+    fill: #3D3D3D;
+}
+
+.skill-svg .st11 {
+    fill: #FFFFFF;
+    stroke: #040000;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st12 {
+    opacity: 0.53;
+}
+
+.skill-svg .st13 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st14 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.skill-svg .st15 {
+    fill: #62BC88;
+}
+
+.skill-svg .st16 {
+    fill: #FFFFFF;
+}
+
+
+/* project-svg */
+
+.project-svg .st0 {
+    opacity: 0.5;
+    fill: #3E3A39;
+}
+
+
+.project-svg .st2 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 7;
+
+}
+
+.project-svg .st3 {
+    fill: #3E3A39;
+}
+
+/* site1 .kt-svg */
+.site1 .kt-svg .st0 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st1 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st2 {
+    fill: #E0E0DF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st3 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st4 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st5 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st6 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st7 {
+    fill: #3E3A39;
+}
+
+.site1 .kt-svg .st8 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st9 {
+    fill: #60B383;
+}
+
+.site1 .kt-svg .st10 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site1 .kt-svg .st11 {
+    stroke: #60B383;
+    stroke-width: 18;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+
+/* site2 .woori-svg */
+
+.site2 .woori-svg .st0 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st1 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st2 {
+    fill: #E0E0DF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st3 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st4 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st5 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st6 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st7 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site2 .woori-svg .st8 {
+    fill: #3E3A39;
+}
+
+.site2 .woori-svg .st9 {
+    fill: #60B383;
+}
+
+/* .site3 .mega-svg */
+
+.site3 .mega-svg .st0 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st1 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st2 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st3 {
+    fill: #E0E0DF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st4 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st5 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st6 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st7 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site3 .mega-svg .st8 {
+    fill: #60B383;
+}
+
+.site3 .mega-svg .st9 {
+    fill: #3E3A39;
+}
+
+/* .site4 .cont-svg */
+
+.site4 .cont-svg .st0 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st1 {
+    fill: #E0E0E0;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st2 {
+    enable-background: new;
+}
+
+.site4 .cont-svg .st3 {
+    fill: #3F3B3A;
+}
+
+.site4 .cont-svg .st4 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st5 {
+    fill: #60B383;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st6 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st7 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st8 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st9 {
+    fill: #61B584;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st10 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site4 .cont-svg .st11 {
+    fill: #60B383;
+}
+
+/* .site5 .icon-svg */
+
+.site5 .icon-svg .st1 {
+    fill: #3E3A39;
+}
+
+.site5 .icon-svg .st2 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st3 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st4 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st5 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st6 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st7 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st8 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st9 {
+    fill: #E0E0DF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site5 .icon-svg .st10 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+/* .site6 .update-svg */
+
+.site6 .update-svg .st1 {
+    fill: #3E3A39;
+}
+
+.site6 .update-svg .st2 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st3 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st4 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st5 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st6 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st7 {
+    fill: #FFFFFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st8 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st9 {
+    fill: #FFFDFF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.site6 .update-svg .st10 {
+    fill: #E0E0DF;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+/* .app-svg */
+
+.app-svg .st0 {
+    opacity: 0.5;
+    fill: #3F3B3A;
+    enable-background: new;
+}
+
+.app-svg .st1 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-miterlimit: 10;
+    stroke-width: 6;
+}
+
+.app-svg .st2 {
+    opacity: 0.5;
+}
+
+.app-svg .st3 {
+    fill: #61B584;
+    opacity: 0.5;
+}
+
+.app-svg .st5 {
+    fill: #3F3B3A;
+}
+
+.app-svg .st6 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st7 {
+    fill: #FFFFFF;
+    stroke: #3F3B3A;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st8 {
+    fill: #61B584;
+    stroke: #3F3B3A;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st9 {
+    fill: #61B584;
+    stroke: #3F3B3A;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st10 {
+    fill: #62BC88;
+}
+
+.app-svg .st11 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st12 {
+    fill: #3D3D3D;
+}
+
+.app-svg .st13 {
+    fill: #60B484;
+    stroke: #3F3B3A;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st14 {
+    fill: none;
+    stroke: #3F3B3A;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st15 {
+    opacity: 0.5;
+}
+
+.app-svg .st16 {
+    fill: #61B584;
+    stroke: #3F3B3A;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.app-svg .st17 {
+    fill: #FFFFFF;
+}
+
+
+
+/*///////////////// layout ////////////////////*/
+
+
+#section1 {
+    position: relative;
+    height: 100vh;
+    background: #62BC88;
+}
+
+#section2 {
+    position: relative;
+}
+
+#section3 {
+    position: relative;
+    padding: 300px 0 60px;
+    margin-top: 500px;
+}
+
+#section3 .cloud {
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+}
+
+#section3 .contact {
+    line-height: 5vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    top: 200px;
+    margin-left: 4vw;
+    margin-top: 9vw;
+}
+
+#section3 .contact h3 {
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+}
+
+#section3 .contact p {
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+}
+
+#section3 .contact form {
+    padding: 5px;
+}
+
+#section3 .contact input {
+    font-size: 2vh;
+    display: block;
+    border: #3D3D3E 3px solid;
+    padding: 10px 210px 10px 10px;
+    margin: 19px 0 10px -3px;
+    box-shadow: 10px 10px #a5a5a6;
+}
+
+#section3 .contact textarea {
+    font-size: 2vh;
+    margin: 20px 56px 10px -3px;
+    border: #3D3D3E 3px solid;
+    padding: 10px 207px 100px 10px;
+    display: block;
+    box-shadow: 12px 12px #a5a5a6;
+}
+
+#section3 .contact button {
+    background: #FFF url(../img/message.svg) no-repeat;
+    background-size: cover;
+    height: 3.1vw;
+    width: 9.5vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 800;
+}
+
+#section3 .last {
+    text-align: center;
+    padding: 160px 0 0 0;
+}
+
+#section3 .last img {
+    width: 2vw;
+    margin-bottom: 0.8vw;
+}
+
+#section3 .last p {
+    font-weight: 700;
+    font-size: 2.5vh;
+}
+
+#section3 .bgbox .circle-01 {
+    position: absolute;
+    top: 18vw;
+    right: 10vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+#section3 .bgbox .circle-02 {
+    position: absolute;
+    top: 21vw;
+    right: 37vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+#section3 .bgbox .circle-03 {
+    position: absolute;
+    top: 35vw;
+    right: 28vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+#section3 .bgbox .circle-04 {
+    position: absolute;
+    top: 28vw;
+    right: 16vw;
+    width: 1.2vw;
+    height: 2.2vw;
+}
+
+#section3 .bgbox .circle-05 {
+    position: absolute;
+    top: 32vw;
+    right: 56vw;
+    width: 1.2vw;
+    height: 2.2vw;
+}
+
+#section3 .bgbox .circle-06 {
+    position: absolute;
+    top: 22vw;
+    left: 12vw;
+    width: 1.2vw;
+    height: 2.2vw;
+}
+
+#section3 .bgbox .drop-01 {
+    position: absolute;
+    top: 13vw;
+    left: 21vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+#section3 .bgbox .drop-02 {
+    position: absolute;
+    top: 21vw;
+    left: 46vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+#section3 .bgbox .note-01 {
+    position: absolute;
+    top: 32vw;
+    right: 10vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+#section3 .bgbox .note-02 {
+    position: absolute;
+    top: 12vw;
+    right: 24vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+#section3 .bgbox .note-03 {
+    position: absolute;
+    top: 17vw;
+    left: 29vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+#section3 .bgbox .mouse-01 {
+    position: absolute;
+    bottom: 30vw;
+    left: 40vw;
+    width: 2%;
+    height: 4vw;
+}
+
+#section3 .bgbox .mouse-02 {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 34vw;
+    left: 2vw;
+    width: 2%;
+    height: 4vw;
+}
+
+#section3 .bgbox .line-01 {
+    position: absolute;
+    top: 35vw;
+    right: 49vw;
+    width: 0.2vw;
+    height: 3vw;
+}
+
+#section3 .bgbox .line-02 {
+    position: absolute;
+    top: 25vw;
+    right: 6vw;
+    width: 0.2vw;
+    height: 3vw;
+}
+
+
+
+
+
+
+
+/* container */
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0)
+}
+
+/* sec1 */
+.sec1 {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 .main-logo {
+    width: 26vw;
+}
+
+.cloud {
+    position: absolute;
+    width: 100%;
+    bottom: -12px;
+    left: 0;
+}
+
+
+
+/* sec2 */
+.sec2 {
+    text-align: center;
+    padding-top: 15vw;
+}
+
+.sec2 h2 {
+    font-size: 4vw;
+    line-height: 5vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+
+.sec2 h4 {
+    font-size: 1.8vw;
+    line-height: 4vw;
+    font-weight: 800;
+    color: #3D3D3E;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+
+.sec2 p {
+    font-size: 1.3vw;
+    margin-top: 1vw;
+}
+
+.sec2 .location {
+    width: 4%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.sec2 .mbox {
+    display: flex;
+    margin-top: 20vh;
+}
+
+.sec2 .mbox>div {
+    width: 50%;
+    height: 400px;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.sec2 .location {
+    width: 4%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.sec2 .profile-svg {
+    margin: 0 auto;
+    width: 15%;
+}
+
+.sec2 .tool {
+    position: relative;
+    margin-top: 9vw;
+}
+
+.sec2 .tool .tool-box-svg {
+    margin: 0 auto;
+    width: 90%
+}
+
+.sec2 .tool .text {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.sec2 .tool .text h3 {
+    font-size: 4vw;
+    line-height: 2.6vw;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0.6vw;
+    font-weight: 800;
+}
+
+.sec2 .tool .text h3 em {
+    margin-top: 2vw;
+    font-size: 4vw;
+    display: block;
+    font-weight: 800;
+}
+
+.sec2 .tool .tool-box {
+    padding: 0 20vw;
+    margin-right: 0.9vw;
+}
+
+.center-line {
+    margin-top: 3vw;
+    position: absolute;
+    left: 50%;
+    top: 35vw;
+    z-index: -66;
+    transform: translateX(-50%);
+    width: 1.8vw;
+    height: 500vw;
+}
+
+.small-line {
+    width: 2.2vw;
+    height: 300vw;
+    position: absolute;
+    left: 50%;
+    top: 160vw;
+    transform: translateX(-50%);
+    z-index: -666;
+}
+
+.small-line .s-line {
+    margin-top: 3vw;
+}
+
+.s-line {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.s-line.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.sec2 .skill {
+    position: relative;
+    margin-top: 13vw;
+    margin-left: 3vw;
+}
+
+.sec2 .skill-svg .line-svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -55;
+}
+
+.sec2 .skill .project {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-57%, -50%);
+    width: 20vw;
+}
+
+
+.sec2 .bbox {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*drop*/
+.sec2 .bbox .drop01 {
+    position: absolute;
+    top: 12vw;
+    left: 31vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+.sec2 .bbox .drop02 {
+    position: absolute;
+    top: 24vw;
+    right: 23vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop03 {
+    position: absolute;
+    top: 53vw;
+    right: 11vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop04 {
+    position: absolute;
+    top: 69vw;
+    left: 27vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop05 {
+    position: absolute;
+    top: 74vw;
+    right: 23vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop06 {
+    position: absolute;
+    top: 93vw;
+    right: 20vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop07 {
+    position: absolute;
+    top: 13vw;
+    left: 19vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+.sec2 .bbox .drop08 {
+    position: absolute;
+    top: 18vw;
+    right: 12vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+.sec2 .bbox .drop09 {
+    position: absolute;
+    top: 50vw;
+    left: 15vw;
+    width: 1.5%;
+    height: 3vw;
+}
+
+/*circle*/
+.sec2 .bbox .circle01 {
+    position: absolute;
+    top: 8vw;
+    right: 33vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle02 {
+    position: absolute;
+    top: 13vw;
+    right: 16vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle03 {
+    position: absolute;
+    top: 41vw;
+    right: 20vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle04 {
+    position: absolute;
+    top: 45vw;
+    right: 16vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle05 {
+    position: absolute;
+    top: 50vw;
+    right: 41vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle06 {
+    position: absolute;
+    top: 54vw;
+    left: 44vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle07 {
+    position: absolute;
+    top: 49vw;
+    left: 15vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle08 {
+    position: absolute;
+    top: 49vw;
+    left: 15vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle09 {
+    position: absolute;
+    top: 61vw;
+    right: 13vw;
+    width: 1.2%;
+    height: 2vw;
+}
+
+.sec2 .bbox .circle10 {
+    position: absolute;
+    top: 70vw;
+    right: 38vw;
+    width: 1.2%;
+
+    height: 2vw;
+}
+
+/*note*/
+.sec2 .bbox .note01 {
+    position: absolute;
+    top: 9vw;
+    left: 22vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note02 {
+    position: absolute;
+    top: 32vw;
+    left: 21vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note03 {
+    position: absolute;
+    top: 32vw;
+    right: 32vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note04 {
+    position: absolute;
+    top: 34vw;
+    left: 32vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note05 {
+    position: absolute;
+    top: 40vw;
+    left: 38vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note06 {
+    position: absolute;
+    top: 80vw;
+    left: 19vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+.sec2 .bbox .note07 {
+    position: absolute;
+    top: 84vw;
+    right: 8vw;
+    width: 1.3%;
+    height: 3vw;
+}
+
+/*line*/
+.sec2 .bbox .line01 {
+    position: absolute;
+    top: 20vw;
+    right: 8vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line02 {
+    position: absolute;
+    top: 19vw;
+    left: 11vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line03 {
+    position: absolute;
+    top: 22vw;
+    left: 30vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line04 {
+    position: absolute;
+    top: 72vw;
+    left: 22vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line05 {
+    position: absolute;
+    top: 63vw;
+    right: 35vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line06 {
+    position: absolute;
+    top: 77vw;
+    left: 13vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line07 {
+    position: absolute;
+    top: 80vw;
+    right: 13vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+.sec2 .bbox .line08 {
+    position: absolute;
+    top: 92vw;
+    left: 16vw;
+    width: 0.3vw;
+    height: 4vw;
+}
+
+.sec2 .bbox .line09 {
+    position: absolute;
+    top: 25vh;
+    right: 23vw;
+    width: 0.3vw;
+    height: 3vw;
+}
+
+/* sec1 Animation */
+
+
+body .main-logo-svg .aniPath80 {opacity: 0;}
+body.active .main-logo-svg .aniPath80 { opacity: 1;
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path80 2.7s 2.2s 1 linear both;
+    stroke-dasharray: 1213;
+    stroke-dashoffset: 1213;
+}
+
+@keyframes path80 {
+    0% {
+        stroke-dashoffset: 1213;
+        fill:#61BB87; 
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill:#61BB87;
+        
+        
+    }
+}
+
+body .main-logo-svg .aniPath81 {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s 3s ease;
+}
+body.active .main-logo-svg .aniPath81 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+
+
+/* sec2 Animation */
+.sec2 .s2-h2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s ease;
+}
+
+.sec2 .s2-p {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s 0.2s ease;
+}
+
+.profile-svg {
+    opacity: 0;
+}
+
+.profile-svg.show {
+    opacity: 1;
+}
+
+.sec2 .profile-svg.show .p-aniPath01 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: p-path01 1.2s 1 linear both;
+    stroke-dasharray: 540;
+    stroke-dashoffset: 540;
+}
+
+@keyframes p-path01 {
+    0% {
+        stroke-dashoffset: 540;
+
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+
+.sec2 .profile-svg .p-aniPath03 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.5s ease;
+}
+
+.sec2 .profile-svg.show .p-aniPath03 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.sec2 .profile-svg .p-aniPath04 {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.7s 1.2s ease;
+}
+
+.sec2 .profile-svg.show .p-aniPath04 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.sec2 .bbox .drop01 {
+    opacity: 0;
+    transition: opacity 0.4s 0.4s ease;
+}
+
+.sec2 .bbox .drop02 {
+    opacity: 0;
+    transition: opacity 0.6s 0.6s ease;
+}
+
+.sec2 .bbox .drop03 {
+    opacity: 0;
+    transition: opacity 0.4s 0.4s ease;
+}
+
+.sec2 .bbox .drop04 {
+    opacity: 0;
+    transition: opacity 0.6s 1.6s ease;
+}
+
+.sec2 .bbox .drop05 {
+    opacity: 0;
+    transition: opacity 0.4s 2.4s ease;
+}
+
+.sec2 .bbox .drop06 {
+    opacity: 0;
+    transition: opacity 0.6s 1.6s ease;
+}
+
+.sec2 .bbox .drop07 {
+    opacity: 0;
+    transition: opacity 0.4s 2.6s ease;
+}
+
+.sec2 .bbox .drop08 {
+    opacity: 0;
+    transition: opacity 0.6s 2s ease;
+}
+
+.sec2 .bbox .drop09 {
+    opacity: 0;
+    transition: opacity 0.4s 2.4s ease;
+}
+
+.sec2 .bbox .circle01 {
+    opacity: 0;
+    transition: opacity 0.4s 0.6s ease;
+}
+
+.sec2 .bbox .circle02 {
+    opacity: 0;
+    transition: opacity 0.6s 0.6s ease;
+}
+
+.sec2 .bbox .circle03 {
+    opacity: 0;
+    transition: opacity 0.4s 0.6s ease;
+}
+
+.sec2 .bbox .circle04 {
+    opacity: 0;
+    transition: opacity 0.6s 1.6s ease;
+}
+
+.sec2 .bbox .circle05 {
+    opacity: 0;
+    transition: opacity 0.4s 1.6s ease;
+}
+
+.sec2 .bbox .circle06 {
+    opacity: 0;
+    transition: opacity 0.6s 2s ease;
+}
+
+.sec2 .bbox .circle07 {
+    opacity: 0;
+    transition: opacity 0.4s 1.6s ease;
+}
+
+.sec2 .bbox .circle08 {
+    opacity: 0;
+    transition: opacity 0.6s 2.3s ease;
+}
+
+.sec2 .bbox .circle09 {
+    opacity: 0;
+    transition: opacity 0.4s 2.6s ease;
+}
+
+.sec2 .bbox .circle10 {
+    opacity: 0;
+    transition: opacity 0.6s 2s ease;
+}
+
+.sec2 .bbox .note01 {
+    opacity: 0;
+    transition: opacity 0.4s 0.5s ease;
+}
+
+.sec2 .bbox .note02 {
+    opacity: 0;
+    transition: opacity 0.4s 0.7s ease;
+}
+
+.sec2 .bbox .note03 {
+    opacity: 0;
+    transition: opacity 0.6s 1s ease;
+}
+
+.sec2 .bbox .note04 {
+    opacity: 0;
+    transition: opacity 0.4s 2.5s ease;
+}
+
+.sec2 .bbox .note05 {
+    opacity: 0;
+    transition: opacity 0.6s 2s ease;
+}
+
+.sec2 .bbox .note06 {
+    opacity: 0;
+    transition: opacity 0.4s 1.7s ease;
+}
+
+.sec2 .bbox .note07 {
+    opacity: 0;
+    transition: opacity 0.6s 2s ease;
+}
+
+.sec2 .bbox .line01 {
+    opacity: 0;
+    transition: opacity 0.4s 0.7s ease;
+}
+
+.sec2 .bbox .line02 {
+    opacity: 0;
+    transition: opacity 0.6s 1s ease;
+}
+
+.sec2 .bbox .line03 {
+    opacity: 0;
+    transition: opacity 0.4s 0.8s ease;
+}
+
+.sec2 .bbox .line04 {
+    opacity: 0;
+    transition: opacity 0.6s 1.7s ease;
+}
+
+.sec2 .bbox .line05 {
+    opacity: 0;
+    transition: opacity 0.4s 2s ease;
+}
+
+.sec2 .bbox .line06 {
+    opacity: 0;
+    transition: opacity 0.6s 2.4s ease;
+}
+
+.sec2 .bbox .line07 {
+    opacity: 0;
+    transition: opacity 0.4s 2s ease;
+}
+
+.sec2 .bbox .line08 {
+    opacity: 0;
+    transition: opacity 0.6s 2.7s ease;
+}
+
+.sec2 .bbox .line09 {
+    opacity: 0;
+    transition: opacity 0.4s 2.1s ease;
+}
+
+
+
+.sec2.show .s2-h2 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.sec2.show .s2-p {
+    padding-bottom: 1vw;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+.sec2.show .bbox .drop01 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop02 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop03 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop04 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop05 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop06 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop07 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop08 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .drop09 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle01 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle02 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle03 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle04 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle05 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle06 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle07 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle08 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle09 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .circle10 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note01 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note02 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note03 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note04 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note05 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note06 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .note07 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line01 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line02 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line03 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line04 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line05 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line06 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line07 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line08 {
+    opacity: 1;
+}
+
+.sec2.show .bbox .line09 {
+    opacity: 1;
+}
+
+
+.site-wrap {
+    margin-top: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site-wrap>div {
+    width: 48%;
+    margin-bottom: 50px;
+}
+
+.site-wrap .site1 {
+    position: relative;
+}
+
+.site-wrap .site2 {
+    margin-top: 5vw;
+}
+
+.site-wrap .site3 {
+    margin-top: -5vw;
+}
+
+
+
+
+
+.mbox-svg {
+    opacity: 0;
+}
+
+.mbox-svg.show {
+    opacity: 1
+}
+
+.mbox-svg.show .aniPath1 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path1 1s 1 linear both;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+@keyframes path1 {
+    0% {
+        stroke-dashoffset: 440;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mbox-svg.show .aniPath2 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path2 1s 1 linear both;
+    stroke-dasharray: 819;
+    stroke-dashoffset: 819;
+}
+
+@keyframes path2 {
+    0% {
+        stroke-dashoffset: 819;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mbox-svg.show .aniPath3 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path3 1.5s 1 linear both;
+    stroke-dasharray: 819;
+    stroke-dashoffset: 819;
+}
+
+@keyframes path3 {
+    0% {
+        stroke-dashoffset: 819;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mbox-svg .aniPath4 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s 0.7s ease;
+}
+
+.mbox-svg.show .aniPath4 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mbox-svg .aniPath5 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s 0.8s ease;
+}
+
+.mbox-svg.show .aniPath5 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mbox-svg .aniPath6 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+
+.mbox-svg.show .aniPath6 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.mbox-svg2 {
+    opacity: 0;
+}
+
+.mbox-svg2.show {
+    opacity: 1
+}
+
+.mbox-svg2.show .aniPath7 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path7 1s 1 linear both;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+@keyframes path7 {
+    0% {
+        stroke-dashoffset: 440;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mbox-svg2.show .aniPath8 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path8 15s 1 linear both;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+@keyframes path8 {
+    0% {
+        stroke-dashoffset: 440;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mbox-svg2 .aniPath9 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
+
+.mbox-svg2.show .aniPath9 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.location-svg {
+    opacity: 0;
+}
+
+.location-svg.show {
+    opacity: 1;
+
+}
+
+.location-svg.show .aniPath10 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 5;
+    stroke-linecap: round;
+    animation: path10 1.5s 1 linear both;
+    stroke-dasharray: 340;
+    stroke-dashoffset: 340;
+}
+
+@keyframes path10 {
+    0% {
+        stroke-dashoffset: 340;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.location-svg .aniPath11 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.8s 0.1s ease;
+}
+
+.location-svg.show .aniPath11 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tool-box-svg {
+    opacity: 0;
+}
+
+.tool-box-svg.show {
+    opacity: 1;
+}
+
+.tool-box-svg.show .aniPath12 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path12 4.5s 1 linear both;
+    stroke-dasharray: 4556;
+    stroke-dashoffset: 4556;
+}
+
+@keyframes path12 {
+    0% {
+        stroke-dashoffset: 4556;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.tool-box-svg .aniPath13 {
+    opacity: 0;
+    transition: all 0.8s 0.1s ease;
+}
+
+.tool-box-svg.show .aniPath13 {
+    opacity: 1;
+
+}
+
+.tool-box-svg .anih3 {
+    opacity: 0;
+    transition: all 0.8s 0.1s ease;
+    transform: translateY(20px);
+}
+
+.tool-box-svg.show .anih3 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.tool-box-svg .anip {
+    opacity: 0;
+    transition: all 0.8s 0.4s ease;
+    transform: translateY(20px);
+}
+
+.tool-box-svg.show .anip {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.tool-box-svg .aniPath14 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s 1s ease;
+}
+
+.tool-box-svg.show .aniPath14 {
+    transform: translateY(0);
+    opacity: 0.5;
+
+}
+
+.tool-box-svg.show .aniPath15 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path15 0.5s 1.8s 1 linear both;
+    stroke-dasharray: 90;
+    stroke-dashoffset: 90;
+}
+
+@keyframes path15 {
+    0% {
+        stroke-dashoffset: 90;
+        fill-opacity: 0;
+        fill: #FFF;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+        fill: #60B383;
+    }
+}
+
+.tool-box-svg.show .aniPath16 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path16 0.5s 1.2s 1 linear both;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+}
+
+@keyframes path16 {
+    0% {
+        stroke-dashoffset: 80;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.skill-svg {
+    opacity: 0;
+}
+
+.skill-svg.show {
+    opacity: 1;
+}
+
+.skill-svg.show .aniPath17 {
+    fill: none;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path17 1s 1 linear both;
+    stroke-dasharray: 577;
+    stroke-dashoffset: 577;
+}
+
+@keyframes path17 {
+    0% {
+        stroke-dashoffset: 577;
+
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.skill-svg.show .aniPath18 {
+    fill: #fff;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path18 2s 0.7s 1 linear both;
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+}
+
+@keyframes path18 {
+    0% {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-dashoffset: 1800;
+
+    }
+
+    30% {
+        fill-opacity: 0.5;
+        fill: #fff;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+        fill: #fff;
+
+    }
+}
+
+.skill-svg.show .aniPath18-1 {
+
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path18-1 8s 1.5s 1 linear both;
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+}
+
+@keyframes path18-1 {
+    0% {
+
+        stroke-dashoffset: 1800;
+
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.skill-svg.show .aniPath19 {
+    fill: #fff;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path19 3.5s -0.4s 1 linear both;
+    stroke-dasharray: 2440;
+    stroke-dashoffset: 2440;
+}
+
+@keyframes path19 {
+    0% {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-dashoffset: 2440;
+
+    }
+
+    30% {
+        fill-opacity: 0.5;
+        fill: #fff;
+        stroke-dashoffset: 2440;
+    }
+
+    80% {
+        fill: #fff;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        fill: #fff;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.skill-svg .aniPath20 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s 1.5s ease;
+}
+
+.skill-svg.show .aniPath20 {
+    transform: translateY(0);
+    opacity: 0.5;
+
+}
+
+.skill-svg.show .aniPath21 {
+    fill: #fff;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path21 0.5s 1s 1 linear both;
+    stroke-dasharray: 28;
+    stroke-dashoffset: 28;
+}
+
+@keyframes path21 {
+    0% {
+        fill: #fff;
+        stroke-dashoffset: 28;
+
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.skill-svg .aniPath22 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s 1.2s ease;
+}
+
+.skill-svg.show .aniPath22 {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.skill-svg .aniPath23 {
+    opacity: 0;
+    transition: all 0.8s 1.5s ease;
+}
+
+.skill-svg.show .aniPath23 {
+
+    opacity: 1;
+
+}
+
+.skill-svg .aniPath24 {
+    opacity: 0;
+    transition: all 0.5s 1s ease;
+}
+
+.skill-svg.show .aniPath24 {
+    opacity: 1;
+
+}
+
+.skill-svg.show .aniPath25 {
+    stroke: #60B383;
+    stroke-linecap: round;
+    animation: path25 1.2s 1s 1 linear both;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+}
+
+@keyframes path25 {
+    0% {
+        stroke-dashoffset: 300;
+
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.skill-1 .skill-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s 1.5s ease;
+}
+
+.skill-1.show .skill-text {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.skill-2 .skill-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s 1.5s ease;
+}
+
+.skill-2.show .skill-text {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.project-svg {
+    opacity: 0;
+}
+
+.project-svg.show {
+    opacity: 1;
+}
+
+.project-svg.show .aniPath26 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path26 2.5s 0.2s 1 linear both;
+    stroke-dasharray: 2387;
+    stroke-dashoffset: 2387;
+}
+
+@keyframes path26 {
+    0% {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-dashoffset: 2387;
+
+    }
+
+    100% {
+        fill: #fff;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.project-svg .aniPath27 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s 1s ease;
+}
+
+.project-svg.show .aniPath27 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+
+
+.project-svg .aniPath28 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 1.5s ease;
+}
+
+.project-svg.show .aniPath28 {
+    opacity: 0.45;
+    transform: translateY(0px);
+
+}
+
+.project .pp {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 1.5s ease;
+}
+
+.project.show .pp {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.kt-svg {
+    opacity: 0;
+}
+
+.kt-svg.show {
+    opacity: 1;
+}
+
+
+
+
+.kt-svg.show .aniPath29 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path29 1.7s 0.2s 1 linear both;
+    stroke-dasharray: 1213;
+    stroke-dashoffset: 1213;
+}
+
+@keyframes path29 {
+    0% {
+
+        stroke-dashoffset: 1213;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.kt-svg.show .aniPath30 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path30 1.7s 0.8s 1 linear both;
+    stroke-dasharray: 1213;
+    stroke-dashoffset: 1213;
+}
+
+@keyframes path30 {
+    0% {
+        fill: #60B383;
+        fill-opacity: 0;
+        stroke-dashoffset: 1213;
+
+    }
+
+    50% {
+        fill: #60B383;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #60B383;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.kt-svg.show .aniPath31 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path31 1.7s 0.8s 1 linear both;
+    stroke-dasharray: 1250;
+    stroke-dashoffset: 1250;
+}
+
+@keyframes path31 {
+
+    0% {
+        stroke-dashoffset: 1250;
+        fill: #fff;
+        fill-opacity: 0;
+    }
+
+    30% {
+        fill: #fff;
+        fill-opacity: 0.5;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+        fill-opacity: 1;
+
+    }
+}
+
+.kt-svg.show .aniPath32 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path32 0.6s 1.5s 1 linear both;
+    stroke-dasharray: 210;
+    stroke-dashoffset: 210;
+}
+
+@keyframes path32 {
+    0% {
+        fill: #E0E0DF;
+        fill-opacity: 0;
+        stroke-dashoffset: 210;
+
+    }
+
+    50% {
+        fill: #E0E0DF;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #E0E0DF;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.kt-svg .aniPath33 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 1.5s ease;
+}
+
+.kt-svg.show .aniPath33 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+
+.kt-svg.show .aniPath34 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path34 7.7s 1.8s 1 linear both;
+
+    stroke-dasharray: 1213;
+    stroke-dashoffset: 1213;
+}
+
+@keyframes path34 {
+
+    0% {
+        stroke-dashoffset: 1213;
+    }
+
+
+    100% {
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.kt-svg .aniPath35 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 2s ease;
+}
+
+
+
+.kt-svg.show .aniPath35 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.kt-svg .aniPath36 {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.kt-svg.show .aniPath36 {
+    opacity: 1;
+
+}
+
+.kt-svg.show .aniPath37 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path37 1.5s 1.8s 1 linear both;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+
+@keyframes path37 {
+    0% {
+        stroke-dashoffset: 1600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.kt-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.kt-svg.show .aniPathcont {
+    opacity: 1;
+
+}
+
+
+.woori-svg {
+    opacity: 0;
+}
+
+.woori-svg.show {
+    opacity: 1;
+}
+
+.woori-svg.show .aniPath38 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path38 1.7s 0.2s 1 linear both;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+}
+
+@keyframes path38 {
+    0% {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-dashoffset: 900;
+    }
+
+    20% {
+        fill: #fff;
+        fill-opacity: 0.5;
+        stroke-dashoffset: 900;
+    }
+
+    100% {
+        fill: #fff;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.woori-svg.show .aniPath39 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path39 1.7s 1s 1 linear both;
+    stroke-dasharray: 1444;
+    stroke-dashoffset: 1444;
+}
+
+@keyframes path39 {
+    0% {
+        stroke-dashoffset: 1444;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.woori-svg.show .aniPath40 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path40 1.7s 0.8s 1 linear both;
+    stroke-dasharray: 1213;
+    stroke-dashoffset: 1213;
+}
+
+@keyframes path40 {
+    0% {
+        fill: #60B383;
+        fill-opacity: 0;
+        stroke-dashoffset: 1213;
+
+    }
+
+    50% {
+        fill: #60B383;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #60B383;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.woori-svg.show .aniPath41 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path41 2.7s 0.8s 1 linear both;
+    stroke-dasharray: 1213;
+    stroke-dashoffset: 1213;
+}
+
+@keyframes path41 {
+    0% {
+        fill: #60B383;
+        fill-opacity: 0;
+        stroke-dashoffset: 1213;
+
+    }
+
+    50% {
+        fill: #60B383;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #60B383;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.woori-svg.show .aniPath42 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path42 0.6s 1s 1 linear both;
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+}
+
+@keyframes path42 {
+    0% {
+        fill: #E0E0DF;
+        fill-opacity: 0;
+        stroke-dashoffset: 410;
+
+    }
+
+    50% {
+        fill: #E0E0DF;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #E0E0DF;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.woori-svg.show .aniPath43 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path43 2.4s 1.5s 1 linear both;
+    stroke-dasharray: 1444;
+    stroke-dashoffset: 1444;
+}
+
+@keyframes path43 {
+    0% {
+        stroke-dashoffset: 1444;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.woori-svg .aniPath44 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 1.5s ease;
+}
+
+.woori-svg.show .aniPath44 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.woori-svg .aniPath45 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 2s ease;
+}
+
+.woori-svg.show .aniPath45 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.woori-svg .aniPath46 {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.woori-svg.show .aniPath46 {
+    opacity: 1;
+
+}
+
+.woori-svg.show .aniPath47 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path47 1.5s 1.8s 1 linear both;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+
+@keyframes path47 {
+    0% {
+        stroke-dashoffset: 1600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.woori-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.woori-svg.show .aniPathcont {
+    opacity: 1;
+
+}
+
+.mega-svg {
+    opacity: 0;
+}
+
+.mega-svg.show {
+    opacity: 1;
+}
+
+.mega-svg.show .aniPath48 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path48 1.7s 0.2s 1 linear both;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+}
+
+@keyframes path48 {
+    0% {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-dashoffset: 900;
+    }
+
+    20% {
+        fill: #fff;
+        fill-opacity: 0.5;
+        stroke-dashoffset: 900;
+    }
+
+    100% {
+        fill: #fff;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.mega-svg.show .aniPath49 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path49 1.7s 0.8s 1 linear both;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+@keyframes path49 {
+    0% {
+        fill: #60B383;
+        fill-opacity: 0;
+        stroke-dashoffset: 1000;
+
+    }
+
+    50% {
+        fill: #60B383;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #60B383;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.mega-svg .aniOpacity01 {
+    opacity: 0;
+}
+
+.mega-svg.show .aniOpacity01 {
+
+    animation: opacity 0.6s 1s 1 linear both;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.mega-svg.show .aniPath50 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path50 0.6s 1s 1 linear both;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+@keyframes path50 {
+    0% {
+        fill: #E0E0DF;
+        fill-opacity: 0;
+        stroke-dashoffset: 600;
+
+    }
+
+    50% {
+        fill: #E0E0DF;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #E0E0DF;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.mega-svg.show .aniPath51 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path51 2.4s 1.5s 1 linear both;
+    stroke-dasharray: 1444;
+    stroke-dashoffset: 1444;
+}
+
+@keyframes path51 {
+    0% {
+        stroke-dashoffset: 1444;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mega-svg .aniPath52 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 2s ease;
+}
+
+.mega-svg.show .aniPath52 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.mega-svg.show .aniPath53 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path53 1.5s 1.8s 1 linear both;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+
+@keyframes path53 {
+    0% {
+        stroke-dashoffset: 1600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mega-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.mega-svg.show .aniPathcont {
+    opacity: 1;
+
+}
+
+
+
+.cont-svg {
+    opacity: 0;
+}
+
+.cont-svg.show {
+    opacity: 1;
+}
+
+.cont-svg.show .aniPath54 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path54 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path54 {
+    0% {
+        stroke-dashoffset: 1524;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.cont-svg.show .aniPath55 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path55 5.4s 1s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path55 {
+    0% {
+        stroke-dashoffset: 1524;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.cont-svg.show .aniPath56 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path56 0.6s 1s 1 linear both;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+@keyframes path56 {
+    0% {
+        fill: #E0E0DF;
+        fill-opacity: 0;
+        stroke-dashoffset: 600;
+
+    }
+
+    50% {
+        fill: #E0E0DF;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #E0E0DF;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.cont-svg.show .aniPath57 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation: path57 1.7s 0.8s 1 linear both;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+@keyframes path57 {
+    0% {
+        fill: #60B383;
+        fill-opacity: 0;
+        stroke-dashoffset: 1000;
+
+    }
+
+    50% {
+        fill: #60B383;
+        fill-opacity: 0.5;
+
+
+    }
+
+    100% {
+        fill: #60B383;
+        fill-opacity: 1;
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.cont-svg.show .aniPath58 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path58 1.5s 2s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path58 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #fff;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #fff;
+        fill-opacity: 1;
+
+    }
+}
+
+.cont-svg.show .aniPath59 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path59 6s 2.5s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path59 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #fff;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #fff;
+        fill-opacity: 1;
+
+    }
+}
+
+.cont-svg .aniPath60 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 2s ease;
+}
+
+.cont-svg.show .aniPath60 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.cont-svg.show .aniPath61 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path61 1.5s 2.3s 1 linear both;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+
+@keyframes path61 {
+    0% {
+        stroke-dashoffset: 1600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.cont-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.cont-svg.show .aniPathcont {
+    opacity: 1;
+
+}
+
+.icon-svg {
+    opacity: 0;
+}
+
+.icon-svg.show {
+    opacity: 1;
+}
+
+.icon-svg.show .aniPath62 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path62 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path62 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #fff;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #fff;
+        fill-opacity: 1;
+
+    }
+}
+
+.icon-svg.show .aniPath63 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path63 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path63 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #E0E0DF;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #E0E0DF;
+        fill-opacity: 1;
+
+    }
+}
+
+.icon-svg.show .aniPath64 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path64 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path64 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #60B383;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #60B383;
+        fill-opacity: 1;
+
+    }
+}
+
+.icon-svg.show .aniPath65 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path65 4s 2.2s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path65 {
+    0% {
+        stroke-dashoffset: 1524;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.icon-svg .aniPath66 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s 2s ease;
+}
+
+.icon-svg.show .aniPath66 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.icon-svg .aniPath666 {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.icon-svg.show .aniPath666 {
+    opacity: 1;
+}
+
+
+.icon-svg.show .aniPath72 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path72 1.5s 1.8s 1 linear both;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+
+@keyframes path72 {
+    0% {
+        stroke-dashoffset: 1600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.icon-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.icon-svg.show .aniPathcont {
+    opacity: 1;
+}
+
+.update-svg {
+    opacity: 0;
+}
+
+.update-svg.show {
+    opacity: 1;
+}
+
+.update-svg.show .aniPath67 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path67 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path67 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #fff;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #fff;
+        fill-opacity: 1;
+
+    }
+}
+
+.update-svg.show .aniPath68 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path68 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path68 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #60B383;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #60B383;
+        fill-opacity: 1;
+
+    }
+}
+
+.update-svg.show .aniPath69 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path69 2s 0.8s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path69 {
+    0% {
+        stroke-dashoffset: 1524;
+        fill: #E0E0DF;
+        fill-opacity: 0;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+        fill: #E0E0DF;
+        fill-opacity: 1;
+
+    }
+}
+
+.update-svg.show .aniPath70 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path70 4s 2.2s 1 linear both;
+    stroke-dasharray: 1524;
+    stroke-dashoffset: 1524;
+}
+
+@keyframes path70 {
+    0% {
+        stroke-dashoffset: 1524;
+
+    }
+
+    100% {
+
+        stroke-dashoffset: 0;
+
+    }
+}
+
+.update-svg .aniPath71 {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s 2s ease;
+}
+
+.update-svg.show .aniPath71 {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.update-svg.show .aniPath73 {
+    stroke: #3E3A39;
+    stroke-linecap: round;
+    animation:
+        path73 1.5s 2.3s 1 linear both;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+
+@keyframes path73 {
+    0% {
+        stroke-dashoffset: 1600;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.update-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.update-svg.show .aniPathcont {
+    opacity: 1;
+}
+
+.app-svg {
+    opacity: 0;
+}
+
+.app-svg.show {
+    opacity: 1;
+}
+
+.app-svg.show .aniPath74 {
+    fill: #fff;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path74 1.8s 0.7s 1 linear both;
+    stroke-dasharray: 2130;
+    stroke-dashoffset: 2130;
+}
+
+@keyframes path74 {
+    0% {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-dashoffset: 2130;
+
+    }
+
+    30% {
+        fill-opacity: 0.5;
+        fill: #fff;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+        fill: #fff;
+
+    }
+}
+
+.app-svg.show .aniPath75 {
+    fill: #60B383;
+    stroke: #3E3A39;
+    stroke-width: 6;
+    stroke-linecap: round;
+    animation: path75 3.5s 1.5s 1 linear both;
+    stroke-dasharray: 2130;
+    stroke-dashoffset: 2130;
+}
+
+@keyframes path75 {
+    0% {
+        fill: #60B383;
+        fill-opacity: 0;
+        stroke-dashoffset: 2130;
+
+    }
+
+    30% {
+        fill-opacity: 0.5;
+        fill: #60B383
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+        fill: #60B383
+    }
+}
+
+.app-svg .aniPath76 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s 1.5s ease;
+}
+
+.app-svg.show .aniPath76 {
+    transform: translateY(0);
+    opacity: 0.5;
+}
+
+.app-svg .aniPath77 {
+    opacity: 0;
+    transition: opacity 0.6s 1.6s ease;
+}
+
+.app-svg.show .aniPath77 {
+    opacity: 1;
+}
+
+.app-svg .aniPath78 {
+    opacity: 0;
+    transition: opacity 0.6s 1.6s ease;
+}
+
+.app-svg.show .aniPath78 {
+    opacity: 0.5;
+}
+
+.app-svg .aniPath79 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s 2s ease;
+}
+
+.app-svg.show .aniPath79 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.app-svg .aniPathcont {
+    opacity: 0;
+    transition: all 1s 2s ease;
+}
+
+.app-svg.show .aniPathcont {
+    opacity: 1;
+}
+
+.app-svg .anisite {
+    opacity: 0;
+    transition: opacity 0.6s 1.6s ease;
+}
+
+.app-svg.show .anisite {
+    opacity: 1;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+
+
+
+
+@keyframes bounce {
+
+    from,
+    20%,
+    53%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+        transform: translate3d(0, -30px, 0) scaleY(1.1);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+        transform: translate3d(0, -15px, 0) scaleY(1.05);
+    }
+
+    80% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+        transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+        transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+}
+
+
+/* mediaquery */
+@media (max-width: 1420px) {
+    .container {
+        width: 100%;
+    }
+}

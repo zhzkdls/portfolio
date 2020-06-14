@@ -1,0 +1,155 @@
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+/* layout */
+#contents {}
+#section1 {height: 100vh; background: #0D7E3E;}
+#section2 {height: 2000px; background: #ccc;}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+
+/* container */
+.container {width: 1600px; margin: 0 auto;  background:rgba(0,0,0,0);}
+
+/* scroll */
+.scroll {
+    position: fixed; left: 10px; top:10px; width: 40px; height: 40px;
+text-align: center; line-height: 40px; color: #fff;
+    background: rgba(0,0,0,0.3);
+    font-size: 12px; z-index: 10000;
+}
+
+/* header */
+#nav {
+    position: fixed; left: 0; top: -100px; z-index: 1000;
+    width: 100%; height: 80px; 
+    background: rgba(255,255,255,0); 
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: sofia-pro, sans-serif;
+}
+#nav .nav-left {}
+#nav .nav-left li {display: inline;}
+#nav .logo {
+    font-size: 30px; width: 100px; height: 100px; 
+    border-radius: 50%;
+    background: #ffd600;
+    margin: 10px 100px;
+}
+#nav .nav-right {text-align: center;}
+#nav .nav-right li {display: inline;}
+#nav a {
+    color: #fff; font-size: 24px; display: inline-block; 
+    padding: 40px 40px; font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* sec1 */
+.sec1 {
+    height: 100vh;
+    font-family: sofia-pro, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec1 h1 {
+    font-size: 9vw; line-height: 9vw;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    
+}
+.sec1 h1 span {
+    opacity: 0; transform: translateY(100px);
+    transition: all .3s;
+    display: inline-block;
+}
+.sec1 h1 span.show {
+    opacity: 1; transform: translateY(0px);
+}
+
+.sec1 h1 em {
+    font-style: normal;
+    display: block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+/* sec2 */
+.sec2 {overflow: hidden;}
+.sec2 .left {position: relative; width: 50%; float: left; height: 1000px; background: #0D7E3E;}
+.sec2 .right {width: 50%; float: left; height: 1000px; background: #111;}
+
+.sec2 .left h2 {
+    font-size: 7vw; font-family: 'Fredericka the Great', cursive; color: #fff;
+    font-weight: normal;    
+    text-align: right;
+    padding: 150px 100px 0 0;
+    position: relative; z-index: 10;
+
+}
+.sec2 .left .limg {
+    position: absolute; top: 25vh; right: 10vw; z-index: 1;
+    width: 25vw;
+    transform: rotate(-15deg)
+}
+.sec2 .left .limg img {width: 100%;}
+.sec2 .left .text {
+    position: absolute; bottom: 0; left: 0; width: 100%; 
+    background: #ffd600;
+    overflow: hidden;
+}
+.sec2 .left .text strong {
+    font-size: 3vw; 
+    line-height: 5vw;
+    color: #000;
+    font-family: sofia-pro, sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-bottom: .51vw;
+    display: block;
+    animation: left 20s linear infinite;
+}
+@keyframes left {
+    0% {transform: translatex(0)}
+    100% {transform: translatex(-100%)}
+}
+
+.sec2 .right h2 {
+    font-size: 7vw; text-align: left;
+    padding: 150px 0 0 130px;
+    font-family: sofia-pro, sans-serif;
+    color: #fff;
+    font-weight: 900;
+}
+.sec2 .right h2 em {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-style: normal;
+}
+.sec2 .right p {
+    color: #fff;
+    font-family: 'S-CoreDream-2ExtraLight'; 
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 80px 100px 100px 150px;
+}
+
+.sec2 .left h2 {opacity: 0;}
+.sec2 .left .limg {opacity: 0;}
+
+#section2.show .sec2 .left h2 {opacity: 1; }
+#section2.show .sec2 .limg  {opacity: 1;}
+
+
+
+
+
+
