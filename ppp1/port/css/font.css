@@ -1,0 +1,23 @@
+/* basic text */
+@font-face {
+    font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: normal; font-style: normal; 
+}
+@font-face { 
+    font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; 
+}
+
+/* main text */
+@font-face {
+    font-family: 'Recoleta';
+    src: url('https://assets.website-files.com/5eb3725804ebab7adb0a6e4e/5eb426afee5762a032aa649b_Latinotype%20-%20Recoleta%20Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* bold text */
+@font-face { 
+    font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; 
+}
